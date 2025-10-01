@@ -1,9 +1,27 @@
 @import url(./styles/variables.css
 );
 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: var(--color-primario-negro);
+    color: var(--color-primario-blanco);
+}
+
 /* Navbar base (usando Bootstrap para responsividad) */
 .navbar {
-    background: var(--black) !important;
+    background: var(--color-primario-negro) !important;
     border-bottom: 1px solid #1e1e1e;
     min-height: 72px;
 }
@@ -26,7 +44,7 @@
     height: 44px;
     display: grid;
     place-items: center;
-    border: 2px solid var(--white);
+    border: 2px solid var(--color-primario-blanco);
     font-weight: 800;
 }
 
@@ -39,7 +57,7 @@
 .nav-links .nav-link {
     position: relative;
     text-decoration: none;
-    color: var(--link-muted);
+    color: var(--color-primario-blanco);
     font-weight: 600;
     letter-spacing: 0.4px;
     padding: 10px 14px;
@@ -64,7 +82,7 @@
 }
 
 .nav-links .nav-link:hover {
-    color: var(--white);
+    color: var(--color-secundario-verde-claro);
 }
 
 /* Ajustes para móvil */

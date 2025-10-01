@@ -1,3 +1,6 @@
+@import url(./styles/variables.css
+);
+
 .section-1 { background: var(--near-black); color: var(--white); }
 
 /* Tira gris con degradado desde los lados al centro */
