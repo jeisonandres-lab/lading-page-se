@@ -20,8 +20,9 @@ body {
 
 /* Navbar base (usando Bootstrap para responsividad) */
 .navbar {
-    background: var(--color-primario-negro) !important;
-    border-bottom: 2px solid var(--color-primario-gris-oscuro);
+    /*background: var(--color-primario-negro) !important;*/
+    background-color: transparente;
+      /*border-bottom: 2px solid var(--color-primario-gris-oscuro);*/
     min-height: 72px;
 }
 
@@ -43,14 +44,7 @@ body {
 .brand .logo-box {
     width: 44px;
     height: 44px;
-    display: grid;
-    place-items: center;
     border: 2px solid var(--color-primario-blanco);
-    font-weight: 800;
-}
-
-.brand .brand-text {
-    font-size: 20px;
 }
 
 .nav-item{
