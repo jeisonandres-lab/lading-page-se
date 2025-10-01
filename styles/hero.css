@@ -1,4 +1,4 @@
-@import url(./styles/variables.css
+@import url(./variables.css
 );
 
 
@@ -8,7 +8,6 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    margin-top: 72px;
     /* compensar navbar fija */
     background-image: url('https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=1920&auto=format&fit=crop');
     background-size: cover;
@@ -46,8 +45,11 @@
     font-size: clamp(28px, 4vw, 54px);
     line-height: 1.05;
     text-transform: uppercase;
+    color: var(--color-primario-blanco);
 }
-
+.accent.title-primery{
+    color: var(--color-secundario-verde-claro);
+}
 /* parte superior del título: más delgada */
 .title-thin { font-weight: 500; }
 
@@ -63,39 +65,48 @@
 
 .hero-sub {
     margin-top: 16px;
-    display: inline-flex;
+   
+   
+}
+
+.content-hero-sub {
     align-items: center;
-    justify-content: center;
-    padding: 10px 18px;
-    border: 3px solid var(--white);
-    border-radius: 14px;
+    padding: 6px 15px;
+    border: 2px solid var(--color-primario-blanco);
+    border-radius: 18px;
     background: rgba(0,0,0,0.35);
-    font-size: clamp(14px, 2vw, 20px);
+    font-size: clamp(14px, 3vw, 30px);
+    font-weight: 600;
     color: #e7e7e7;
     max-width: min(920px, 90vw);
     margin-left: auto;
     margin-right: auto;
+    width: 36rem;
 }
 
-.cta {
+.cta.boton-unidades {
     position: relative;
-    margin-top: 28px;
+    margin-top: 45px;
     display: inline-block;
-    padding: 14px 24px;
+    padding: 5px 18px 5px 18px;
     border: 3px solid var(--color-secundario-verde-claro);
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.35);
-    color: var(--white);
+    background:var(--color-primario-negro);
+    color: var(--color-primario-blanco) !important;
     font-weight: 800;
+    font-size: clamp(14px, 3vw, 1.8rem);
     text-decoration: none;
+    text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: transform 0.1s ease, background 0.2s ease;
 }
 
-.cta:hover {
+.cta.boton-unidades > 
+.boton-unidades:hover {
     transform: translateY(-1px);
     background: rgba(97, 179, 37, 0.12);
 }
+
 
 @media (max-width: 860px) {
     .nav-links {
