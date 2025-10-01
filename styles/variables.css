@@ -1,0 +1,17 @@
+:root {
+    
+    /* Colores Primarios */
+    --color-primario-negro: #141414;
+    --color-primario-gris-oscuro: #4b4e54;
+    --color-primario-gris-medio: #838589;
+    --color-primario-blanco: #f2f2f2;
+
+    /* Colores Secundarios */
+    --color-secundario-verde-oscuro: #3f7400;
+    --color-secundario-verde-medio: #579200;
+    --color-secundario-verde-claro: #72af16;
+
+    /* Colores Complementos */
+    --color-complemento-amarillo-mostaza: #bcbc00;
+    --color-complemento-crema: #fffcd9;
+}

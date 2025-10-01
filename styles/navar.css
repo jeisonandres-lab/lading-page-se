@@ -1,0 +1,75 @@
+@import url(./styles/variables.css
+);
+
+/* Navbar base (usando Bootstrap para responsividad) */
+.navbar {
+    background: var(--black) !important;
+    border-bottom: 1px solid #1e1e1e;
+    min-height: 72px;
+}
+
+.nav-container {
+    max-width: 1200px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+.brand .logo-box {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border: 2px solid var(--white);
+    font-weight: 800;
+}
+
+.brand .brand-text {
+    font-size: 20px;
+}
+
+.nav-links { gap: 24px; }
+
+.nav-links .nav-link {
+    position: relative;
+    text-decoration: none;
+    color: var(--link-muted);
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    padding: 10px 14px;
+    transition: color 0.2s ease;
+}
+
+/* Barra verde junto a cada ítem */
+.nav-links .nav-link::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 18px;
+    background: var(--green);
+    opacity: 0.9;
+}
+
+.nav-links .nav-link:last-child::after {
+    display: none;
+}
+
+.nav-links .nav-link:hover {
+    color: var(--white);
+}
+
+/* Ajustes para móvil */
+@media (max-width: 991.98px) {
+    .nav-links { gap: 0; }
+    .nav-links .nav-link { padding: 12px 0; }
+    .nav-links .nav-link::after { display: none; }
+}
