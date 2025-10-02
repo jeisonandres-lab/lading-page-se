@@ -109,12 +109,12 @@
     position: relative;
     margin-top: 45px;
     display: inline-block;
-    padding: 5px 18px 5px 18px;
+    padding: 5px 36px 5px 36px;
     border: 3px solid var(--color-secundario-verde-claro);
     border-radius: 15px;
     background: var(--color-primario-negro);
     color: var(--color-primario-blanco) !important;
-    font-weight: 800;
+    font-weight: 600;
     font-size: clamp(14px, 3vw, 1.8rem);
     text-decoration: none;
     text-transform: uppercase;
@@ -461,7 +461,7 @@
     }
     
     .hero-title {
-        font-size: clamp(40px, 3.5vw, 48px);
+        font-size: clamp(35px, 3.5vw, 48px);
     }
     
     .content-hero-sub {
@@ -482,6 +482,7 @@
         font-size: clamp(40px, 3vw, 42px);
         white-space: normal;
         line-height: 1.1;
+        
     }
     
     .content-hero-sub {
@@ -494,6 +495,7 @@
         font-size: clamp(12px, 2.5vw, 1.4rem);
         padding: 8px 16px;
         margin-top: 35px;
+        width: 90%;
     }
 }
 
@@ -505,9 +507,12 @@
     }
     
     .hero-title {
-        font-size: clamp(25px, 2.8vw, 36px);
+        font-size: clamp(40px, 2.8vw, 36px);
         line-height: 1.15;
         letter-spacing: 0.5px;
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
     }
     
     .title-thin {
@@ -531,12 +536,13 @@
         padding: 6px 14px;
         margin-top: 30px;
         border-radius: 12px;
+        width: 90%;
         box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0 0 30px var(--color-secundario-verde-claro);
     }
 }
 
 /* Teléfonos pequeños (360px y menos) */
-@media (max-width: 360px) {
+@media (max-width: 380px) {
     .hero-content {
         margin: 0 8px;
         padding: 0 4px;
@@ -556,10 +562,11 @@
     }
     
     .cta.boton-unidades {
-        font-size: clamp(15px, 2vw, 1rem);
+        font-size: clamp(13px, 2vw, 1rem);
         padding: 5px 12px;
         margin-top: 25px;
         border-radius: 10px;
+        width: 90%;
         box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0 0 20px var(--color-secundario-verde-claro);
     }
 }
@@ -586,6 +593,7 @@
         font-size: clamp(9px, 1.8vw, 0.9rem);
         padding: 4px 10px;
         margin-top: 20px;
+        width: 90%;
     }
 }
 
