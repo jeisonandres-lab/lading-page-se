@@ -15,13 +15,16 @@ body {
 body {
     font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     background: var(--color-primario-negro);
-    color: var(--color-primario-blanco);
 }
+.nav-link.active {
+  color: var(--color-secundario-verde-claro) !important;
+}
+
 
 /* Navbar base (usando Bootstrap para responsividad) */
 .navbar {
-    /*background: var(--color-primario-negro) !important;*/
-    background-color: transparente;
+    background: var( --color-primario-negro) !important;
+    /*background-color: transparente;*/
       /*border-bottom: 2px solid var(--color-primario-gris-oscuro);*/
     min-height: 72px;
 }
@@ -47,10 +50,6 @@ body {
     border: 2px solid var(--color-primario-blanco);
 }
 
-.nav-item{
-    padding: 7px;
-    border-right: 2.5px solid var(--color-secundario-verde-claro) ;
-}
 
 
 .nav-links .nav-link {
@@ -61,8 +60,14 @@ body {
     letter-spacing: 0.4px;
     padding: 10px 14px;
     transition: color 0.2s ease;
+    
 }
 
+.pagin{
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+    border-right: 2px solid var(--color-secundario-verde-claro) !important;
+}
 /* Barra verde junto a cada ítem */
 .nav-links .nav-link::after {
     content: "";
@@ -107,6 +112,12 @@ body {
 
 }
 
+.dropdown-menu{
+    transition: all 2s ease;
+}
+.dropdown-menu.show{
+    transition: all 2s ease;
+}
 .nav-links .nav-link::after {
     height: 0;
     position: relative;
@@ -114,6 +125,13 @@ body {
 }
 
 
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--color-secundario-verde-claro) !important;
+}
+
+.nav-link:focus, .nav-link:hover{
+    color: var(--color-primario-blanco) !important;
+}
 
 
 
@@ -123,4 +141,14 @@ body {
     .nav-links .nav-link { padding:0px 0; }
     .nav-links .nav-link::after { display: none; }
     .brand {left: 0rem;}
+
+
+    .pagin_contact{
+        border-right: 2px solid var(--color-secundario-verde-claro) !important;
+    }
+    .pagin{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        border-right: 2px solid var(--color-secundario-verde-claro) !important;
+    }
 }

@@ -26,15 +26,13 @@
     inset: 0;
     background: linear-gradient(90deg,
             rgba(0, 0, 0, 0.88) 0%,
-            rgba(0, 0, 0, 0.55) 18%,
-            rgba(0, 0, 0, 0.35) 32%,
-            rgba(0, 0, 0, 0.35) 68%,
-            rgba(0, 0, 0, 0.55) 82%,
+            rgba(0, 0, 0, 0.55) 80%,
             rgba(0, 0, 0, 0.88) 100%);
 }
 
 /* Contenido central opcional (puedes borrarlo si no lo necesitas) */
 .hero-content {
+    width: 3100px;
     position: relative;
     max-width: 1100px;
     margin: 0 24px;
@@ -46,6 +44,14 @@
     line-height: 1.05;
     text-transform: uppercase;
     color: var(--color-primario-blanco);
+    /* Reservar espacio para el letter-spacing máximo de la animación */
+    letter-spacing: 0em;
+    /* Mantener el contenedor estable durante la animación */
+    min-height: 1.2em;
+    display: block;
+    /* Asegurar que el texto no se desborde */
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .accent.title-primery {
@@ -54,18 +60,29 @@
 
 /* parte superior del título: más delgada */
 .title-thin {
+    display: block;
     font-weight: 500;
 }
 
 /* parte inferior "sea inteligente y rentable": más gruesa y más ancha */
 .title-heavy {
-    font-weight: 900;
-    letter-spacing: 0.6px;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+.title-heavy .title-heavy-sub {
+    font-weight: 800;
+    letter-spacing: 0px;
 }
 
 .accent {
     color: var(--green);
 }
+
+.hero .lh-1 {
+    line-height: 0.9 !important;
+}
+
 
 .hero-sub {
     margin-top: 16px;
@@ -78,11 +95,11 @@
     padding: 6px 15px;
     border: 2px solid var(--color-primario-blanco);
     border-radius: 18px;
-    background: rgba(0, 0, 0, 0.35);
+    background: transparent;
     font-size: clamp(14px, 3vw, 30px);
     font-weight: 600;
     color: #e7e7e7;
-    max-width: min(920px, 90vw);
+    max-width: min(920px, 70vw);
     margin-left: auto;
     margin-right: auto;
     width: 36rem;
@@ -94,7 +111,7 @@
     display: inline-block;
     padding: 5px 18px 5px 18px;
     border: 3px solid var(--color-secundario-verde-claro);
-    border-radius: 10px;
+    border-radius: 15px;
     background: var(--color-primario-negro);
     color: var(--color-primario-blanco) !important;
     font-weight: 800;
@@ -103,6 +120,7 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: transform 0.1s ease, background 0.2s ease;
+    box-shadow: 0 4px 1px rgba(0, 0, 0, 0.4), 0 0 50px var(--color-secundario-verde-claro);
 }
 
 .cta.boton-unidades>.boton-unidades:hover {
@@ -111,11 +129,155 @@
 }
 
 .tracking-in-contract {
-	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    -webkit-animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+
+.tracking-in-expand-fwd-bottom {
+    -webkit-animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.tracking-in-contract-bck {
+    -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* OPCIÓN 2: Animación encadenada en una sola regla */
+.chained-animation {
+    -webkit-animation:
+        tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both,
+        second-animation 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both 1s;
+    animation:
+        tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both,
+        second-animation 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both 1s;
+}
+
+
+.slide-in-bck-center {
+    -webkit-animation: slide-in-bck-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    animation: slide-in-bck-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+
+
+@-webkit-keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 0.8em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 0.8em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+
+
+@-webkit-keyframes tracking-in-expand-fwd-bottom {
+    0% {
+        letter-spacing: -0.1em;
+        -webkit-transform: translateZ(-700px) translateY(500px);
+        transform: translateZ(-700px) translateY(500px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) translateY(0);
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+
+    }
+}
+
+@keyframes tracking-in-expand-fwd-bottom {
+    0% {
+        letter-spacing: -0.1em;
+        -webkit-transform: translateZ(-700px) translateY(500px);
+        transform: translateZ(-700px) translateY(500px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) translateY(0);
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+@-webkit-keyframes tracking-in-contract-bck {
+    0% {
+        letter-spacing: 0.2em;
+        -webkit-transform: translateZ(400px) translateY(-300px);
+        transform: translateZ(400px) translateY(-300px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) translateY(0);
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-contract-bck {
+    0% {
+        letter-spacing: 0.2em;
+        -webkit-transform: translateZ(400px) translateY(-300px);
+        transform: translateZ(400px) translateY(-300px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) translateY(0);
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
 /* ----------------------------------------------
- * Generated by Animista on 2025-10-1 15:34:1
+ * Generated by Animista on 2025-10-1 19:2:58
  * Licensed under FreeBSD License.
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
@@ -123,34 +285,35 @@
 
 /**
  * ----------------------------------------
- * animation tracking-in-contract
+ * animation slide-in-bck-center
  * ----------------------------------------
  */
- @-webkit-keyframes tracking-in-contract {
-  0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: normal;
-    opacity: 1;
-  }
+@-webkit-keyframes slide-in-bck-center {
+    0% {
+        -webkit-transform: translateZ(600px);
+        transform: translateZ(600px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
 }
-@keyframes tracking-in-contract {
-  0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: normal;
-    opacity: 1;
-  }
+
+@keyframes slide-in-bck-center {
+    0% {
+        -webkit-transform: translateZ(600px);
+        transform: translateZ(600px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
 }
 
 
@@ -168,3 +331,127 @@
         height: 16px;
     }
 }
+
+
+
+.slide-in-elliptic-bottom-bck {
+    -webkit-animation:
+        slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both,
+        puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation:
+        slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both,
+    puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+
+
+}
+
+
+
+@-webkit-keyframes slide-in-elliptic-bottom-bck {
+    0% {
+        -webkit-transform: translateY(600px) rotateX(-30deg) scale(6.5);
+        transform: translateY(600px) rotateX(-30deg) scale(6.5);
+        -webkit-transform-origin: 50% -100%;
+        transform-origin: 50% -100%;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0) rotateX(0) scale(1);
+        transform: translateY(0) rotateX(0) scale(1);
+        -webkit-transform-origin: 50% 500px;
+        transform-origin: 50% 500px;
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-elliptic-bottom-bck {
+    0% {
+        -webkit-transform: translateY(600px) rotateX(-30deg) scale(6.5);
+        transform: translateY(600px) rotateX(-30deg) scale(6.5);
+        -webkit-transform-origin: 50% -100%;
+        transform-origin: 50% -100%;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0) rotateX(0) scale(1);
+        transform: translateY(0) rotateX(0) scale(1);
+        -webkit-transform-origin: 50% 500px;
+        transform-origin: 50% 500px;
+        opacity: 1;
+    }
+}
+
+
+.puff-in-ver {
+    -webkit-animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2025-10-1 19:6:35
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-elliptic-bottom-bck
+ * ----------------------------------------
+ */
+/* ----------------------------------------------
+ * Generated by Animista on 2025-10-1 19:7:31
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation puff-in-ver
+ * ----------------------------------------
+ */
+@-webkit-keyframes puff-in-ver {
+    0% {
+        -webkit-transform: scaleY(2);
+        transform: scaleY(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes puff-in-ver {
+    0% {
+        -webkit-transform: scaleY(2);
+        transform: scaleY(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+/* Ajustes para móvil */
+@media (max-width: 991.98px) {
+   .hero-title{
+    white-space: wrap;
+   }
+} 
