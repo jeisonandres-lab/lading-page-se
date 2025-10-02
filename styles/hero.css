@@ -572,14 +572,14 @@
 }
 
 /* Teléfonos muy pequeños (320px y menos) */
-@media (max-width: 320px) {
+@media (max-width: 330px) {
     .hero-content {
         margin: 0 6px;
         padding: 0 2px;
     }
     
     .hero-title {
-        font-size: clamp(14px, 2.2vw, 28px);
+        font-size: clamp(30px, 2.2vw, 28px);
         line-height: 1.25;
     }
     
