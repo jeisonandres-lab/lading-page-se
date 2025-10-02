@@ -16,16 +16,22 @@ body {
     font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     background: var(--color-primario-negro);
 }
+
+.icons-menu{
+    color: var(--color-secundario-verde-claro);
+    font-size: 2rem;
+}
+
 .nav-link.active {
-  color: var(--color-secundario-verde-claro) !important;
+    color: var(--color-secundario-verde-claro) !important;
 }
 
 
 /* Navbar base (usando Bootstrap para responsividad) */
 .navbar {
-    background: var( --color-primario-negro) !important;
+    background: var(--color-primario-negro) !important;
     /*background-color: transparente;*/
-      /*border-bottom: 2px solid var(--color-primario-gris-oscuro);*/
+    /*border-bottom: 2px solid var(--color-primario-gris-oscuro);*/
     min-height: 72px;
 }
 
@@ -60,14 +66,15 @@ body {
     letter-spacing: 0.4px;
     padding: 10px 14px;
     transition: color 0.2s ease;
-    
+
 }
 
-.pagin{
+.pagin {
     padding-right: 24px !important;
     padding-left: 24px !important;
     border-right: 2px solid var(--color-secundario-verde-claro) !important;
 }
+
 /* Barra verde junto a cada ítem */
 .nav-links .nav-link::after {
     content: "";
@@ -89,14 +96,14 @@ body {
     color: var(--color-secundario-verde-claro);
 }
 
-.dropdown-menu.show{
+.dropdown-menu.show {
     border-radius: 0px !important;
     background-color: var(--color-primario-negro) !important;
     border: 2px solid var(--color-primario-gris-oscuro);
-    
+
 }
 
-.dropdown-menu > li > a {
+.dropdown-menu>li>a {
     color: var(--color-primario-blanco) !important;
     position: relative;
     text-decoration: none;
@@ -106,18 +113,21 @@ body {
     padding: 10px 14px;
 
 }
-.dropdown-menu > li > a:hover {
+
+.dropdown-menu>li>a:hover {
     color: var(--color-secundario-verde-claro) !important;
     background: transparent !important;
 
 }
 
-.dropdown-menu{
+.dropdown-menu {
     transition: all 2s ease;
 }
-.dropdown-menu.show{
+
+.dropdown-menu.show {
     transition: all 2s ease;
 }
+
 .nav-links .nav-link::after {
     height: 0;
     position: relative;
@@ -125,30 +135,96 @@ body {
 }
 
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
     color: var(--color-secundario-verde-claro) !important;
 }
 
-.nav-link:focus, .nav-link:hover{
+.nav-link:focus,
+.nav-link:hover {
     color: var(--color-primario-blanco) !important;
 }
 
 
 
-/* Ajustes para móvil */
-@media (max-width: 991.98px) {
-    .nav-links { gap: 0; }
-    .nav-links .nav-link { padding:0px 0; }
-    .nav-links .nav-link::after { display: none; }
-    .brand {left: 0rem;}
+/* ============================================
+   MEDIA QUERIES RESPONSIVE
+   ============================================ */
+
+/* Tablets grandes (1024px y menos) */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 0;
+    }
+
+    .nav-links .nav-link {
+        padding: 0px 0;
+    }
+
+    .nav-links .nav-link::after {
+        display: none;
+    }
+
+    .brand {
+        left: 0rem !important;
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+    }
 
 
-    .pagin_contact{
+    .pagin_contact {
         border-right: 2px solid var(--color-secundario-verde-claro) !important;
     }
-    .pagin{
+
+    .pagin {
         padding-right: 0px !important;
         padding-left: 0px !important;
         border-right: 2px solid var(--color-secundario-verde-claro) !important;
     }
+
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        display: flex !important;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: center !important;
+        
+    }
 }
+/* Tablets medianas (768px y menos) */
+@media (max-width: 768px) {
+    
+}
+
+/* Teléfonos grandes (480px y menos) */
+@media (max-width: 480px) {
+    .brand {
+        left: 0rem !important;
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+/* Teléfonos pequeños (360px y menos) */
+@media (max-width: 360px) {
+    
+}
+
+/* Teléfonos muy pequeños (320px y menos) */
+@media (max-width: 320px) {
+
+}
+
+/* Orientación landscape en móviles
+@media (max-width: 768px) and (orientation: landscape) {
+
+} */

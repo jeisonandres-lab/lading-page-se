@@ -340,7 +340,7 @@
         puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
     animation:
         slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both,
-    puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+        puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 
 
 }
@@ -449,9 +449,220 @@
     }
 }
 
-/* Ajustes para móvil */
-@media (max-width: 991.98px) {
-   .hero-title{
-    white-space: wrap;
-   }
-} 
+/* ============================================
+   MEDIA QUERIES RESPONSIVE
+   ============================================ */
+
+/* Tablets grandes (1024px y menos) */
+@media (max-width: 1024px) {
+    .hero-content {
+        max-width: 900px;
+        margin: 0 20px;
+    }
+    
+    .hero-title {
+        font-size: clamp(24px, 3.5vw, 48px);
+    }
+    
+    .content-hero-sub {
+        max-width: min(800px, 50vw);
+        font-size: clamp(12px, 2.5vw, 26px);
+    }
+}
+
+/* Tablets medianas (768px y menos) */
+@media (max-width: 768px) {
+    .hero-content {
+        max-width: 100%;
+        margin: 0 16px;
+        padding: 0 10px;
+    }
+    
+    .hero-title {
+        font-size: clamp(20px, 3vw, 42px);
+        white-space: normal;
+        line-height: 1.1;
+    }
+    
+    .content-hero-sub {
+        max-width: min(600px, 50vw);
+        font-size: clamp(11px, 2.2vw, 22px);
+        padding: 8px 12px;
+    }
+    
+    .cta.boton-unidades {
+        font-size: clamp(12px, 2.5vw, 1.4rem);
+        padding: 8px 16px;
+        margin-top: 35px;
+    }
+}
+
+/* Teléfonos grandes (480px y menos) */
+@media (max-width: 480px) {
+    .hero-content {
+        margin: 0 12px;
+        padding: 0 8px;
+    }
+    
+    .hero-title {
+        font-size: clamp(18px, 2.8vw, 36px);
+        line-height: 1.15;
+        letter-spacing: 0.5px;
+    }
+    
+    .title-thin {
+        display: block;
+        margin-bottom: 4px;
+    }
+    
+    .title-heavy {
+        display: block;
+    }
+    
+    .content-hero-sub {
+        max-width: min(400px, 50vw);
+        font-size: clamp(10px, 2vw, 18px);
+        padding: 6px 10px;
+        border-radius: 12px;
+    }
+    
+    .cta.boton-unidades {
+        font-size: clamp(11px, 2.2vw, 1.2rem);
+        padding: 6px 14px;
+        margin-top: 30px;
+        border-radius: 12px;
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0 0 30px var(--color-secundario-verde-claro);
+    }
+}
+
+/* Teléfonos pequeños (360px y menos) */
+@media (max-width: 360px) {
+    .hero-content {
+        margin: 0 8px;
+        padding: 0 4px;
+    }
+    
+    .hero-title {
+        font-size: clamp(16px, 2.5vw, 32px);
+        line-height: 1.2;
+        letter-spacing: 0.3px;
+    }
+    
+    .content-hero-sub {
+        max-width: min(320px, 55vw);
+        font-size: clamp(9px, 1.8vw, 16px);
+        padding: 5px 8px;
+        border-radius: 10px;
+    }
+    
+    .cta.boton-unidades {
+        font-size: clamp(10px, 2vw, 1rem);
+        padding: 5px 12px;
+        margin-top: 25px;
+        border-radius: 10px;
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0 0 20px var(--color-secundario-verde-claro);
+    }
+}
+
+/* Teléfonos muy pequeños (320px y menos) */
+@media (max-width: 320px) {
+    .hero-content {
+        margin: 0 6px;
+        padding: 0 2px;
+    }
+    
+    .hero-title {
+        font-size: clamp(14px, 2.2vw, 28px);
+        line-height: 1.25;
+    }
+    
+    .content-hero-sub {
+        max-width: min(280px, 98vw);
+        font-size: clamp(8px, 1.6vw, 14px);
+        padding: 4px 6px;
+    }
+    
+    .cta.boton-unidades {
+        font-size: clamp(9px, 1.8vw, 0.9rem);
+        padding: 4px 10px;
+        margin-top: 20px;
+    }
+}
+
+/* Orientación landscape en móviles */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        height: 100vh;
+        padding: 20px 0;
+    }
+    
+    .hero-content {
+        margin: 0 20px;
+    }
+    
+    .hero-title {
+        font-size: clamp(16px, 2.5vw, 28px);
+        margin-bottom: 10px;
+    }
+    
+    .content-hero-sub {
+        margin-top: 10px;
+        font-size: clamp(10px, 1.8vw, 16px);
+    }
+    
+    .cta.boton-unidades {
+        margin-top: 20px;
+        font-size: clamp(10px, 1.8vw, 1.2rem);
+    }
+}
+
+
+/* Animaciones optimizadas para móviles */
+@keyframes tracking-in-contract-mobile {
+    0% {
+        letter-spacing: 0.3em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-contract-bck-mobile {
+    0% {
+        letter-spacing: 0.1em;
+        -webkit-transform: translateZ(200px) translateY(-150px);
+        transform: translateZ(200px) translateY(-150px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        -webkit-transform: translateZ(0) translateY(0);
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-elliptic-bottom-bck-mobile {
+    0% {
+        -webkit-transform: translateY(300px) rotateX(-15deg) scale(3);
+        transform: translateY(300px) rotateX(-15deg) scale(3);
+        -webkit-transform-origin: 50% -100%;
+        transform-origin: 50% -100%;
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0) rotateX(0) scale(1);
+        transform: translateY(0) rotateX(0) scale(1);
+        -webkit-transform-origin: 50% 500px;
+        transform-origin: 50% 500px;
+        opacity: 1;
+    }
+}
+
