@@ -486,7 +486,7 @@
     
     .content-hero-sub {
         max-width: min(600px, 50vw);
-        font-size: clamp(11px, 2.2vw, 22px);
+        font-size: clamp(20px, 2.2vw, 22px);
         padding: 8px 12px;
     }
     
@@ -521,7 +521,7 @@
     
     .content-hero-sub {
         max-width: min(400px, 50vw);
-        font-size: clamp(10px, 2vw, 18px);
+        font-size: clamp(20px, 2vw, 18px);
         padding: 6px 10px;
         border-radius: 12px;
     }
@@ -550,7 +550,7 @@
     
     .content-hero-sub {
         max-width: min(320px, 55vw);
-        font-size: clamp(9px, 1.8vw, 16px);
+        font-size: clamp(15px, 1.8vw, 16px);
         padding: 5px 8px;
         border-radius: 10px;
     }
@@ -578,7 +578,7 @@
     
     .content-hero-sub {
         max-width: min(280px, 98vw);
-        font-size: clamp(8px, 1.6vw, 14px);
+        font-size: clamp(20px, 1.6vw, 14px);
         padding: 4px 6px;
     }
     
@@ -607,7 +607,7 @@
     
     .content-hero-sub {
         margin-top: 10px;
-        font-size: clamp(10px, 1.8vw, 16px);
+        font-size: clamp(20px, 1.8vw, 16px);
     }
     
     .cta.boton-unidades {
