@@ -154,18 +154,7 @@ body {
 /* Tablets grandes (1024px y menos) */
 @media (max-width: 1024px) {
 
-    .nav-links .nav-link {
-        padding: 10px 14px !important;  
-    }
-
-    .navbar-toggler:focus {
-        box-shadow: none !important;
-    }
-
-    .navbar-collapse {
-        margin-top: 25px !important;
-    }
-
+   
     .nav-container .content-button {
         width: 20vw;
         justify-content: flex-start !important;
@@ -199,6 +188,17 @@ body {
 
 /* Tablets medianas (768px y menos) */
 @media (max-width: 992px) {
+    .nav-links .nav-link {
+        padding: 10px 14px !important;  
+    }
+
+    .navbar-collapse {
+        margin-top: 25px !important;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+
     .brand {
         width: 60vw;
         left: 0em !important;
