@@ -549,9 +549,9 @@
     }
     
     .content-hero-sub {
-        max-width: min(320px, 55vw);
+        max-width: min(320px, 64vw);
         font-size: clamp(15px, 1.8vw, 16px);
-        padding: 5px 8px;
+        padding: 5px 5px;
         border-radius: 10px;
     }
     
