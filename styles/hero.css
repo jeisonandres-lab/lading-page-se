@@ -515,11 +515,7 @@
         flex-direction: column;
     }
     
-    .title-thin {
-        display: block;
-        margin-bottom: 4px;
-    }
-    
+   
     .title-heavy {
         display: block;
     }
@@ -540,7 +536,11 @@
         box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0 0 30px var(--color-secundario-verde-claro);
     }
 }
-
+@media (max-width: 80px) {
+    .hero-title {
+        font-size: clamp(40px, 2.8vw, 36px);
+    }
+}
 /* Teléfonos pequeños (360px y menos) */
 @media (max-width: 380px) {
     .hero-content {
