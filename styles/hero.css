@@ -461,7 +461,7 @@
     }
     
     .hero-title {
-        font-size: clamp(24px, 3.5vw, 48px);
+        font-size: clamp(40px, 3.5vw, 48px);
     }
     
     .content-hero-sub {
@@ -479,14 +479,14 @@
     }
     
     .hero-title {
-        font-size: clamp(20px, 3vw, 42px);
+        font-size: clamp(40px, 3vw, 42px);
         white-space: normal;
         line-height: 1.1;
     }
     
     .content-hero-sub {
         max-width: min(600px, 50vw);
-        font-size: clamp(20px, 2.2vw, 22px);
+        font-size: clamp(28px, 2.2vw, 40px);
         padding: 8px 12px;
     }
     
@@ -505,7 +505,7 @@
     }
     
     .hero-title {
-        font-size: clamp(18px, 2.8vw, 36px);
+        font-size: clamp(25px, 2.8vw, 36px);
         line-height: 1.15;
         letter-spacing: 0.5px;
     }
@@ -527,7 +527,7 @@
     }
     
     .cta.boton-unidades {
-        font-size: clamp(11px, 2.2vw, 1.2rem);
+        font-size: clamp(16px, 2.2vw, 1.2rem);
         padding: 6px 14px;
         margin-top: 30px;
         border-radius: 12px;
@@ -543,20 +543,20 @@
     }
     
     .hero-title {
-        font-size: clamp(16px, 2.5vw, 32px);
+        font-size: clamp(35px, 2.5vw, 32px);
         line-height: 1.2;
         letter-spacing: 0.3px;
     }
     
     .content-hero-sub {
         max-width: min(320px, 64vw);
-        font-size: clamp(15px, 1.8vw, 16px);
+        font-size: clamp(17px, 1.8vw, 16px);
         padding: 5px 5px;
         border-radius: 10px;
     }
     
     .cta.boton-unidades {
-        font-size: clamp(10px, 2vw, 1rem);
+        font-size: clamp(15px, 2vw, 1rem);
         padding: 5px 12px;
         margin-top: 25px;
         border-radius: 10px;

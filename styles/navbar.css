@@ -17,7 +17,7 @@ body {
     background: var(--color-primario-negro);
 }
 
-.icons-menu{
+.icons-menu {
     color: var(--color-secundario-verde-claro);
     font-size: 2rem;
 }
@@ -153,34 +153,37 @@ body {
 
 /* Tablets grandes (1024px y menos) */
 @media (max-width: 1024px) {
-    
 
-   .nav-container .content-button{
-    width: 20vw;
-    justify-content: flex-start !important;
-    z-index: 10;
-   }
+    .nav-links .nav-link {
+        padding: 10px 14px !important;  
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+
+    .navbar-collapse {
+        margin-top: 25px !important;
+    }
+
+    .nav-container .content-button {
+        width: 20vw;
+        justify-content: flex-start !important;
+    }
 
     .nav-links .nav-link::after {
         display: none;
     }
 
     .brand {
-       
-        width: 60vw;
         left: 0em !important;
         display: flex;
         justify-content: center;
-        z-index: 5;
     }
-
 
     .pagin_contact {
         border-right: 2px solid var(--color-secundario-verde-claro) !important;
     }
-
-   
-
 
     .navbar>.container,
     .navbar>.container-fluid,
@@ -190,14 +193,31 @@ body {
     .navbar>.container-xl,
     .navbar>.container-xxl {
         display: flex !important;
-        flex-wrap: inherit;
-        align-items: center;
         justify-content: center !important;
-        
     }
 }
+
 /* Tablets medianas (768px y menos) */
+@media (max-width: 992px) {
+    .brand {
+        width: 60vw;
+        left: 0em !important;
+    }
+
+    .pagin {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        border-right: 2px solid var(--color-secundario-verde-claro) !important;
+    }
+}
+
 @media (max-width: 768px) {
+    .brand {
+
+        width: 60vw;
+        left: 0em !important;
+    }
+
     .pagin {
         padding-right: 0px !important;
         padding-left: 0px !important;
@@ -206,20 +226,13 @@ body {
 }
 
 /* Teléfonos grandes (480px y menos) */
-@media (max-width: 480px) {
-    
-
-}
+@media (max-width: 480px) {}
 
 /* Teléfonos pequeños (360px y menos) */
-@media (max-width: 360px) {
-    
-}
+@media (max-width: 360px) {}
 
 /* Teléfonos muy pequeños (320px y menos) */
-@media (max-width: 320px) {
-
-}
+@media (max-width: 320px) {}
 
 /* Orientación landscape en móviles
 @media (max-width: 768px) and (orientation: landscape) {
