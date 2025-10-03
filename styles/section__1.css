@@ -246,7 +246,8 @@
 /* Responsive: en pantallas grandes, que no sobresalga tanto */
 @media (min-width: 1600px) {
     .unidades-title-vertical {
-        font-size: clamp(10rem, 20vw, 200rem);
+        font-size: clamp(10rem, 10vw, 200rem);
+        width: 16%;
     }
 }
 
