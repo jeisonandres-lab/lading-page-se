@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/nosotros.css">
+    <link rel="stylesheet" href="styles/nosotros_parte2.css">
     <link rel="stylesheet" href="styles/section__1.css">
+    <link rel="stylesheet" href="styles/footer.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- animete.css  -->
@@ -23,6 +26,50 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <title>Bootstrap Example</title>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        @keyframes appear_1 {
+            from {
+                opacity: 0;
+                clip-path: inset(0 100% 0 0);
+                /* Oculta todo desde la derecha */
+            }
+
+            to {
+                opacity: 1;
+                clip-path: inset(0 0 0 0);
+                /* Muestra todo */
+            }
+        }
+
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                clip-path: inset(0 0 0 100%);
+                /* Oculta todo desde la derecha */
+            }
+
+            to {
+                opacity: 1;
+                clip-path: inset(0 0 0 0);
+                /* Muestra todo */
+            }
+        }
+
+        .section_animate1 {
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+
+        .section_animate2 {
+            animation: appear_1 linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+
+        
+    </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" tabindex="0">
@@ -31,17 +78,39 @@
             <div class=" d-flex justify-content-end content-button">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                   <i class="fa-solid fa-bars icons-menu"></i>
+                    <i class="fa-solid fa-bars icons-menu"></i>
                 </button>
             </div>
 
             <a class="navbar-brand brand" href="#inicio">
-                <div class="logo-box">logo</div>
+                <svg style="width: 110px;" viewBox="0 0 138.62 35.39">
+                    <defs>
+                        <style>
+                            .cls-2 {
+                                fill: #fdfdfd;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Capa_2" data-name="Capa 2">
+                        <g id="Units">
+                            <path class="cls-2"
+                                d="M138.62,7.85V0H110.49a18.58,18.58,0,0,0-6.84,1.19A10.76,10.76,0,0,0,98.9,4.7a9,9,0,0,0-1.73,5.54,8.93,8.93,0,0,0,1.6,5.5A10.47,10.47,0,0,0,102.6,19a44.31,44.31,0,0,0,5.65,2.19A25.9,25.9,0,0,1,112.94,23a2.65,2.65,0,0,1,1.48,2.41,2.23,2.23,0,0,1-.74,1.81,3.07,3.07,0,0,1-2.06.63,3.7,3.7,0,0,1-2.51-.88,3.76,3.76,0,0,1-1.17-2.68H97.27a10.34,10.34,0,0,0,4.42,8.19A17.42,17.42,0,0,0,112,35.39h26.6V27.54h-10v-6.4h8.45V13.7H128.6V7.85ZM118.31,1.53a12.06,12.06,0,0,1,2.11,1.27,10.25,10.25,0,0,1,4,7.87h-6.15V1.53h0ZM123.6,30.3a10.36,10.36,0,0,1-4.48,3.7c-.26.12-.54.24-.81.34V15.66c-1.24-.55-2.69-1.1-4.35-1.67a27,27,0,0,1-4.57-1.85,2.54,2.54,0,0,1-1.45-2.29,2.23,2.23,0,0,1,.66-1.76,2.69,2.69,0,0,1,1.84-.58,3.13,3.13,0,0,1,2.22.78,3.8,3.8,0,0,1,1,2.38h4.6v5c.47.21.91.42,1.32.62a11.22,11.22,0,0,1,3.87,3.26,9,9,0,0,1,1.63,5.56,9.32,9.32,0,0,1-1.53,5.21" />
+                            <path class="cls-2"
+                                d="M15.87,12.32a7.16,7.16,0,0,0-5.49-2.77,7.68,7.68,0,0,0-7.44,7.87,7.7,7.7,0,0,0,7.47,7.76,7.38,7.38,0,0,0,6.93-5H8V17.42H20.68A10.34,10.34,0,1,1,0,17.42,10.36,10.36,0,0,1,10.27,6.83a10.3,10.3,0,0,1,9,5.49Z" />
+                            <path class="cls-2"
+                                d="M32.94,27.51l-6.63-9.4h-.06v9.4H23.32V7.22h6.22c2.83,0,4.3.68,5.36,1.69a6.8,6.8,0,0,1,1.84,4.81A5.8,5.8,0,0,1,31,19.94l5.63,7.57Zm-6.69-9.82h2c1.2,0,5.55-.05,5.55-4,0-1.7-1.14-3.79-4.46-3.79h-3.1Z" />
+                            <path class="cls-2"
+                                d="M53.16,21a6.86,6.86,0,0,1-2,5.21,7.25,7.25,0,0,1-9.4,0,6.86,6.86,0,0,1-2-5.21V7.22h2.94V20.88c0,3.75,2.71,4.3,3.8,4.3s3.81-.55,3.81-4.3V7.22h2.93Z" />
+                            <path class="cls-2"
+                                d="M59.87,27.51H56.94V7.22h5.81c4.81,0,7.1,2.52,7.1,6.14s-2.29,6.14-7.1,6.14H59.87Zm0-10.72h2.88c3.35,0,4.16-1.92,4.16-3.43s-.81-3.43-4.16-3.43H59.87Z" />
+                            <path class="cls-2"
+                                d="M81.86,27.9A10.54,10.54,0,1,1,92.32,17.42,10.52,10.52,0,0,1,81.86,27.9m0-18.35c-5.19,0-7.53,4.58-7.53,7.81s2.37,7.82,7.53,7.82,7.53-4.55,7.53-7.73c0-3.6-2.53-7.9-7.53-7.9" />
+                            <path class="cls-2"
+                                d="M102.21,35.39H97.3V30.74a7.93,7.93,0,0,0,1.55,2.45,8.5,8.5,0,0,0,3.36,2.2" />
+                        </g>
+                    </g>
+                </svg>
             </a>
-
-
-            
-
             <div class=" collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto nav-links">
                     <li class="nav-item"><a class="nav-link pagin" href="#inicio">INICIO</a></li>
@@ -70,118 +139,459 @@
 
         </nav>
     </header>
+    <main class="view">
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <h1 class="hero-title lh-1  tracking-in-expand-fwd-bottom ">
+                    <span class="title-thin  ">
+                        Aseguramos que tu
+                        <span class="accent title-primery tracking-in-contract">
+                            inversión
 
-    <section class="hero" id="inicio">
-        <div class="hero-content">
-            <h1 class="hero-title lh-1  tracking-in-expand-fwd-bottom ">
-                <span class="title-thin  ">
-                    Aseguramos que tu 
-                    <span class="accent title-primery tracking-in-contract">
-                        inversión 
-
+                        </span>
+                        <br>
                     </span>
-                    <br>
-                </span>
-                <span class="title-heavy title-heavy-sub tracking-in-contract ">sea <strong class="title-heavy-sub">inteligente y rentable</strong></span>
-            </h1>
-            <div class="container ">
-                <div class="row  d-flex flex-column ">
-                    <div class="col-12 col-md-12 col-sm-12">
-                        <div class="hero-sub text-center d-flex flex-column">
-                            <div class="content-hero-sub fw-light tracking-in-expand-fwd-bottom  ">
-                                <p class="m-0 lh-1">Espacios diseñados para producir, generar <br>y garantizar el
-                                    <strong class="fw-bold">mejor retorno posible</strong>
-                                </p>
+                    <span class="title-heavy title-heavy-sub tracking-in-contract ">sea <strong
+                            class="title-heavy-sub">inteligente y rentable</strong></span>
+                </h1>
+                <div class="container ">
+                    <div class="row  d-flex flex-column ">
+                        <div class="col-12 col-md-12 col-sm-12">
+                            <div class="hero-sub text-center d-flex flex-column">
+                                <div class="content-hero-sub fw-light tracking-in-expand-fwd-bottom  ">
+                                    <p class="m-0 lh-1">Espacios diseñados para producir, generar <br>y garantizar el
+                                        <strong class="fw-bold">mejor retorno posible</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12  tracking-in-expand-fwd-bottom ">
+                            <div class="   ">
+                                <a class="cta boton-unidades " href="#unidades">Descubre nuestras <span
+                                        class="accent title-primery">unidades</span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-12  tracking-in-expand-fwd-bottom ">
-                        <div class="   ">
-                            <a class="cta boton-unidades " href="#unidades">Descubre nuestras <span
-                                    class="accent title-primery">unidades</span></a>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="nosotros" class="">
-        <div class="container-fluid  w-100 bottom-0 position-absolute d-flex justify-content-center">
-            <span class="barra-verde w-75 d-block" ></span>
-        </div>
         <!-- Tira superior gris con degradado hacia el centro y fila de íconos -->
         <div class="grey-strip">
             <div class="container">
-                <div class="row justify-content-center strip-icons text-center">
-                    <div class="col-4 col-sm-4 col-md-2">
-                        <div class="icon-item">
-                            <img src="globo.png" alt="">
+                <div class="row justify-content-center strip-icons text-center g-5 p-0">
+                    <div class="col-auto d-flex flex-column align-items-center">
+                        <div class="">
+                            <!-- SVG Honestidad -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.24 70.03">
+                                <defs>
+                                    <style>
+                                        .cls-3 {
+                                            fill: #efefef;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="Capa_2" data-name="Capa 2">
+                                    <g id="Hero">
+                                        <path class="cls-3"
+                                            d="M55.41,22.59l.05.05a2.51,2.51,0,0,1,0,3.56L38.63,43A2.56,2.56,0,0,1,35,39.41L38,36.48a8.62,8.62,0,0,0-3.61.29c-2,.78-3.17,2.73-4.63,4.22l-4.19,4.26a5.51,5.51,0,0,0-1.41,2.23,3.79,3.79,0,0,0,.2,2.44,6.79,6.79,0,0,0,1.58,2.38q5.59,5.61,11.21,11.21a4.08,4.08,0,0,0,5,1,7.57,7.57,0,0,0,2.47-1.68L65.18,42.25a1.47,1.47,0,0,1,2.08,0l1.57,1.57a1.47,1.47,0,0,1,0,2.09L50.59,64.16c-1,1-1.91,2-2.93,2.91A10.89,10.89,0,0,1,41.51,70a9.69,9.69,0,0,1-7.15-2,20.24,20.24,0,0,1-1.81-1.65Q27.3,61.08,22.1,55.85a10.47,10.47,0,0,1-3-5.51A9.55,9.55,0,0,1,20.71,43a13.47,13.47,0,0,1,1.49-1.79c1.15-1.18,2.33-2.33,3.49-3.51s2.12-2.55,3.33-3.68a10.77,10.77,0,0,1,3.79-2.4,13.11,13.11,0,0,1,4.91-.42c1.71.13,3.45,0,5.16,0a.64.64,0,0,0,.47-.19l8.44-8.48A2.55,2.55,0,0,1,55.41,22.59Z" />
+                                        <path class="cls-3"
+                                            d="M37.75,7.86c.63-.58,1.26-1.19,1.92-1.77A24.13,24.13,0,0,1,50.48.53a20.13,20.13,0,0,1,12.13.9A20.55,20.55,0,0,1,74.78,15.07a16.88,16.88,0,0,1,0,7.87c-.63,2.61-1.81,6.92-3.28,9.13,0,0-3-4.42-3.69-5.16-.09,0,.76-1.92,1.09-2.81a12.83,12.83,0,0,0,.65-7.81A15,15,0,0,0,58,5.66a15.15,15.15,0,0,0-9,1.14,30.17,30.17,0,0,0-7.55,4.81,33.73,33.73,0,0,0-3.44,3.53l-.33.37c-.21-.24-.43-.46-.63-.7a29.84,29.84,0,0,0-7-6,21.61,21.61,0,0,0-6.86-3,13.84,13.84,0,0,0-8.82.81A14.6,14.6,0,0,0,5.75,17a10.9,10.9,0,0,0-.26,4.33,12.38,12.38,0,0,0,1.22,3.49,21.16,21.16,0,0,0,3.84,5.26c2.4,2.42,4.83,4.83,7.24,7.24a2.62,2.62,0,0,0,.21.17l-3.84,3.84-.95-1c-2.17-2.17-4.35-4.31-6.5-6.5a26.44,26.44,0,0,1-5.5-8A14.42,14.42,0,0,1,0,19,20,20,0,0,1,6.53,5.41,19.72,19.72,0,0,1,17.16.25a20.72,20.72,0,0,1,6,0,23.56,23.56,0,0,1,11.9,5.3C36,6.26,36.86,7.07,37.75,7.86Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <span>Honestidad</span>
                         </div>
                     </div>
-                    <div class="col-4 col-sm-4 col-md-2">
+                    <div class="col-auto d-flex flex-column align-items-center">
                         <div class="icon-item">
-                            <img src="globo.png" alt="">
+                            <!-- SVG Responsabilidad -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59.27 70.57">
+                                <defs>
+                                    <style>
+                                        .cls-3 {
+                                            fill: #efefef;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="Capa_2" data-name="Capa 2">
+                                    <g id="Hero">
+                                        <path class="cls-3"
+                                            d="M.14,29.88c0-2.23,0-4.47,0-6.7,0-2.05,0-4.1-.06-6.15,0-2.23,0-4.46-.08-6.69A2.59,2.59,0,0,1,1.81,7.78,10.89,10.89,0,0,1,4.1,7.36c1.34-.16,2.7-.2,4-.39,1.72-.26,3.43-.59,5.14-.94a51.07,51.07,0,0,0,6.66-1.89A61.82,61.82,0,0,0,28.7.24a2,2,0,0,1,1.88,0c1.88.91,3.74,1.86,5.65,2.7,1.44.62,2.93,1.14,4.42,1.62s3.28,1,4.94,1.4a31.7,31.7,0,0,0,3.2.62c1.35.21,2.71.37,4.06.53s2.47.27,3.71.39a3.07,3.07,0,0,1,2.59,2,7.35,7.35,0,0,1,.11,1.76c0,3.64,0,7.29-.07,10.93q0,6.57,0,13.14a28.38,28.38,0,0,1-.49,4.78,30.13,30.13,0,0,1-1.39,5.13,31.69,31.69,0,0,1-3,6A39.71,39.71,0,0,1,47.83,59,56.8,56.8,0,0,1,40,65a82.6,82.6,0,0,1-7.78,4.43l-1.7.88a1.85,1.85,0,0,1-1.74,0,97.21,97.21,0,0,1-9.25-5.15,54.08,54.08,0,0,1-7.8-6A51.66,51.66,0,0,1,8,55.28a32.67,32.67,0,0,1-5.34-8.52A27,27,0,0,1,.9,41.36c-.16-.83-.28-1.68-.45-2.51C-.07,36.23.24,33.58.15,31c0-.36,0-.72,0-1.07ZM53,14.1c0-.63-.1-.77-.75-.85-.3,0-.62,0-.92-.07-1.47-.22-2.95-.43-4.42-.7s-2.74-.5-4.08-.86c-1.79-.48-3.58-1-5.31-1.62C35.34,9.19,33.15,8.28,31,7.33a2.9,2.9,0,0,0-2.7,0,53.53,53.53,0,0,1-8.5,3.33c-2.05.61-4.14,1.09-6.23,1.58a43.63,43.63,0,0,1-6.53,1c-.7.06-.84.25-.76.94,0,.14,0,.27,0,.41,0,2.08.06,4.16.07,6.24,0,4.68,0,9.35,0,14,0,1,.12,2.06.22,3.08A21.45,21.45,0,0,0,8,43.28a26,26,0,0,0,2.94,5.63,36.69,36.69,0,0,0,7.55,7.94,62.15,62.15,0,0,0,10.8,6.81,1,1,0,0,0,.78,0c1.3-.67,2.59-1.36,3.85-2.08a52.2,52.2,0,0,0,8.58-6.08,33.87,33.87,0,0,0,6.24-7.07c.54-.85,1-1.72,1.51-2.62a16,16,0,0,0,1.17-2.68c.17-.55.37-1.09.54-1.64a20.16,20.16,0,0,0,.95-5.59c0-4,0-8,0-12,0-1.32,0-2.64.06-4,0-1.12.05-2.25.07-3.37C53.05,15.75,53,14.93,53,14.1Z" />
+                                        <path class="cls-3"
+                                            d="M25.26,39c1.11-1.1,2.12-2.11,3.15-3.12Q35.19,29.2,42,22.53c.38-.39.55-.4.94,0,1.19,1.14,2.36,2.3,3.53,3.46.36.35.34.56-.07,1L37.7,35.49,25.9,47.1c-.5.5-.71.5-1.21,0L15.39,38c-.48-.47-.48-.66,0-1.13l3.25-3.2c.53-.52.72-.52,1.25,0l5.1,5A3,3,0,0,1,25.26,39Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <span>Responsabilidad</span>
                         </div>
                     </div>
-                    <div class="col-4 col-sm-4 col-md-2">
+                    <div class="col-auto d-flex flex-column align-items-center">
                         <div class="icon-item">
-                           <img src="globo.png" alt="">
+                            <!-- SVG Organización -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.72 62.33">
+                                <defs>
+                                    <style>
+                                        .cls-3 {
+                                            fill: #efefef;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="Capa_2" data-name="Capa 2">
+                                    <g id="Hero">
+                                        <path class="cls-3"
+                                            d="M77.25,40.42H72.72V31H58.23V19.81h4.1a4.09,4.09,0,0,0,3.92-4.22V4.22A4.09,4.09,0,0,0,62.33,0H50a4.09,4.09,0,0,0-3.92,4.22V15.59A4.09,4.09,0,0,0,50,19.81h4.08V31H29.8V19.81h4.1a4.09,4.09,0,0,0,3.92-4.22V4.22A4.09,4.09,0,0,0,33.9,0H21.54a4.09,4.09,0,0,0-3.92,4.22V15.59a4.09,4.09,0,0,0,3.92,4.22h4.09V31H9v9.47H4.47A4.48,4.48,0,0,0,0,44.89v13a4.48,4.48,0,0,0,4.47,4.46H17.56A4.48,4.48,0,0,0,22,57.87v-13a4.48,4.48,0,0,0-4.47-4.47H13V35H39.56v5.44H35a4.48,4.48,0,0,0-4.46,4.47v13A4.48,4.48,0,0,0,35,62.33h13.1a4.48,4.48,0,0,0,4.47-4.46v-13a4.48,4.48,0,0,0-4.47-4.47H43.59V35h25.1v5.44H64.16a4.48,4.48,0,0,0-4.47,4.47v13a4.48,4.48,0,0,0,4.47,4.46H77.25a4.48,4.48,0,0,0,4.47-4.46v-13A4.48,4.48,0,0,0,77.25,40.42Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <span>Organización</span>
                         </div>
                     </div>
-                    <div class="col-4 col-sm-4 col-md-2">
+                    <div class="col-auto d-flex flex-column align-items-center">
                         <div class="icon-item">
-                           <img src="globo.png" alt="">
+                            <!-- SVG Lealtad -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.03 62.85">
+                                <defs>
+                                    <style>
+                                        .cls-3 {
+                                            fill: #efefef;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="Capa_2" data-name="Capa 2">
+                                    <g id="Hero">
+                                        <path class="cls-3"
+                                            d="M70,39.58c-3.08-2.93-6.21-5.8-9.15-8.88-3.61-3.8-7-7.79-10.56-11.68a1.25,1.25,0,0,0-.8-.47,6.48,6.48,0,0,0-3.76,1.13c-3.77,2.81-7.6,5.53-11.4,8.27-2.53,1.82-4.85,1.72-7.1-.43s-3.05-6.05-.78-8.7c2.64-3.08,5.34-6.1,8.14-9C36.1,8.24,37.89,7,39.68,5.45c-1,.06-1.84.1-2.68.17a37.65,37.65,0,0,0-10,2c-1.74.65-3.49,1.43-4.5,3.24-3,5.35-5.87,10.73-8.79,16.11A5.58,5.58,0,0,0,13,28.87a9.07,9.07,0,0,0,1.27,5.76c.3.5.52.6,1.07.39,4-1.51,8.22,1.15,9,5.65.1.61.28.85.9.89a5.64,5.64,0,0,1,4.77,3,22.89,22.89,0,0,1,1.15,2.85,7,7,0,0,1,6.77,8.93c3.19,2,6.38,4,9.6,6a3.54,3.54,0,0,0,4.71-1.09,3.18,3.18,0,0,0-.33-.3c-1.48-1-3-2.08-4.46-3.15a1.83,1.83,0,0,1-.49-2.8c.73-1.07,1.68-1.14,2.74-.33A40.78,40.78,0,0,0,54,57.8c1.86,1.08,4.64-.13,5.52-2.18.28-.65.19-1-.44-1.26a12.62,12.62,0,0,1-1.71-.89,11.14,11.14,0,0,1-3.93-3.21A1.85,1.85,0,0,1,53.49,48a1.41,1.41,0,0,1,1.92-.55,13.92,13.92,0,0,1,2.11,1.3,10.77,10.77,0,0,0,4.55,2.48,2.81,2.81,0,0,0,3.16-1.84,1,1,0,0,0-.51-1.51,48.81,48.81,0,0,1-5-3.55,2,2,0,0,1-.38-2.78c.66-.9,1.45-1,2.57-.29s2.33,1.73,3.52,2.57a3.77,3.77,0,0,0,3.31.89,3.44,3.44,0,0,0,2.47-2.57C71.49,40.9,70.73,40.29,70,39.58Z" />
+                                        <path class="cls-3"
+                                            d="M31.56,51.53a3.18,3.18,0,0,0-2.75,3.36,2.29,2.29,0,0,0,2.47,2.34,3.13,3.13,0,0,0,3-3.07A2.78,2.78,0,0,0,31.56,51.53Z" />
+                                        <path class="cls-3"
+                                            d="M24.23,45.64c-1.7.46-2.56,1.83-3.08,3.5a2.13,2.13,0,0,0,1.62,3c1.89.39,4.41-1.78,4.48-3.85A2.46,2.46,0,0,0,24.23,45.64Z" />
+                                        <path class="cls-3"
+                                            d="M17.59,38.58a3.66,3.66,0,0,0-3.23,3.74A2.65,2.65,0,0,0,17,45.13a3.74,3.74,0,0,0,3.68-3.39A3.28,3.28,0,0,0,17.59,38.58Z" />
+                                        <path class="cls-3"
+                                            d="M61.38,7.9A16.24,16.24,0,0,0,58.52,7c-2.32-.45-4.64-.8-7-1.2a9.61,9.61,0,0,0-7,1.13,41.84,41.84,0,0,0-8.79,7.12c-2.09,2.25-4.1,4.59-6.15,6.89a2.42,2.42,0,0,0-.18,3.39c.79,1,1.65,1.09,2.86.21,3.61-2.6,7.19-5.23,10.82-7.79,1.19-.84,2.34-1.89,3.87-2a43,43,0,0,1,5.78-.13,37.06,37.06,0,0,1,5.66,1.21,1.93,1.93,0,0,1,1.28,2.27,1.53,1.53,0,0,1-1.86,1.5,17.83,17.83,0,0,1-2.17-.34A191.52,191.52,0,0,0,72.06,36.26a14.47,14.47,0,0,0,2-5.16,6.73,6.73,0,0,0-.69-4.84q-4.22-7.44-8.19-15A7,7,0,0,0,61.38,7.9Z" />
+                                        <path class="cls-3"
+                                            d="M8.65,29.19,1.94,25A4.33,4.33,0,0,1,.52,19.32L9.77,2.08A3.72,3.72,0,0,1,15.06.56l6.71,4.17Z" />
+                                        <path class="cls-3"
+                                            d="M65.25,4.73,72,.56a3.73,3.73,0,0,1,5.29,1.52l9.25,17.24A4.34,4.34,0,0,1,85.09,25l-6.72,4.18Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <span>Lealtad</span>
                         </div>
                     </div>
-                    <div class="col-4 col-sm-4 col-md-2">
+                    <div class="col-auto d-flex flex-column align-items-center">
                         <div class="icon-item">
-                            <img src="globo.png" alt="">
+                            <!-- SVG Puntualidad -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.54 71.76">
+                                <defs>
+                                    <style>
+                                        .cls-3 {
+                                            fill: #efefef;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="Capa_2" data-name="Capa 2">
+                                    <g id="Hero">
+                                        <path class="cls-3"
+                                            d="M37.25,6.53v-2a4.49,4.49,0,1,0-9,0v2a32.78,32.78,0,1,0,9,0ZM55.64,40.12H60a27.14,27.14,0,0,1-6.55,16.6l-3.3-3.3a1.68,1.68,0,1,0-2.37,2.38l3.33,3.33a27.2,27.2,0,0,1-16.63,7.05V61.31a1.68,1.68,0,1,0-3.36,0v4.87a27.13,27.13,0,0,1-16.64-7l3.34-3.34a1.68,1.68,0,0,0,0-2.38,1.7,1.7,0,0,0-2.38,0l-3.3,3.31a27.12,27.12,0,0,1-6.58-16.6H9.92a1.68,1.68,0,1,0,0-3.36H5.62a27.14,27.14,0,0,1,7-16.11l2.81,2.81A1.68,1.68,0,0,0,17.8,21.1L15,18.33a27.15,27.15,0,0,1,16.06-6.54v3.8a1.68,1.68,0,0,0,1.68,1.68h0a1.68,1.68,0,0,0,1.68-1.68v-3.8a27.15,27.15,0,0,1,16.06,6.54l-2.76,2.76a1.68,1.68,0,0,0,0,2.38,1.7,1.7,0,0,0,2.38,0l2.8-2.8a27.08,27.08,0,0,1,7,16.09H55.64a1.68,1.68,0,0,0,0,3.36Z" />
+                                        <path class="cls-3"
+                                            d="M27.65,42.25l2.87-2.85L42.91,27.21c.36-.35.51-.37.87,0,1.08,1,2.15,2.1,3.22,3.15.33.33.31.52-.07.89L39,39,28.23,49.63c-.45.45-.64.46-1.1,0l-8.49-8.35c-.43-.43-.43-.6,0-1l3-2.92c.48-.47.66-.47,1.14,0l4.65,4.58A2.51,2.51,0,0,1,27.65,42.25Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <span>Puntualidad</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Contenido de la sección con glow verde a la derecha -->
-        <div class="section-body unidades-section d-flex align-items-center justify-content-center" style="min-height: 100vh; position: relative;">
-    <!-- Título vertical ABSOLUTO -->
-    <div class="unidades-title-vertical">
-        <span>UNI<br>DA<br>DES</span>
-    </div>
-    <div class="container-fluid">
-        <div class="row justify-content-center align-items-center" style="min-height: 80vh; position: relative;">
-            <!-- Columna central y derecha igual... -->
-            <div class="col-6 offset-3 d-flex flex-column align-items-center">
-                <div class="unidades-box p-5">
-                    <div class="unidades-item mb-3">
-                        <div class="unidades-logo coworking">SE <span>CO</span>WORKING</div>
-                        <div class="unidades-desc">Rentas comerciales y turísticas con máxima rentabilidad</div>
+        <!-- section nosotros primera parte  -->
+        <section id="nosotros" class="section_animate1 section_vista1  legado-section d-flex align-items-center justify-content-center">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container conten-section-body">
+                            <div class="row align-items-center min-vh-70">
+                                <!-- Columna derecha: Texto alineado a la derecha -->
+                                <div
+                                    class="animate__fadeInUp col-md-12 d-flex flex-column justify-content-center align-items-end text-end">
+                                    <div class="legado-text">
+                                        <h2
+                                            class="legado-title mb-4 d-flex justify-content-center legado-titulo-doslineas">
+                                            <div class="text-start ">
+                                                <span class="legado-blanco">Nuestro</span><br>
+                                                <span class="legado-green autoShow ">Legado</span>
+                                            </div>
+
+                                        </h2>
+                                        <p class="legado-parrafo ">
+                                            Grupo SE surge con el propósito de invertir en propiedades de alta
+                                            rentabilidad;
+                                            El nombre,
+                                            basado en los apellidos de la fundadora, representa valores transmitidos por
+                                            generaciones:
+                                            honestidad, responsabilidad, puntualidad, organización y lealtad
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="unidades-item mb-3">
-                        <div class="unidades-logo rental">SE <span>RENTAL</span></div>
-                        <div class="unidades-desc">Tu espacio de trabajo colaborativo y flexible</div>
-                    </div>
-                    <div class="unidades-item ">
-                        <div class="unidades-logo investments">SE <span>INVESTMENTS</span></div>
-                        <div class="unidades-desc">Conviértete con respaldo y asesoría de expertos</div>
-                    </div>
-                   
-                   
-            </div>
-             <a href="#" class="unidades-btn mt-3">Conoce más sobre nuestras unidades <span class="aqui">aquí</span></a>
+
                 </div>
-            <!-- Columna derecha: Glow verde -->
-            <div class="col-3 position-relative">
-                <div class="unidades-glow"></div>
             </div>
-        </div>
-    </div>
-</div>
 
-    </section>
-    <!--bootstrap-->
 
+
+
+        </section>
+
+        <!-- section nosotros segunda parte  -->
+        <section class="section_animate2 testimonio-section py-5 ">
+
+
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <!-- Imagen con fondo verde -->
+                    <div class="col-md-4 d-flex justify-content-center mb-4 mb-md-0">
+                        <div class="testimonio-img-bg d-flex align-items-center justify-content-center">
+                            <img src="ruta/a/tu/imagen-manos.png" alt="Manos" class="img-fluid testimonio-img">
+                        </div>
+                    </div>
+                    <!-- Texto -->
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <div class="testimonio-text">
+                            <p class="testimonio-frase mb-2">
+                                “Con <strong>GRUPO SE</strong> encontré un espacio
+                                <span class="testimonio-green">rentable y seguro</span>”
+                            </p>
+                            <p class="testimonio-autor mb-0">- <strong>Cliente satisfecho</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="mision-filosofia-section py-5">
+            <div class="container">
+                <div class="row text-center justify-content-center g-5">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h2 class="mision-title fw-bold">MISIÓN</h2>
+                        <p class="mision-text">
+                            Colocar la inversión en propiedades que tengan alta <span
+                                class="text-green">rentabilidad</span>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="mision-title fw-bold">FILOSOFÍA</h2>
+                        <p class="mision-text">
+                            Ganar-ganar; aseguramos que cada cliente haga una <span class="text-green">inversión
+                                inteligente;</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mision-imagen-section py-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <!-- Imagen izquierda -->
+                    <div class="col-md-4 d-flex justify-content-center mb-4 mb-md-0">
+                        <img src="ruta/a/tu/logo-se-grupo.png" alt="Logo SE Grupo" class="img-fluid mision-img">
+                    </div>
+                    <!-- Texto derecha -->
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <div class="mision-img-text">
+                            <p class="mision-img-frase mb-2">
+                                Nuestra misión<br>
+                                es que tu inversión<br>
+                                <span class="fw-bold text-white">siempre <span class="text-green">genere
+                                        frutos</span></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--bootstrap-->
+        <section class="unidades" id="unidades">
+            <div class="container-fluid  w-100 bottom-0 position-absolute d-flex justify-content-center">
+                <span class="barra-verde w-75 d-block"></span>
+            </div>
+
+
+            <!-- Contenido de la sección con glow verde a la derecha -->
+            <div class="section-body unidades-section d-flex align-items-center justify-content-center"
+                style="height: 630px;">
+                <!-- SVG Glow como fondo -->
+                <div class="glow-bg">
+                    <!-- Pega aquí tu SVG completo -->
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 1235.4 1169.48">
+                        <!-- ...tu SVG aquí... -->
+                    </svg>
+                </div>
+                <!-- El resto de tu contenido aquí -->
+                <div class="unidades-title-vertical">
+                    <span>UNI<br>DA<br>DES</span>
+                </div>
+                <div class="container-fluid">
+                    <div class="row justify-content-center align-items-center">
+                        <!-- Columna central y derecha igual... -->
+                        <div class="col-8 d-flex flex-column align-items-center" style="z-index: 1;">
+                            <div class="unidades-box p-5">
+                                <div class="unidades-item mb-3">
+                                    <img src="sections/coworking_box_2.png" alt="">
+                                    <div class="unidades-desc">Rentas comerciales y turísticas con máxima rentabilidad
+                                    </div>
+                                </div>
+                                <div class="unidades-item mb-3">
+                                    <img src="sections/rental_box_2.png" alt="">
+                                    <div class="unidades-desc">Tu espacio de trabajo colaborativo y flexible</div>
+                                </div>
+                                <div class="unidades-item ">
+                                    <img src="sections/investmest_box_1.png" alt="">
+                                    <div class="unidades-desc">Conviértete con respaldo y asesoría de expertos</div>
+                                </div>
+
+
+                            </div>
+                            <a href="#" class="unidades-btn mt-3">Conoce más sobre nuestras unidades
+                                <span class="aqui"><span>aquí</span></span>
+                            </a>
+                        </div>
+                        <!-- Columna derecha: Glow verde -->
+                        <div class="col-3" style="z-index: 0;
+                                        width: 100vw;
+                                        position: absolute;
+                                        right: -50rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 1235.4 1169.48">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: url(#Degradado_sin_nombre_29);
+                                        }
+                                    </style>
+                                    <radialGradient id="Degradado_sin_nombre_29" cx="620.64" cy="585.64" r="655.66"
+                                        gradientTransform="translate(33 62.45) scale(0.94 0.89)"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#70af22" />
+                                        <stop offset="0.01" stop-color="#6daa22" />
+                                        <stop offset="0.11" stop-color="#55821e" />
+                                        <stop offset="0.23" stop-color="#41601a" />
+                                        <stop offset="0.34" stop-color="#304418" />
+                                        <stop offset="0.47" stop-color="#232e16" />
+                                        <stop offset="0.61" stop-color="#1a1f14" />
+                                        <stop offset="0.77" stop-color="#151613" />
+                                        <stop offset="1" stop-color="#131313" />
+                                    </radialGradient>
+                                </defs>
+                                <g id="Capa_2" data-name="Capa 2">
+                                    <g id="Hero">
+                                        <ellipse class="cls-1" cx="617.7" cy="584.74" rx="617.7" ry="584.74" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+        <footer class="footer-se py-4">
+            <div class="container">
+                <div class="row align-items-start">
+                    <!-- Logo y dirección -->
+                    <div class="col-md-5 mb-4 mb-md-0 d-flex align-items-md-start align-items-center">
+                        <div class="mb-2 me-4">
+                            <img src="ruta/a/tu/logo-se-grupo-blanco.png" alt="Grupo SE" style="height: 48px;">
+                        </div>
+                        <div class="footer-text text-white small">
+                            © 2025 Grupo SE<br>
+                            Todos los derechos reservados.<br>
+                            Plaza Central, local 3A-B, tercer nivel, Avenida 27 de Febrero, esquina Winston
+                            Churchill<br>
+                            Planta: Santo Domingo
+                        </div>
+                    </div>
+                    <!-- Menú -->
+                    <div class="col-md-2 mb-4 mb-md-0">
+                        <div class="footer-menu-title text-green mb-1">MENÚ</div>
+                        <ul class="footer-menu list-unstyled mb-0">
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#nosotros">Sobre Nosotros</a></li>
+                            <li><a href="#unidades">Unidades</a></li>
+                            <li><a href="#">Inversiones</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <!-- Legal -->
+                    <div class="col-md-2 mb-4 mb-md-0">
+                        <div class="footer-menu-title text-green mb-1">LEGAL</div>
+                        <ul class="footer-menu list-unstyled mb-0">
+                            <li><a href="#">Aviso legal</a></li>
+                            <li><a href="#">Política de privacidad</a></li>
+                        </ul>
+                    </div>
+                    <!-- Redes sociales -->
+                    <div class="col-md-3  falign-items-md-end align-items-center">
+                        <div class="footer-social mb-2 d-flex flex-column align-items-center align-items-center">
+                            <a href="#" class="footer-social-icon me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="footer-social-icon me-2"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="footer-social-icon"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    </footer>
+
+    <script>
+//          document.addEventListener('DOMContentLoaded', () => {
+//     // 1. Seleccionar todos los elementos que quieres animar
+//     const elementosAnimables = document.querySelectorAll('.section_vista1');
+
+//     // 2. Definir las opciones del observador
+//     const opciones = {
+//         root: null, // Usamos el viewport como área de intersección
+//         rootMargin: '0px',
+//         // Se ejecuta cuando el 10% del elemento es visible
+//         threshold: 0.1 
+//     };
+
+//     // 3. La función que se ejecuta cuando hay intersección
+//     function manejarInterseccion(entries, observer) {
+//         entries.forEach(entry => {
+//             // Si el elemento es visible (está intersectando)...
+//             if (entry.isIntersecting) {
+//                 // a) Añadir la clase que dispara la animación
+//                 entry.target.classList.add('tracking-in-expand-fwd-bottom');
+                
+//                 // b) ¡Importante! Dejar de observar el elemento. 
+//                 // Esto asegura que la animación se ejecute UNA SOLA VEZ.
+//                 observer.unobserve(entry.target);
+//             }
+//             // Si quisieras que la animación se revierta al salir de la vista,
+//             // podrías usar el 'else' aquí, pero no es lo que buscas.
+//         });
+//     }
+
+//     // 4. Crear la instancia del Intersection Observer
+//     const observer = new IntersectionObserver(manejarInterseccion, opciones);
+
+//     // 5. Empezar a observar cada elemento
+//     elementosAnimables.forEach(elemento => {
+//         observer.observe(elemento);
+//     });
+// });
+    </script>
 </body>
 
 </html>

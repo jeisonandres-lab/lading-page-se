@@ -1,0 +1,75 @@
+
+
+
+
+
+
+
+
+
+
+
+/* parte 2 de nosotros  */
+/* Sección Misión y Filosofía */
+.mision-filosofia-section {
+    background: #2a2a2a;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.mision-title {
+    font-size: 4rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.mision-text {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.text-green {
+    color: #7ec11f;
+    font-weight: 600;
+}
+
+/* Sección Misión con imagen */
+.mision-imagen-section {
+    background: #181818;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.mision-img {
+    max-width: 260px;
+    filter: drop-shadow(0 8px 32px #0008);
+}
+
+.mision-img-text {
+    color: #fff;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.mision-img-frase {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+    .mision-title {
+        font-size: 2rem;
+    }
+    .mision-img-frase, .mision-img-text {
+        font-size: 1.2rem;
+    }
+    .mision-img {
+        max-width: 160px;
+    }
+}

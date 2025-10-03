@@ -1,11 +1,41 @@
 @import url(./variables.css
 );
 
-.barra-verde{
-    background-color: var(--color-secundario-verde-claro) ;
+.barra-verde {
+    background-color: var(--color-secundario-verde-claro);
     height: 10px !important;
 }
-.section-1 { background: var(--near-black); color: var(--white); }
+
+.icon-item {
+    color: var(--color-primario-blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 0 auto; */
+    padding: 0;              /* Elimina el padding lateral */
+}
+
+.icon-item svg {
+    width: 70px !important;   /* Más pequeño para unir más */
+    height: 70px !important;
+    display: block;
+    /* margin: 0 auto; */
+}
+
+.icon-item span {
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: center;
+    /* margin-top: 10px; */
+    word-break: break-word;
+    /* width: 100%; */
+    display: block;
+}
+
+.section-1 {
+    background: #131313;
+    color: var(--white);
+}
 
 /* Tira gris con degradado desde los lados al centro */
 .grey-strip {
@@ -13,6 +43,7 @@
     background: #2a2a2a;
     padding: 18px 0;
     overflow: hidden;
+    z-index: 0; /* Asegura que el contenido esté por encima del ::before */
 }
 
 .grey-strip::before {
@@ -20,20 +51,21 @@
     position: absolute;
     inset: 0;
     background: linear-gradient(90deg,
-        rgba(0,0,0,0.85) 0%,
-        rgba(0,0,0,0.5) 0%,
-        rgba(0,0,0,0.0) 40%,
-        rgba(0,0,0,0.0) 60%,
-        rgba(0,0,0,0.5)100%,
-        rgba(0,0,0,0.85) 100%);
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(0, 0, 0, 0.0) 40%,
+            rgba(0, 0, 0, 0.0) 60%,
+            rgba(0, 0, 0, 0.5)100%,
+            rgba(0, 0, 0, 0.85) 100%);
     pointer-events: none;
+    z-index: -1; /* Hace que el degradado quede detrás del contenido */
 }
 
 
 /* ...existing code... */
 .unidades-section {
-    background: #181818;
-    min-height: 100vh;
+    background: #131313;
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +76,8 @@
 /* Título vertical sobresaliendo a la izquierda */
 .unidades-title-vertical {
     position: absolute;
-    left: -50px; /* sobresale 40px fuera de la pantalla */
+    left: -50px;
+    /* sobresale 40px fuera de la pantalla */
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
@@ -55,124 +88,105 @@
     letter-spacing: 0px;
     background: #232323;
     border-radius: 30px;
-    padding: 60px 10px 60px 50px; /* más padding a la izquierda */
+    padding: 60px 10px 60px 50px;
+    /* más padding a la izquierda */
     box-shadow: 8px 0 30px 0 #0006;
     /* min-width: 220px; */
     text-align: left;
-    width: 12%;
+    width: 16%;
     /* Opcional: transición suave si quieres animar */
     transition: left 0.3s;
 }
 
-/* Responsive: en móviles, que no sobresalga tanto */
-@media (max-width: 768px) {
-    .unidades-title-vertical {
-        left: -10px;
-        font-size: 2.2rem;
-        padding: 18px 6px 18px 18px;
-        min-width: 120px;
-    }
-}
-
 .unidades-box {
-    
     border-radius: 40px 0px 0px 40px;
     border-bottom: 1px solid #fff;
     border-left: 1px solid #fff;
     border-top: 1px solid #fff;
-
     /* box-shadow: 0 0 30px #000a; */
     width: 100%;
     max-width: 720px;
 }
+
 .unidades-item {
     display: flex;
     align-items: center;
     gap: 18px;
 }
+
 .unidades-logo {
     font-weight: 700;
     font-size: 1.6rem;
     padding: 15px 18px;
     border-radius: 15px;
     color: #fff;
-    min-width: 300px;
     justify-content: center;
     display: flex;
     align-items: center;
     gap: 6px;
 }
-.unidades-logo span {
-    font-weight: 700;
-    margin-left: 4px;
+
+.unidades-item  img{
+    width: 40%;
+    height: auto;
 }
-.unidades-logo.coworking {
-    background: #393d40;
-}
-.unidades-logo.coworking span {
-    color: #8be900;
-    font-style: italic;
-}
-.unidades-logo.rental {
-    background: #d3d800;
-    color: #232323;
-}
-.unidades-logo.rental span {
-    color: #232323;
-    font-style: italic;
-}
-.unidades-logo.investments {
-    background: #4ad900;
-}
-.unidades-logo.investments span {
-    color: #fff;
-    font-style: italic;
-}
+
 .unidades-desc {
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     line-height: 0.9;
     font-weight: 300;
-  
+
 }
+
 .unidades-btn {
-    display: inline-block;
+    display: flex;
     background: #232323;
     color: #fff;
     font-size: 1.6rem;
     border-radius: 10px;
-    padding: 8px 22px;
+    padding: 6px 8px 6px 15px;
     font-weight: 500;
     text-decoration: none;
     box-shadow: 0 2px 8px #0004;
     border: 2px solid #232323;
     transition: border 0.2s;
 }
+
 .unidades-btn .aqui {
     background: #181818;
     color: #fff;
-    border: 2px solid #8be900;
+    border: 2px solid var(--color-secundario-verde-claro);
     border-radius: 6px;
     padding: 2px 10px;
     font-weight: 700;
     margin-left: 8px;
+    display: flex;
+    justify-content: center;
 }
-.unidades-btn:hover {
-    border: 2px solid #8be900;
+.unidades-btn .aqui span {
+    top: -4px;
+    position: relative;
 }
+
+/* .unidades-btn:hover {
+    border: 2px solid var(--color-secundario-verde-claro);
+} */
+
 .unidades-glow {
     position: absolute;
     top: 50%;
     left: auto;
-    right: -24px; /* pegado a la derecha */
+    right: -24px;
+    /* pegado a la derecha */
     width: 520px;
     height: 520px;
-    color: #8be900; /* para usar con currentColor en el núcleo */
+    color: #8be900;
+    /* para usar con currentColor en el núcleo */
     /* permitir visibilidad completa para estirar hacia la izquierda */
     -webkit-mask-image: none;
     mask-image: none;
     transform: translateY(-50%);
-    
     z-index: 1;
     pointer-events: none;
 }
@@ -181,10 +195,11 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: 86%; /* más hacia la derecha para que el cuadrado sea el origen */
+    left: 86%;
+    /* más hacia la derecha para que el cuadrado sea el origen */
     transform: translate(-50%, -50%);
-    width: 260px;
-    height: 260px;
+    width: 500px;
+    height: 500px;
     /* núcleo cuadrado + puntas más estiradas hacia la izquierda */
     background:
         /* punta superior izquierda (más larga y contrastada) */
@@ -206,7 +221,33 @@
     background-repeat: no-repeat;
     opacity: 0.34;
     /*border-radius: 18px; cuadrado suave */
-    filter: blur(98px);
+    filter: blur(220px);
+}
+
+
+
+
+
+
+
+
+
+/* Responsive: en móviles, que no sobresalga tanto */
+@media (max-width: 768px) {
+    .unidades-title-vertical {
+        left: -10px;
+        font-size: 2.2rem;
+        padding: 18px 6px 18px 18px;
+        min-width: 120px;
+    }
+}
+
+
+/* Responsive: en pantallas grandes, que no sobresalga tanto */
+@media (min-width: 1600px) {
+    .unidades-title-vertical {
+        font-size: clamp(10rem, 20vw, 200rem);
+    }
 }
 
 
