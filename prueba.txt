@@ -54,3 +54,30 @@
     background-color: transparent;
     border: 0;
 }
+
+
+
+
+
+background:
+        /* punta superior */
+        radial-gradient(ellipse 75% 35% at 100% 28%,
+            rgba(139, 233, 0, 0.45) 0%,
+            rgba(139, 233, 0, 0.22) 42%,
+            rgba(139, 233, 0, 0.0) 76%),
+        /* punta inferior */
+        radial-gradient(ellipse 75% 35% at 100% 72%,
+            rgba(139, 233, 0, 0.45) 0%,
+            rgba(139, 233, 0, 0.22) 42%,
+            rgba(139, 233, 0, 0.0) 76%),
+        /* núcleo central */
+        radial-gradient(ellipse 62% 46% at 88% 50%,
+            rgba(139, 233, 0, 0.58) 0%,
+            rgba(139, 233, 0, 0.36) 36%,
+            rgba(139, 233, 0, 0.18) 58%,
+            rgba(35, 35, 35, 0) 78%);
+    filter: blur(18px) saturate(120%);
+    transform: translateY(-50%);
+    /* desvanecer hacia la izquierda para que no quede un corte duro */
+    -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, #000 22%, #000 100%);
+    mask-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, #000 22%, #000 100%);

@@ -1,6 +1,10 @@
 @import url(./variables.css
 );
 
+.barra-verde{
+    background-color: var(--color-secundario-verde-claro) ;
+    height: 10px !important;
+}
 .section-1 { background: var(--near-black); color: var(--white); }
 
 /* Tira gris con degradado desde los lados al centro */
@@ -17,320 +21,193 @@
     inset: 0;
     background: linear-gradient(90deg,
         rgba(0,0,0,0.85) 0%,
-        rgba(0,0,0,0.5) 20%,
+        rgba(0,0,0,0.5) 0%,
         rgba(0,0,0,0.0) 40%,
         rgba(0,0,0,0.0) 60%,
-        rgba(0,0,0,0.5) 80%,
+        rgba(0,0,0,0.5)100%,
         rgba(0,0,0,0.85) 100%);
     pointer-events: none;
 }
 
-.strip-icons { position: relative; z-index: 1; }
-.icon-item { display: grid; place-items: center; gap: 6px; }
-.icon-circle {
-    width: 54px; height: 54px;
-    display: grid; place-items: center;
-    border-radius: 50%;
-    background: #1e1e1e;
-    border: 2px solid rgba(255,255,255,0.2);
-    font-size: 24px;
-}
-.icon-label { font-size: 13px; color: #d8d8d8; font-weight: 600; }
 
-/* Cuerpo de la sección con layout de tres columnas */
-.section-body {
-    position: relative;
-    min-height: 600px;
-    background: var(--near-black);
+/* ...existing code... */
+.unidades-section {
+    background: #181818;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-}
-
-/* Sidebar gris a la izquierda */
-.grey-sidebar {
-    background: #2a2a2a;
-    padding: 40px 30px;
     position: relative;
-    z-index: 2;
 }
 
-.sidebar-content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* Título vertical sobresaliendo a la izquierda */
+.unidades-title-vertical {
+    position: absolute;
+    left: -50px; /* sobresale 40px fuera de la pantalla */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 7rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 0.7;
+    letter-spacing: 0px;
+    background: #232323;
+    border-radius: 30px;
+    padding: 60px 10px 60px 50px; /* más padding a la izquierda */
+    box-shadow: 8px 0 30px 0 #0006;
+    /* min-width: 220px; */
+    text-align: left;
+    width: 12%;
+    /* Opcional: transición suave si quieres animar */
+    transition: left 0.3s;
 }
 
-.sidebar-title {
-    color: var(--white);
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+/* Responsive: en móviles, que no sobresalga tanto */
+@media (max-width: 768px) {
+    .unidades-title-vertical {
+        left: -10px;
+        font-size: 2.2rem;
+        padding: 18px 6px 18px 18px;
+        min-width: 120px;
+    }
 }
 
-.values-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+.unidades-box {
+    
+    border-radius: 40px 0px 0px 40px;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
 
-.value-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-.value-icon {
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255,255,255,0.1);
-    border-radius: 50%;
-}
-
-.value-text {
-    color: #e5e5e5;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-/* Contenido central */
-.main-content {
-    padding: 40px 30px;
-    position: relative;
-    z-index: 2;
-}
-
-.content-wrapper {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.content-card {
-    border: 2px solid rgba(255,255,255,0.12);
-    border-radius: 16px;
-    padding: 40px;
-    background: rgba(0,0,0,0.35);
+    /* box-shadow: 0 0 30px #000a; */
     width: 100%;
+    max-width: 720px;
 }
-
-.section-title { 
-    font-weight: 900; 
-    text-transform: uppercase; 
-    letter-spacing: 0.5px; 
-    color: var(--white);
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.section-text { 
-    color: #e5e5e5; 
-    margin-bottom: 30px;
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-/* Grid de unidades */
-.units-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.unit-block {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 12px;
-    padding: 25px;
-    transition: all 0.3s ease;
-}
-
-.unit-block:hover {
-    background: rgba(255,255,255,0.08);
-    border-color: rgba(97,179,37,0.3);
-    transform: translateY(-2px);
-}
-
-.unit-title {
-    color: var(--white);
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-
-.unit-description {
-    color: #d8d8d8;
-    font-size: 14px;
-    line-height: 1.5;
-    margin: 0;
-}
-
-/* Círculo degradado verde a la derecha */
-.green-circle-container {
-    position: relative;
+.unidades-item {
     display: flex;
     align-items: center;
+    gap: 18px;
+}
+.unidades-logo {
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 15px 18px;
+    border-radius: 15px;
+    color: #fff;
+    min-width: 300px;
     justify-content: center;
-    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
-
-.green-gradient-circle {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: radial-gradient(circle at center, 
-        rgba(97,179,37,0.8) 0%, 
-        rgba(97,179,37,0.6) 30%, 
-        rgba(97,179,37,0.4) 60%, 
-        rgba(97,179,37,0.2) 80%, 
-        rgba(97,179,37,0.1) 90%,
-        rgba(97,179,37,0) 100%);
-    filter: blur(2px);
-    position: relative;
+.unidades-logo span {
+    font-weight: 700;
+    margin-left: 4px;
+}
+.unidades-logo.coworking {
+    background: #393d40;
+}
+.unidades-logo.coworking span {
+    color: #8be900;
+    font-style: italic;
+}
+.unidades-logo.rental {
+    background: #d3d800;
+    color: #232323;
+}
+.unidades-logo.rental span {
+    color: #232323;
+    font-style: italic;
+}
+.unidades-logo.investments {
+    background: #4ad900;
+}
+.unidades-logo.investments span {
+    color: #fff;
+    font-style: italic;
+}
+.unidades-desc {
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 0.9;
+    font-weight: 300;
+  
+}
+.unidades-btn {
+    display: inline-block;
+    background: #232323;
+    color: #fff;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    padding: 8px 22px;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 2px 8px #0004;
+    border: 2px solid #232323;
+    transition: border 0.2s;
+}
+.unidades-btn .aqui {
+    background: #181818;
+    color: #fff;
+    border: 2px solid #8be900;
+    border-radius: 6px;
+    padding: 2px 10px;
+    font-weight: 700;
+    margin-left: 8px;
+}
+.unidades-btn:hover {
+    border: 2px solid #8be900;
+}
+.unidades-glow {
+    position: absolute;
+    top: 50%;
+    left: auto;
+    right: -24px; /* pegado a la derecha */
+    width: 520px;
+    height: 520px;
+    color: #8be900; /* para usar con currentColor en el núcleo */
+    /* permitir visibilidad completa para estirar hacia la izquierda */
+    -webkit-mask-image: none;
+    mask-image: none;
+    transform: translateY(-50%);
+    
     z-index: 1;
+    pointer-events: none;
 }
 
-.green-gradient-circle::before {
+.unidades-glow::before {
     content: "";
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 86%; /* más hacia la derecha para que el cuadrado sea el origen */
     transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: radial-gradient(circle at center, 
-        rgba(97,179,37,0.9) 0%, 
-        rgba(97,179,37,0.7) 40%, 
-        rgba(97,179,37,0.4) 70%, 
-        rgba(97,179,37,0.1) 90%,
-        rgba(97,179,37,0) 100%);
-    filter: blur(1px);
+    width: 260px;
+    height: 260px;
+    /* núcleo cuadrado + puntas más estiradas hacia la izquierda */
+    background:
+        /* punta superior izquierda (más larga y contrastada) */
+        radial-gradient(ellipse 240% 58% at 0% 0%,
+            rgba(139, 233, 0, 0.72) 0%,
+            rgba(139, 233, 0, 0.46) 26%,
+            rgba(139, 233, 0, 0.22) 52%,
+            rgba(139, 233, 0, 0.10) 72%,
+            rgba(139, 233, 0, 0.0) 86%),
+        /* punta inferior izquierda (más larga y contrastada) */
+        radial-gradient(ellipse 240% 58% at 0% 100%,
+            rgba(139, 233, 0, 0.72) 0%,
+            rgba(139, 233, 0, 0.46) 26%,
+            rgba(139, 233, 0, 0.22) 52%,
+            rgba(139, 233, 0, 0.10) 72%,
+            rgba(139, 233, 0, 0.0) 86%),
+        /* núcleo sólido cuadrado */
+        linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    opacity: 0.34;
+    /*border-radius: 18px; cuadrado suave */
+    filter: blur(98px);
 }
 
-/* Estilos responsive */
-@media (max-width: 991.98px) {
-    .icon-label { font-size: 12px; }
-    .icon-circle { width: 48px; height: 48px; font-size: 22px; }
-    
-    /* Layout responsive para móviles */
-    .section-body {
-        min-height: auto;
-    }
-    
-    .grey-sidebar {
-        padding: 30px 20px;
-        order: 2;
-    }
-    
-    .main-content {
-        padding: 30px 20px;
-        order: 1;
-    }
-    
-    .green-circle-container {
-        padding: 20px;
-        order: 3;
-    }
-    
-    .green-gradient-circle {
-        width: 200px;
-        height: 200px;
-    }
-    
-    .green-gradient-circle::before {
-        width: 120px;
-        height: 120px;
-    }
-    
-    .sidebar-title {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .values-list {
-        gap: 15px;
-    }
-    
-    .value-item {
-        gap: 12px;
-        padding: 10px 0;
-    }
-    
-    .value-icon {
-        font-size: 20px;
-        width: 35px;
-        height: 35px;
-    }
-    
-    .value-text {
-        font-size: 14px;
-    }
-    
-    .content-card {
-        padding: 30px 20px;
-    }
-    
-    .section-title {
-        font-size: 28px;
-        margin-bottom: 15px;
-    }
-    
-    .section-text {
-        font-size: 16px;
-        margin-bottom: 25px;
-    }
-    
-    .unit-block {
-        padding: 20px;
-    }
-    
-    .unit-title {
-        font-size: 18px;
-    }
-    
-    .unit-description {
-        font-size: 13px;
-    }
-}
 
-@media (max-width: 767.98px) {
-    .grey-sidebar,
-    .main-content,
-    .green-circle-container {
-        padding: 20px 15px;
-    }
-    
-    .content-card {
-        padding: 25px 15px;
-    }
-    
-    .section-title {
-        font-size: 24px;
-    }
-    
-    .section-text {
-        font-size: 15px;
-    }
-    
-    .green-gradient-circle {
-        width: 150px;
-        height: 150px;
-    }
-    
-    .green-gradient-circle::before {
-        width: 100px;
-        height: 100px;
-    }
-}
-
+/* ...existing code... */
