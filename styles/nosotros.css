@@ -1,8 +1,8 @@
 @import url(./variables.css
 );
 
-.legado-section{
-     position: relative;
+.legado-section {
+    position: relative;
     height: 100vh;
     width: 100%;
     /* compensar navbar fija */
@@ -51,7 +51,8 @@
 
 .legado-parrafo {
     text-align: justify;
-    text-align-last: left; /* Para la última línea alineada a la izquierda */
+    text-align-last: left;
+    /* Para la última línea alineada a la izquierda */
     font-size: 1.6rem;
     color: #f2f2f2;
     line-height: 1.4;
@@ -74,7 +75,7 @@
     height: 80vh;
     display: flex;
     align-items: center;
-    
+
 }
 
 .testimonio-img-bg {
@@ -123,27 +124,52 @@
         min-height: 70px;
         padding: 0.2rem 0.5rem;
     }
+
     .testimonio-frase {
         font-size: 1.1rem;
     }
 }
 
 @media (max-width: 991.98px) {
-    .legado-title, .legado-green {
-        font-size: 2.5rem;
+
+    .legado-title,
+    .legado-green {
+        font-size: 3rem;
     }
+
     .legado-parrafo {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         max-width: 100%;
     }
+
     .legado-logo {
         max-width: 250px;
     }
+
     .legado-text {
+        display: contents;
         max-width: 100%;
     }
 }
 
 
+/* Responsive: en pantallas grandes, que no sobresalga tanto */
+@media (min-width: 1400px) {
+    .g-5, .gx-5 {
+    --bs-gutter-x: 10rem !important;
+    }
+    .legado-text {
+     max-width: 100000px; 
+        width: 50%; 
+    }
 
+    .legado-parrafo {
+        font-size: 1.5rem;
+        max-width: 1500px;
+    }
 
+    .legado-title, .legado-green {
+        font-size: 8rem;
+    }
+
+}
