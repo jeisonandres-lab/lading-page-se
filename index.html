@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/nosotros_parte2.css">
     <link rel="stylesheet" href="styles/section__1.css">
     <link rel="stylesheet" href="styles/blog.css">
+    <link rel="stylesheet" href="styles/contacto.css">
     <link rel="stylesheet" href="styles/footer.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -545,7 +546,8 @@
             </div>
         </section>
 
-        <section class="blog-section pt-3 pb-5">
+        <!-- section blog  -->
+        <section class="movie_top blog-section pt-5 pb-5">
             <div class="container">
                 <!-- Título principal -->
                 <div class="row">
@@ -559,7 +561,7 @@
                 <!-- Tarjetas de blog -->
                 <div class="row justify-content-center g-4">
                     <!-- Tarjeta 1 -->
-                    <div class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center">
                         <div class="blog-img-wrapper blog-card h-100 d-flex flex-column align-items-center">
                             <div class="blog-card-header coworking-bg d-flex align-items-end">
                                 <span class="blog-card-title"><span class="text-green">co</span>WORKING</span>
@@ -568,32 +570,30 @@
                             <div class="blog-card-text text-center mb-2">
                                 El futuro del coworking en República Dominicana
                             </div>
+                            <div class="d-flex justify-content-center w-100">
+                                <a href="#" class="blog-btn text-center">Leer más</a>
+                            </div>
                         </div>
-
-                        <div class="d-flex justify-content-center w-100">
-                            <a href="#" class="blog-btn text-center">Leer más</a>
-                        </div>
-
                     </div>
                     <!-- Tarjeta 2 -->
-                    <div class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center">
                         <div class="blog-card h-100 d-flex flex-column align-items-center">
                             <div class="blog-card-header rental-bg d-flex align-items-end">
                                 <span class="blog-card-title">RENTAL</span>
                             </div>
                             <img src="./img/grupo-personas-trabajando-plan-negocios-oficina_1303-15768.jpg" alt="Rental" class="blog-img mb-2">
-                            <div class="blog-card-text text-center mb-2">
+                            <div class="blog-card-text text-center tag2 mb-2">
                                 Cómo asegurar el mejor retorno en rentas turísticas
                             </div>
-                        </div>
-                        
-                        <div class="d-flex justify-content-center w-100">
-                            <a href="#" class="blog-btn text-center">Leer más</a>
-                        </div>
 
+                            <div class="d-flex justify-content-center w-100">
+                                <a href="#" class="blog-btn text-center">Leer más</a>
+                            </div>
+
+                        </div>
                     </div>
                     <!-- Tarjeta 3 -->
-                    <div class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center">
                         <div class="blog-card h-100 d-flex flex-column align-items-center">
                             <div class="blog-card-header investments-bg d-flex align-items-end">
                                 <span class="blog-card-title">INVESTMENTS</span>
@@ -602,17 +602,104 @@
                             <div class="blog-card-text text-center mb-2">
                                 Ventajas de coinvertir con respaldo inmobiliario
                             </div>
-                        </div>
-                        <div class="d-flex justify-content-center w-100">
-                            <a href="#" class="blog-btn text-center">Leer más</a>
+
+                            <div class="d-flex justify-content-center w-100">
+                                <a href="#" class="blog-btn text-center">Leer más</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- section contactanos  -->   
+        <section class="section_animate2 investment-section py-5 px-3">
+            <div class="container custom-container">
+                <div class="row justify-content-center ">
+                    <div class="col-12 col-lg-12">
+                        <div class="header-content mb-5">
+                            <h1 class="header-text">
+                                <span class="header-text-primario">CONVERSEMOS </span>SOBRE TU&nbsp;<br>
+                                <div class="d-flex container-fluid">
+                                    <div class="row">
+                                        <span class="col-lg-7 green-text">PRÓXIMA INVERSIÓN</span>
+                                        <div class="col-lg-5 gradient-bar-container d-flex align-items-center ">
+                                            <div class="gradient-bar h-25"></div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </h1>
+                            
+                        </div>
+                        <div class="col-lg-12 d-flex">
+                            <div class="col-lg-6 ">
+                                <form class="form-column">
+                                    <div class="mb-3 form-group-custom">
+                                        <label for="nombre" class="form-label-custom">Nombre</label>
+                                        <input type="text" class="form-control-custom" id="nombre">
+                                    </div>
 
-        
+                                    <div class="mb-3 form-group-custom">
+                                        <label for="email" class="form-label-custom">E-mail</label>
+                                        <input type="email" class="form-control-custom" id="email" placeholder="Ej: franciscoamora@gmail.com">
+                                    </div>
+
+                                    <div class="mb-3 form-group-custom">
+                                        <label for="telefono" class="form-label-custom">Teléfono</label>
+                                        <input type="tel" class="form-control-custom" id="telefono">
+                                    </div>
+
+                                    <div class="mb-3 form-group-custom">
+                                        <label for="interes" class="form-label-custom">Interés</label>
+                                        <select class="form-select-custom" id="interes">
+                                            <option selected disabled>Elige una opción</option>
+                                            <option value="1">Coworking</option>
+                                            <option value="2">Rental</option>
+                                            <option value="3">Invesments</option>
+                                        </select>
+                                    </div>
+
+                                    <div class=" form-group-custom">
+                                        <label for="mensaje" class="form-label-custom">Mensaje</label>
+                                        <textarea class="form-control-custom textarea-custom" id="mensaje" rows="3" placeholder="¡Hola!, quiero agendar una asesoría con ustedes."></textarea>
+                                    </div>              
+                                </form>
+
+                                <button type="submit" class="btn-send-message">
+                                        ENVÍA UN MENSAJE
+                                </button>
+                            </div>
+                            <div class="col-12 col-lg-5 map-column mt-5 mt-lg-0 d-flex flex-column justify-content-between">
+                                <div class="conten-map">
+                                    <div class="map-header">
+                                            <div class="map-container mb-4">
+                                                <div class="map-placeholder">
+                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1083.0355302771789!2d-69.93542243979967!3d18.463647400347412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea563d92a3824df%3A0x4b258914d8f6f964!2sPlaza%20Central!5e0!3m2!1ses-419!2sve!4v1759590727599!5m2!1ses-419!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                
+                                </div>
+                                <p class="address-text text-center ">
+                                        Plaza Central local 34i-B, tercer nivel. Avenida<br>
+                                        27 de Febrero, esquina Winston Churchill<br>
+                                        Piantini, Santo Domingo
+                                    </p>
+                                <div class="social-icons mt-4 d-flex justify-content-center justify-content-lg-center">
+                                    <div class="content-icons">
+                                        <a href="#" class="social-icon-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#" class="social-icon-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                                        <a href="#" class="social-icon-link" aria-label="Correo Electrónico"><i class="fa-solid fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
         <footer class="footer-se py-4">
             <div class="container">

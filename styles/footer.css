@@ -36,6 +36,10 @@
     transition: color 0.2s;
 }
 
+.footer-social-icon     {
+ font-size: 2rem;
+}
+
 .footer-social-icon:hover {
     color: #7ec11f;
 }

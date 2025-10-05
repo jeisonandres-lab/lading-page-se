@@ -59,6 +59,9 @@
     text-transform: uppercase;
 }
 
+.tag2{
+    width: 75% !important;
+}
 .blog-img {
     width: 100%;
     max-width: 260px;
@@ -84,19 +87,18 @@
 }
 
 .blog-btn {
-    width: 50%;
     text-decoration: none;
     display: inline-block;
     background: transparent;
     color: #fff;
     border: 2px solid #7ec11f;
     border-radius: 8px;
-    padding: 0.5rem 2.2rem;
-    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
     transition: background 0.2s, color 0.2s;
-    margin-top: auto;
+    margin-top: 15px;
     margin-bottom: auto;
 }
 
