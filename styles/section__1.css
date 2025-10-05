@@ -272,6 +272,11 @@
     padding: 0px 20px 0px 20px !important;
     }
 
+    .icon-item svg {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
 }
 
 /* Responsive: en pantallas grandes, que no sobresalga tanto */
