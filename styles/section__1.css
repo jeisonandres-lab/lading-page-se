@@ -240,7 +240,12 @@
 
 
 
-
+.esfera {
+    z-index: 0;
+    width: 100vw;
+    position: absolute;
+    right: -50rem;
+}
 
 
 
@@ -248,100 +253,114 @@
 
 /* Responsive: en móviles, que no sobresalga tanto */
 @media (max-width: 768px) {
-    .content-unidad{
+    .content-unidad {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+    .unidades-title-vertical::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        /* Ajusta esta altura para controlar la longitud del degradado */
+        pointer-events: none;
+        /* Permite hacer clic en el contenido debajo del degradado */
 
-        .unidades-title-vertical::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 80px; /* Ajusta esta altura para controlar la longitud del degradado */
-            pointer-events: none; /* Permite hacer clic en el contenido debajo del degradado */
-
-            /* El Degradado: De negro a transparente */
-            background: linear-gradient(
-                to bottom, 
-                rgb(19, 20, 19) 0%,      /* Negro casi opaco en la parte superior */
-                rgba(0, 0, 0, 0.0) 100%     /* Totalmente transparente al final */
+        /* El Degradado: De negro a transparente */
+        background: linear-gradient(to bottom,
+                rgb(19, 20, 19) 0%,
+                /* Negro casi opaco en la parte superior */
+                rgba(0, 0, 0, 0.0) 100%
+                /* Totalmente transparente al final */
             );
 
-         
-        }
-        .unidades-title-vertical {
-            display: flex;
-            justify-content: center;
-            position: relative;
-            border-radius: 0px 0px 20px 20px;
-            left: 0px; 
-            top: 0%;
-            width: 60%;
-            font-size: 2.5rem;
-            padding: 40px 10px 30px 10px;
-            box-shadow: none !important;
-        }
 
-        .unidades-title-vertical span {
-            z-index: 1;
-        }
+    }
 
-    /* .unidades-title-vertical span{
-        width: 100%;
-    } */
+    .unidades-title-vertical {
+        margin-top: 90px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        border-radius: 0px 0px 20px 20px;
+        left: 0px;
+        top: 0%;
+        width: 60%;
+        font-size: 2.5rem;
+        padding: 40px 10px 30px 10px;
+        box-shadow: none !important;
+    }
 
+    .unidades-title-vertical span {
+        z-index: 1;
+    }
 
+    .unidades-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .unidades-item img {
+        width: 80%;
+        margin-bottom: 5px;
+    }
+
+     .unidades-item:nth-child(1), .unidades-item:nth-child(2) {
+        margin-bottom: 50px !important;
+    }
+
+    .unidades-box {
+        border-radius: 0px 0px 0px 40px;
+        border-bottom: 0px solid #fff;
+        border-left: 0px solid #fff;
+        border-top: 0px solid #fff;
+        /* box-shadow: 0 0 30px #000a; */
+    }
+
+    .unidades-btn {
+        margin-bottom: 90px;
+        font-size: clamp(14px, 3vw, 1.6rem);
+    }
+
+    .esfera{
+        right: 0
+    }
+
+    .esfera svg {
+        position: relative;
+        width: 49rem !important;
+        height: auto !important;
+        right: 185px;
+        top: -15px;
+    }
+
+}
+
+@media (max-width: 392px) {
+
+    .strip-icons div:nth-of-type(5),
+    .strip-icons div:nth-of-type(4) {
+        margin-top: auto;
+    }
+
+    .grey-strip .content-icon-varios {
+        padding: 7px !important;
+    }
 
 
 }
 
-@media (max-width: 490px) {
-    body main .contenedor-barra-verde {
-        display: none !important;
+/* Responsive: en pantallas grandes, que no sobresalga tanto */
+@media (min-width: 1600px) {
+    .unidades-title-vertical {
+        font-size: clamp(10rem, 10vw, 200rem);
+        width: 16%;
     }
-
-    .icon-item span{
-        font-size: 0.9rem;
-    }
-
-    .grey-strip .content-icon-varios {
-    padding: 0px 20px 0px 20px !important;
-    }
-
-    .icon-item svg {
-        width: 60px !important;
-        height: 60px !important;
-    }
-/* Si todos son DIVs */
-        .strip-icons div:nth-of-type(5),
-        .strip-icons div:nth-of-type(4) {
-            margin-top: 25px;
-        }
-
-        body main .unidades .esfera{
-            right: 0rem !important;
-        }
-
-        .unidades-box {
-            border-radius: 0px; 
-            border-bottom: 0px;
-            border-left: 0px;
-            border-top: 0px;
-        }
-
-    }
-
-    /* Responsive: en pantallas grandes, que no sobresalga tanto */
-    @media (min-width: 1600px) {
-        .unidades-title-vertical {
-            font-size: clamp(10rem, 10vw, 200rem);
-            width: 16%;
-        }
-    }
+}
 
 
-    /* ...existing code... */
+/* ...existing code... */
