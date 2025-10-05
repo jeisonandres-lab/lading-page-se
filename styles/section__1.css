@@ -1,7 +1,7 @@
 @import url(./variables.css
 );
 
-. {
+.barra-verde {
     background-color: var(--color-secundario-verde-claro);
     height: 10px !important;
 }
@@ -12,11 +12,13 @@
     flex-direction: column;
     align-items: center;
     /* margin: 0 auto; */
-    padding: 0;              /* Elimina el padding lateral */
+    padding: 0;
+    /* Elimina el padding lateral */
 }
 
 .icon-item svg {
-    width: 70px !important;   /* Más pequeño para unir más */
+    width: 70px !important;
+    /* Más pequeño para unir más */
     height: 70px !important;
     display: block;
     /* margin: 0 auto; */
@@ -43,7 +45,8 @@
     background: #2a2a2a;
     padding: 18px 0;
     overflow: hidden;
-    z-index: 0; /* Asegura que el contenido esté por encima del ::before */
+    z-index: 0;
+    /* Asegura que el contenido esté por encima del ::before */
 }
 
 .grey-strip::before {
@@ -58,11 +61,13 @@
             rgba(0, 0, 0, 0.5)100%,
             rgba(0, 0, 0, 0.85) 100%);
     pointer-events: none;
-    z-index: -1; /* Hace que el degradado quede detrás del contenido */
+    z-index: -1;
+    /* Hace que el degradado quede detrás del contenido */
 }
 
 .grey-strip .content-icon-varios {
-    padding: 0px 30px 0px 30px !important;/* Limita el ancho máximo para que los íconos no se estiren demasiado */
+    padding: 0px 30px 0px 30px !important;
+    /* Limita el ancho máximo para que los íconos no se estiren demasiado */
 }
 
 .icon-item {
@@ -134,7 +139,7 @@
     gap: 6px;
 }
 
-.unidades-item  img{
+.unidades-item img {
     width: 40%;
     height: auto;
 }
@@ -172,6 +177,7 @@
     display: flex;
     justify-content: center;
 }
+
 .unidades-btn .aqui span {
     top: -4px;
     position: relative;
@@ -249,11 +255,24 @@
         min-width: 120px;
     }
 
-    .barra-verde{
-        display: none !important;
-    }
+
+
 }
 
+@media (max-width: 490px) {
+    body main .contenedor-barra-verde {
+        display: none !important;
+    }
+
+    .icon-item span{
+        font-size: 0.9rem;
+    }
+
+    .grey-strip .content-icon-varios {
+    padding: 0px 20px 0px 20px !important;
+    }
+
+}
 
 /* Responsive: en pantallas grandes, que no sobresalga tanto */
 @media (min-width: 1600px) {
