@@ -338,6 +338,22 @@
         top: -15px;
     }
 
+    .icon-item svg {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .icon-item span {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+
+    .grey-strip .content-icon-varios {
+    padding: 0px 10px 0px 10px !important;
+    }
+
+
 }
 
 @media (max-width: 392px) {
