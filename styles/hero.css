@@ -98,12 +98,12 @@
     border-radius: 18px;
     background: transparent;
     font-size: clamp(14px, 3vw, 30px);
-    font-weight: 600;
+    font-weight: 400;
     color: #e7e7e7;
     max-width: min(920px, 70vw);
     margin-left: auto;
     margin-right: auto;
-    width: 36rem;
+    width: 45rem;
 }
 
 .cta.boton-unidades {
@@ -159,7 +159,7 @@
     }
     
     .hero-title {
-        font-size: clamp(40px, 3vw, 42px);
+        font-size: clamp(37px, 3vw, 42px);
         white-space: normal;
         line-height: 1.1;
         
@@ -187,7 +187,7 @@
     }
     
     .hero-title {
-        font-size: clamp(40px, 2.8vw, 36px);
+        font-size: clamp(37px, 2.8vw, 36px);
         line-height: 1.15;
         letter-spacing: 0.5px;
         flex-wrap: nowrap;
@@ -201,14 +201,14 @@
     }
     
     .content-hero-sub {
-        max-width: min(400px, 60vw);
+        max-width: min(400px, 80vw);
         font-size: clamp(20px, 2vw, 18px);
         padding: 6px 10px;
         border-radius: 12px;
     }
     
     .cta.boton-unidades {
-        font-size: clamp(16px, 2.2vw, 1.2rem);
+        font-size: clamp(13px, 2.2vw, 1.2rem);
         padding: 6px 14px;
         margin-top: 30px;
         border-radius: 12px;
@@ -222,14 +222,14 @@
     }
 }
 /* Teléfonos pequeños (360px y menos) */
-@media (max-width: 380px) {
+@media (max-width: 390px) {
     .hero-content {
         margin: 0 8px;
         padding: 0 4px;
     }
     
     .hero-title {
-        font-size: clamp(35px, 2.5vw, 32px);
+        font-size: clamp(32px, 2.5vw, 32px);
         line-height: 1.2;
         letter-spacing: 0.3px;
     }
@@ -242,11 +242,11 @@
     }
     
     .cta.boton-unidades {
-        font-size: clamp(13px, 2vw, 1rem);
+        font-size: clamp(10px, 2vw, 1rem);
         padding: 5px 12px;
         margin-top: 25px;
         border-radius: 10px;
-        width: 90%;
+        width: 70%;
     }
 }
 

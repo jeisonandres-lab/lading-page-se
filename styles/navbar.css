@@ -7,15 +7,6 @@
     padding: 0;
 }
 
-html,
-body {
-    height: 100%;
-}
-
-body {
-    font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    background-color: var(--color-primario-negro) !important;
-}
 
 .icons-menu {
     color: var(--color-secundario-verde-claro);

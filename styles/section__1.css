@@ -1,7 +1,7 @@
 @import url(./variables.css
 );
 
-.barra-verde {
+. {
     background-color: var(--color-secundario-verde-claro);
     height: 10px !important;
 }
@@ -61,6 +61,14 @@
     z-index: -1; /* Hace que el degradado quede detrás del contenido */
 }
 
+.grey-strip .content-icon-varios {
+    padding: 0px 30px 0px 30px !important;/* Limita el ancho máximo para que los íconos no se estiren demasiado */
+}
+
+.icon-item {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
 
 /* ...existing code... */
 .unidades-section {
@@ -239,6 +247,10 @@
         font-size: 2.2rem;
         padding: 18px 6px 18px 18px;
         min-width: 120px;
+    }
+
+    .barra-verde{
+        display: none !important;
     }
 }
 

@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo SE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/animaciones.css">
     <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="styles/navbar.css">
@@ -26,9 +26,13 @@
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <title>Bootstrap Example</title>
+    <title>Grupo SE</title>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: var(--color-primario-negro) !important;
+        }
         @keyframes appear_1 {
             from {
                 opacity: 0;
@@ -186,6 +190,7 @@
         </nav>
     </header>
     <main class="view">
+
         <section class="hero" id="inicio">
             <div class="hero-content">
                 <h1 class="hero-title lh-1  tracking-in-expand-fwd-bottom ">
@@ -193,7 +198,6 @@
                         Aseguramos que tu
                         <span class="accent title-primery tracking-in-contract">
                             inversión
-
                         </span>
                         <br>
                     </span>
@@ -205,8 +209,8 @@
                         <div class="col-12 col-md-12 col-sm-12">
                             <div class="hero-sub text-center d-flex flex-column">
                                 <div class="content-hero-sub fw-light tracking-in-expand-fwd-bottom  ">
-                                    <p class="m-0 lh-1">Espacios diseñados para producir, generar <br>y garantizar el
-                                        <strong class="fw-bold">mejor retorno posible</strong>
+                                    <p class="m-0 lh-1">Espacios diseñados para producir, generar 
+                                        y garantizar el <strong class="fw-bold">mejor retorno posible</strong>
                                     </p>
                                 </div>
                             </div>
@@ -222,11 +226,15 @@
             </div>
         </section>
 
+        <div class="container-fluid  w-100 bottom-0 position-absolute d-flex justify-content-center">
+            <span class="barra-verde w-75 d-block"></span>
+        </div>
+
         <!-- Tira superior gris con degradado hacia el centro y fila de íconos -->
         <div class="grey-strip">
             <div class="container">
                 <div class="row justify-content-center strip-icons text-center g-5 p-0">
-                    <div class="col-auto col-xxl-auto  d-flex flex-column align-items-center">
+                    <div class="col-auto col-xxl-auto  d-flex flex-column align-items-center content-icon-varios">
                         <div class="icon-item">
                             <!-- SVG Honestidad -->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.24 70.03">
@@ -249,7 +257,7 @@
                             <span>Honestidad</span>
                         </div>
                     </div>
-                    <div class="col-auto col-xxl-auto  d-flex flex-column align-items-center">
+                    <div class="col-auto col-xxl-auto  d-flex flex-column align-items-center content-icon-varios">
                         <div class="icon-item">
                             <!-- SVG Responsabilidad -->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59.27 70.57">
@@ -272,7 +280,7 @@
                             <span>Responsabilidad</span>
                         </div>
                     </div>
-                    <div class="col-auto col-xxl-auto  d-flex flex-column align-items-center">
+                    <div class="col-auto col-xxl-auto  d-flex flex-column align-items-center content-icon-varios">
                         <div class="icon-item">
                             <!-- SVG Organización -->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.72 62.33">
@@ -293,7 +301,7 @@
                             <span>Organización</span>
                         </div>
                     </div>
-                    <div class="col-auto col-xxl-auto  d-flex flex-column align-items-center">
+                    <div class="col-auto col-xxl-auto  d-flex flex-column align-items-center content-icon-varios">
                         <div class="icon-item">
                             <!-- SVG Lealtad -->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.03 62.85">
@@ -326,7 +334,7 @@
                             <span>Lealtad</span>
                         </div>
                     </div>
-                    <div class="col-auto col-xxl-auto  d-flex flex-column align-items-center">
+                    <div class="col-auto col-xxl-auto  d-flex flex-column align-items-center content-icon-varios">
                         <div class="icon-item">
                             <!-- SVG Puntualidad -->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.54 71.76">
@@ -353,122 +361,11 @@
             </div>
         </div>
 
-        <!-- section nosotros primera parte  -->
-        <section id="nosotros" class="section_animate1 section_vista1  legado-section d-flex align-items-center justify-content-center">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="container conten-section-body">
-                            <div class="row align-items-center min-vh-70">
-                                <!-- Columna derecha: Texto alineado a la derecha -->
-                                <div
-                                    class="animate__fadeInUp col-md-12 d-flex flex-column justify-content-center align-items-end text-end">
-                                    <div class="legado-text">
-                                        <h2
-                                            class="legado-title mb-4 d-flex justify-content-center legado-titulo-doslineas">
-                                            <div class="text-start ">
-                                                <span class="legado-blanco animation-text" id="legado-blanco">Nuestro</span><br>
-                                                <span class="legado-green animation-text ">Legado</span>
-                                            </div>
-
-                                        </h2>
-                                        <p class="legado-parrafo ">
-                                            Grupo SE surge con el propósito de invertir en propiedades de alta
-                                            rentabilidad;
-                                            El nombre,
-                                            basado en los apellidos de la fundadora, representa valores transmitidos por
-                                            generaciones:
-                                            honestidad, responsabilidad, puntualidad, organización y lealtad
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- section nosotros segunda parte  -->
-        <section class="section_animate2 testimonio-section py-5 ">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <!-- Imagen con fondo verde -->
-                    <div class="col-md-4 col-xxl-3  d-flex justify-content-center mb-4 mb-md-0">
-                        <div class="testimonio-img-bg d-flex align-items-center justify-content-center">
-                            <img src="ruta/a/tu/imagen-manos.png" alt="Manos" class="img-fluid testimonio-img">
-                        </div>
-                    </div>
-                    <!-- Texto -->
-                    <div class="col-md-6 col-xxl-7 d-flex flex-column justify-content-center">
-                        <div class="testimonio-text">
-                            <p class="testimonio-frase mb-2 animation-text">
-                                “Con <strong>GRUPO SE</strong> encontré un espacio
-                                <span class="testimonio-green">rentable y seguro</span>”
-                            </p>
-                            <p class="testimonio-autor mb-0">- <strong>Cliente satisfecho</strong></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- section mision y filosofia  -->
-        <section class="movie_top mision-filosofia-section py-5">
-            <div class="container">
-                <div class="row text-center justify-content-center g-5">
-                    <div class="col-md-4 col-xxl-6 mb-4 mb-md-0 animation-blur">
-                        <h2 class="mision-title fw-bold">MISIÓN</h2>
-                        <p class="mision-text">
-                            Colocar la inversión en propiedades que tengan alta <span
-                                class="text-green">rentabilidad</span>
-                        </p>
-                    </div>
-                    <div class="col-md-4 col-xxl-6 animation-blur">
-                        <h2 class="mision-title fw-bold">FILOSOFÍA</h2>
-                        <p class="mision-text">
-                            Ganar-ganar; aseguramos que cada cliente haga una <span class="text-green">inversión
-                                inteligente;</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="movie_top mision-imagen-section py-5">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <!-- Imagen izquierda -->
-                    <div class="col-md-4 d-flex justify-content-center mb-4 mb-md-0">
-                        <img src="ruta/a/tu/logo-se-grupo.png" alt="Logo SE Grupo" class="img-fluid mision-img">
-                    </div>
-                    <!-- Texto derecha -->
-                    <div class="col-md-6 d-flex flex-column justify-content-center">
-                        <div class="mision-img-text">
-                            <p class="mision-img-frase mb-2">
-                                Nuestra misión<br>
-                                es que tu inversión<br>
-                                <span class="fw-bold text-white">siempre <span class="text-green">genere
-                                        frutos</span></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--bootstrap-->
+        <!--Referencia unidades-->
         <section class="section_animate2  unidades" id="unidades">
-            <div class="container-fluid  w-100 bottom-0 position-absolute d-flex justify-content-center">
-                <span class="barra-verde w-75 d-block"></span>
-            </div>
-
-
             <!-- Contenido de la sección con glow verde a la derecha -->
             <div class="section-body unidades-section d-flex align-items-center justify-content-center"
-                style="height: 630px;">
+                style="height: 100vh;">
                 <!-- SVG Glow como fondo -->
                 <div class="glow-bg">
                     <!-- Pega aquí tu SVG completo -->
@@ -545,6 +442,113 @@
 
             </div>
         </section>
+
+        <!-- section nosotros segunda parte  -->
+        <section class="section_animate2 testimonio-section py-5 ">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <!-- Imagen con fondo verde -->
+                    <div class="col-md-4 col-xxl-3  d-flex justify-content-center mb-4 mb-md-0">
+                        <div class="testimonio-img-bg d-flex align-items-center justify-content-center">
+                            <img src="ruta/a/tu/imagen-manos.png" alt="Manos" class="img-fluid testimonio-img">
+                        </div>
+                    </div>
+                    <!-- Texto -->
+                    <div class="col-md-6 col-xxl-7 d-flex flex-column justify-content-center">
+                        <div class="testimonio-text animation-blur">
+                            <p class="testimonio-frase mb-5 ">
+                                “Con <strong>GRUPO SE</strong> encontré un espacio
+                                <span class="testimonio-green">rentable y seguro</span>”
+                            </p>
+                            <p class="testimonio-autor mb-0">- <strong>Cliente satisfecho</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- section nosotros primera parte  -->
+        <section id="nosotros" class="section_animate1 section_vista1  legado-section d-flex align-items-center justify-content-center">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container conten-section-body">
+                            <div class="row align-items-center min-vh-70">
+                                <!-- Columna derecha: Texto alineado a la derecha -->
+                                <div
+                                    class="animate__fadeInUp col-md-12 d-flex flex-column justify-content-center align-items-end text-end">
+                                    <div class="legado-text">
+                                        <h2
+                                            class="legado-title mb-4 d-flex justify-content-center legado-titulo-doslineas">
+                                            <div class="text-start ">
+                                                <span class="legado-blanco animation-text" id="legado-blanco">Nuestro</span><br>
+                                                <span class="legado-green animation-text ">Legado</span>
+                                            </div>
+
+                                        </h2>
+                                        <p class="legado-parrafo ">
+                                            Grupo SE surge con el propósito de invertir en propiedades de alta
+                                            rentabilidad;
+                                            El nombre,
+                                            basado en los apellidos de la fundadora, representa valores transmitidos por
+                                            generaciones:
+                                            honestidad, responsabilidad, puntualidad, organización y lealtad
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- section mision y filosofia  -->
+        <section class="movie_top mision-filosofia-section py-5">
+            <div class="container">
+                <div class="row text-center justify-content-center g-5">
+                    <div class="col-md-4 col-xxl-6 mb-4 mb-md-0 animation-blur">
+                        <h2 class="mision-title fw-bold">MISIÓN</h2>
+                        <p class="mision-text">
+                            Colocar la inversión en propiedades que tengan alta <span
+                                class="text-green">rentabilidad</span>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-xxl-6 animation-blur">
+                        <h2 class="mision-title fw-bold">FILOSOFÍA</h2>
+                        <p class="mision-text">
+                            Ganar-ganar; aseguramos que cada cliente haga una <span class="text-green">inversión
+                                inteligente;</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie_top mision-imagen-section py-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <!-- Imagen izquierda -->
+                    <div class="col-md-4 d-flex justify-content-center mb-4 mb-md-0">
+                        <img src="ruta/a/tu/logo-se-grupo.png" alt="Logo SE Grupo" class="img-fluid mision-img">
+                    </div>
+                    <!-- Texto derecha -->
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <div class="mision-img-text">
+                            <p class="mision-img-frase mb-2">
+                                Nuestra misión<br>
+                                es que tu inversión<br>
+                                <span class="fw-bold text-white">siempre <span class="text-green">genere
+                                        frutos</span></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- section blog  -->
         <section class="movie_top blog-section pt-5 pb-5">
@@ -632,7 +636,7 @@
                             </h1>
                             
                         </div>
-                        <div class="col-lg-12 d-flex  flex-column">
+                        <div class="col-lg-12 d-flex comten-contacto">
                             <div class="col-sm-12 conten-from col-lg-6 ">
                                 <form class="form-column">
                                     <div class="mb-3 form-group-custom">
@@ -670,7 +674,7 @@
                                         ENVÍA UN MENSAJE
                                 </button>
                             </div>
-                            <div class=" col-sm-12 col-lg-5 map-column mt-5 mt-lg-0 d-flex flex-column justify-content-between">
+                            <div class=" col-sm-12 col-lg-5 map-column w-sm-100 mt-5 mt-lg-0 d-flex flex-column justify-content-between">
                                 <div class="conten-map">
                                     <div class="map-header">
                                             <div class="map-container mb-4">
