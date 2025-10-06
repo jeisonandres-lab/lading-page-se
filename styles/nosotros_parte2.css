@@ -31,15 +31,45 @@
 }
 
 /* Sección Misión con imagen */
-.mision-imagen-section {
+/* .mision-imagen-section {
     background: #181818;
-    height: 70vh;
+    
     display: flex;
     align-items: center;
+} */
+
+.mision-imagen-section {
+      background-color: #131313;
+    background-image: url('../img/background_quote.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 50vh;
+    /* Ajusta según tu diseño */
+    border-radius: 18px;
+    width: 100%;
+    /* Para que la columna tenga altura en móviles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* Centrado vertical y horizontal del texto */
+.contenido-mision-text2 {
+    position: absolute;
+    min-height: 320px;
+    /* Igual que la imagen para alinear */
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .mision-img {
-    max-width: 260px;
     filter: drop-shadow(0 8px 32px #0008);
 }
 
@@ -55,12 +85,25 @@
     margin-bottom: 0;
     font-weight: 200;
 }
+@media (max-width: 1200px) {
+   .content-imagen-laptop svg{
+        height: 180px;
+    }
 
+    .mision-img-text{
+        margin-top: 15px;
+        text-align: center;
+    }
+
+}
 @media (max-width: 990.98px) {
     .mision-img-frase2 {
         display: block !important;
     }
 
+    
+
+ 
     .mision-img-frase1 {
         display: none !important;
     }
@@ -69,8 +112,8 @@
         font-size: 2rem;
     }
 
-    .contenido-mision-text2{
-        align-items: center ;
+    .contenido-mision-text2 {
+        align-items: center;
     }
 
     .mision-img-frase,
@@ -79,9 +122,16 @@
         justify-content: center;
         flex-direction: column;
     }
-    .mision-img-text{
-        width: 80%;
+
+    .mision-img-text {
+        width: 100%;
         text-align: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .mision-img-frase2{
+        width: 75%;
     }
 
     .mision-img {
@@ -97,13 +147,26 @@
         font-size: 1.6rem !important;
     }
 
+    /* .content-imagen-laptop {
+        background-image: url('../img/background_quote.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 320px;
+        border-radius: 18px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+
+
+
+
+
 }
 
-@media (max-width: 767.98px) {
-    
-
-
-}
+@media (max-width: 767.98px) {}
 
 /* Responsive: en pantallas grandes, que no sobresalga tanto */
 @media (min-width: 1400px) {
