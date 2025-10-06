@@ -33,6 +33,8 @@
             font-family: "Poppins", sans-serif;
             background-color: var(--color-primario-negro) !important;
         }
+
+               
         @keyframes appear_1 {
             from {
                 opacity: 0;
@@ -75,7 +77,7 @@
             }
         }
 
-            @keyframes slideUpFade {
+        @keyframes slideUpFade {
                 from {
                     opacity: 0;
                     transform: translateY(30px); /* Comienza 30px más abajo */
@@ -86,7 +88,8 @@
                     transform: translateY(0);    /* Vuelve a su posición original */
                     filter: blur(0);             /* Totalmente nítido */
                 }
-            }
+        }
+
 
         .movie_top2 {
             /* 1. Cambia el nombre de la animación */
@@ -118,6 +121,8 @@
             animation-timeline: view();
             animation-range: entry 0% cover 40%;
         }
+
+
 
 
 
@@ -502,11 +507,11 @@
                     <!-- Tarjeta 1 -->
                     <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center ">
                         <div class="blog-img-wrapper blog-card h-100 d-flex flex-column align-items-center">
-                            <div class="blog-card-header coworking-bg d-flex align-items-end">
+                            <div class="blog-card-header coworking-bg d-flex align-items-end ">
                                 <!-- <span class="blog-card-title"><span class="text-green">co</span>WORKING</span> -->
-                                 <img class="blog-img1" src="./img/cropped_coworking.png" alt="">
+                                 <img class="blog-img1 scale-up-tl" src="./img/cropped_coworking.png" alt="">
                             </div>
-                            <img  src="./img/coworking_photo.png" alt="Rental" class="blog-img mb-2">
+                            <img  src="./img/coworking_photo.png " alt="Rental" class=" scale-up-tl blog-img mb-2">
                             <div class="blog-card-text text-center mb-2">
                                 El futuro del coworking en República Dominicana
                             </div>
@@ -520,9 +525,9 @@
                         <div class="blog-card h-100 d-flex flex-column align-items-center">
                             <div class="blog-card-header rental-bg d-flex align-items-end">
                                 <!-- <span class="blog-card-title">RENTAL</span> -->
-                                 <img class="blog-img2" src="./img/cropped_rental.png" alt="">
+                                 <img class="blog-img2 scale-up-tl" src="./img/cropped_rental.png" alt="">
                             </div>
-                            <img src="./img/rental_photo.png" alt="Rental" class="blog-img mb-2">
+                            <img src="./img/rental_photo.png" alt="Rental" class="scale-up-tl blog-img mb-2">
                             <div class="blog-card-text text-center tag2 mb-2">
                                 Cómo asegurar el mejor retorno en rentas turísticas
                             </div>
@@ -538,9 +543,9 @@
                         <div class="blog-card h-100 d-flex flex-column align-items-center">
                             <div class="blog-card-header investments-bg d-flex align-items-end">
                                 <!-- <span class="blog-card-title">INVESTMENTS</span> -->
-                                 <img class="blog-img3" src="./img/cropped_investments.png" alt="">
+                                 <img class="blog-img3 scale-up-tl" src="./img/cropped_investments.png" alt="">
                             </div>
-                            <img src="./img/invest_photo.png" alt="Rental" class="blog-img mb-2">
+                            <img src="./img/invest_photo.png" alt="Rental" class="scale-up-tl blog-img mb-2">
                             <div class="blog-card-text text-center mb-2">
                                 Ventajas de coinvertir con respaldo inmobiliario
                             </div>

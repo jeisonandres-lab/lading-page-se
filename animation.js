@@ -37,6 +37,27 @@ document.addEventListener('DOMContentLoaded', () => {
         blurObserver.observe(elemento);
     });
 
+
+
+    // Animación para blur (solo una vez)
+    const movimiento = document.querySelectorAll('.scale-up-tl');
+    const blurCallback1 = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('scale-up-tl--active');
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const blurObserver2 = new IntersectionObserver(blurCallback1, opciones);
+    movimiento.forEach(elemento => {
+        blurObserver2.observe(elemento);
+    });
+
+
+    
+
     // Animación para movie_top (solo una vez)
     const elementos3 = document.querySelectorAll('.movie_top');
     const opciones3 = {
@@ -54,27 +75,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    const observer2 = new IntersectionObserver(callback2, opciones3);
-    elementos3.forEach(elemento => {
-        observer2.observe(elemento);
-    });
-
-    // Animación para section_animate2 (solo una vez)
-    const animate2Elements = document.querySelectorAll('.section_animate2');
-    const animate2Callback = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('section_animate2--active');
-                observer.unobserve(entry.target); // Solo una vez
-            }
-        });
-    };
-    const animate2Observer = new IntersectionObserver(animate2Callback, {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    });
-    animate2Elements.forEach(elemento => {
-        animate2Observer.observe(elemento);
-    });
+   
 });
