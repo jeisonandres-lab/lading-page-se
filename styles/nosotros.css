@@ -119,14 +119,35 @@
 }
 
 @media (max-width: 767.98px) {
-    .testimonio-img-bg {
-        min-width: 120px;
-        min-height: 70px;
-        padding: 0.2rem 0.5rem;
+    .contenido-testimonio {
+        align-items: center;
     }
 
-    .testimonio-frase {
-        font-size: 1.1rem;
+    body main .testimonio-autor{
+        margin-top: 0;
+        margin-bottom: 2rem !important;
+        font-size: 2rem;
+    }
+
+    .testimonio-text {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+    }
+    .content-testimonio{
+        flex-direction: column-reverse !important;
+    }
+
+      .testimonio-img-bg {
+        width: 80%;
+        height: 12rem;
+       
+    }
+
+    body main .testimonio-frase {
+        margin-bottom: 1rem !important;
+        font-size: 2.5rem;
     }
 }
 
@@ -152,6 +173,19 @@
     }
 }
 
+@media (max-width: 490.98px) {
+    .testimonio-text {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-testimonio{
+        flex-direction: column-reverse !important;
+    }
+
+  
+}
 
 /* Responsive: en pantallas grandes, que no sobresalga tanto */
 @media (min-width: 1400px) {
