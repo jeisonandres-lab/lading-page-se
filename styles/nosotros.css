@@ -175,13 +175,24 @@
 
 @media (max-width: 490.98px) {
     body main .testimonio-frase {
-       
         font-size: 2rem;
     }
+
+    body main .testimonio-autor{
+        font-size: 1.5rem;
+    }
+
     .content-testimonio{
         flex-direction: column-reverse !important;
     }
 
+  
+}
+
+@media (max-width: 390.98px) {
+    body main .testimonio-frase {
+        font-size: 1.8rem;
+    }
   
 }
 
