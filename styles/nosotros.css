@@ -123,7 +123,7 @@
         align-items: center;
     }
 
-    body main .testimonio-autor{
+    body main .testimonio-autor {
         margin-top: 0;
         margin-bottom: 2rem !important;
         font-size: 2rem;
@@ -135,14 +135,15 @@
         flex-direction: column;
         align-items: self-start;
     }
-    .content-testimonio{
+
+    .content-testimonio {
         flex-direction: column-reverse !important;
     }
 
-      .testimonio-img-bg {
+    .testimonio-img-bg {
         width: 80%;
         height: 12rem;
-       
+
     }
 
     body main .testimonio-frase {
@@ -160,7 +161,7 @@
 
     .legado-parrafo {
         font-size: 1.2rem;
-        max-width: 100%;
+        max-width: 70%;
     }
 
     .legado-logo {
@@ -168,9 +169,20 @@
     }
 
     .legado-text {
-        display: contents;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: self-start;
         max-width: 100%;
     }
+
+    .legado-parrafo {
+        text-align: left;
+        text-align-last: auto;
+
+    }
+
+
 }
 
 @media (max-width: 490.98px) {
@@ -178,32 +190,39 @@
         font-size: 2rem;
     }
 
-    body main .testimonio-autor{
+    body main .testimonio-autor {
         font-size: 1.5rem;
     }
 
-    .content-testimonio{
+    .content-testimonio {
         flex-direction: column-reverse !important;
     }
 
-  
+    .legado-parrafo {
+        max-width: 80%;
+    }
+
+
 }
 
 @media (max-width: 390.98px) {
     body main .testimonio-frase {
         font-size: 1.8rem;
     }
-  
+
 }
 
 /* Responsive: en pantallas grandes, que no sobresalga tanto */
 @media (min-width: 1400px) {
-    .g-5, .gx-5 {
-    --bs-gutter-x: 10rem !important;
+
+    .g-5,
+    .gx-5 {
+        --bs-gutter-x: 10rem !important;
     }
+
     .legado-text {
-     max-width: 100000px; 
-        width: 50%; 
+        max-width: 100000px;
+        width: 50%;
     }
 
     .legado-parrafo {
@@ -211,7 +230,8 @@
         max-width: 1500px;
     }
 
-    .legado-title, .legado-green {
+    .legado-title,
+    .legado-green {
         font-size: 8rem;
     }
 
