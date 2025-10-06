@@ -14,23 +14,23 @@
 
 .content-img {
     position: relative;
-    height: 70rem;
+    height: 40rem;
     width: 100%;
     z-index: 1;
     /* compensar navbar fija */
     background-image: url('../img/Recurso8.png') !important;
     background-size: cover !important;
-    background-position: center !important;
+    background-position:  center !important;
     background-repeat: no-repeat !important;
+    margin: auto;
    
-
-    display: flex !important;
+    display: block!important;
     object-fit: contain; 
     object-position: center;
     align-items: center !important;
     justify-content: center !important;
     overflow: hidden !important;
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .content-datos{
@@ -150,6 +150,10 @@
         align-items: center;
     }
 
+    .content-img{
+        background-position: -318px !important;
+    }
+
     body main .testimonio-autor {
         margin-top: 0;
         margin-bottom: 2rem !important;
@@ -181,7 +185,7 @@
 
 @media (max-width: 991.98px) {
     .content-img{
-         /* background-size: contain !important; */
+       height: 100%;
     }
     .cuadrado-nosotros{
         display: block;
@@ -198,7 +202,7 @@
     }
 
     .legado-parrafo {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         max-width: 70%;
     }
 

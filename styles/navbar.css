@@ -7,7 +7,9 @@
     padding: 0;
 }
 
-
+.navbar-brand svg{
+    color: var(--color-primario-blanco);
+}
 .icons-menu {
     color: var(--color-secundario-verde-claro);
     font-size: 2rem;

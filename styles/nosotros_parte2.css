@@ -1,5 +1,9 @@
 /* parte 2 de nosotros  */
 /* Sección Misión y Filosofía */
+main {
+    padding-top: 70px;
+}
+
 .mision-filosofia-section {
     background: #2a2a2a;
     height: 70vh;
@@ -29,7 +33,9 @@
     color: #7ec11f;
     font-weight: 600;
 }
-
+.section_vista1 {
+    width: 100%;
+}
 /* Sección Misión con imagen */
 /* .mision-imagen-section {
     background: #181818;
@@ -53,9 +59,6 @@
     align-items: center;
     justify-content: center;
 }
-
-
-
 
 /* Centrado vertical y horizontal del texto */
 .contenido-mision-text2 {
@@ -100,9 +103,6 @@
     .mision-img-frase2 {
         display: block !important;
     }
-
-    
-
  
     .mision-img-frase1 {
         display: none !important;
