@@ -1,10 +1,12 @@
 @import url(./variables.css
 );
+
 /* Variables para facilitar el mantenimiento */
 :root {
     --bg-color: #1a1a1a;
     --color-primario-blanco: #f5f5f5;
-    --green-color: #4CAF50; /* Un verde vibrante similar */
+    --green-color: #4CAF50;
+    /* Un verde vibrante similar */
     --input-bg: #2b2b2b;
     --input-border: #444;
 }
@@ -28,11 +30,13 @@
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 40px;
-    padding-left: 15px; /* Pequeño ajuste para móviles */
+    padding-left: 15px;
+    /* Pequeño ajuste para móviles */
 }
 
 .header-text {
-    font-size: 3rem; /* Tamaño grande para desktop */
+    font-size: 3rem;
+    /* Tamaño grande para desktop */
     font-weight: 700;
     line-height: 1.1;
     margin: 0;
@@ -48,15 +52,18 @@
 
 /* Barra degradada */
 .gradient-bar-container {
-    width: 100%; /* Ocupa el ancho para el layout */
+    width: 100%;
+    /* Ocupa el ancho para el layout */
     display: flex;
-    justify-content: flex-start; /* Alinea la barra con el texto */
+    justify-content: flex-start;
+    /* Alinea la barra con el texto */
     margin-top: 10px;
 }
 
 .gradient-bar {
     height: 5px;
-    width: 400px; /* Ancho de la barra */
+    width: 400px;
+    /* Ancho de la barra */
     /* Degradado de verde a negro/transparente */
     background: linear-gradient(to right, var(--color-secundario-verde-claro) 0%, #1a1a1a 90%, transparent 100%);
 }
@@ -64,20 +71,25 @@
 /* Responsividad del Título */
 @media (max-width: 992px) {
     .header-text {
-        font-size: 2rem; /* Reducir en móvil */
+        font-size: 2rem;
+        /* Reducir en móvil */
     }
+
     .gradient-bar {
-        width: 150px; /* Reducir la barra en móvil */
+        width: 150px;
+        /* Reducir la barra en móvil */
     }
 }
 
 /* --- Formulario --- */
 
 .form-column {
-    background-color: hsl(0, 0%, 20%); /* Fondo del formulario ligeramente más claro que el body */
+    background-color: hsl(0, 0%, 20%);
+    /* Fondo del formulario ligeramente más claro que el body */
     padding: 15px 20px 15px 20px;
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Sombra sutil */
 }
 
 .form-group-custom {
@@ -93,19 +105,25 @@
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 5px;
-    text-transform: uppercase; /* Como en la imagen, aunque sin separación de la caja */
+    text-transform: uppercase;
+    /* Como en la imagen, aunque sin separación de la caja */
 }
 
-.form-control-custom, .form-select-custom, .textarea-custom {
+.form-control-custom,
+.form-select-custom,
+.textarea-custom {
     background-color: #242323;
     color: var(--color-primario-blanco);
     border: none;
     padding: 12px 15px;
-    border-radius: 15px; /* Bordes rectos */
+    border-radius: 15px;
+    /* Bordes rectos */
     transition: border-color 0.3s;
-    box-shadow: none; /* Eliminar el enfoque por defecto de Bootstrap */
+    box-shadow: none;
+    /* Eliminar el enfoque por defecto de Bootstrap */
     width: 100%;
-    appearance: none; /* Para select en algunos navegadores */
+    appearance: none;
+    /* Para select en algunos navegadores */
 }
 
 .form-control-custom::placeholder {
@@ -132,14 +150,17 @@
 /* Botón de Envío */
 .btn-send-message {
     display: block;
-    width: 55%; /* Ajuste a la imagen */
-    max-width: 300px; /* Limitar el ancho como en la imagen */
+    width: 55%;
+    /* Ajuste a la imagen */
+    max-width: 300px;
+    /* Limitar el ancho como en la imagen */
     margin-top: 20px;
     background-color: transparent;
     padding: 5px 10px 5px 10px;
     color: var(--color-primario-blanco);
     border: 2px solid var(--color-primario-blanco);
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 10px;
+    /* Bordes redondeados */
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -157,15 +178,17 @@
 /* --- Columna del Mapa y Dirección --- */
 
 .map-container {
-    height: 350px; /* Altura del mapa */
+    height: 350px;
+    /* Altura del mapa */
     width: 100%;
     /* border: 5px solid var(--green-color);  Borde verde como en la imagen */
     box-sizing: border-box;
     /* Simulación de Google Maps */
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
     position: relative;
     overflow: hidden;
-    border-radius: 15px; /* Bordes rectos */
+    border-radius: 15px;
+    /* Bordes rectos */
 }
 
 /* Estilo para el placeholder del mapa (reemplazar con iframe real) */
@@ -179,15 +202,17 @@
     background-size: cover;
 }
 
-.map-placeholder iframe{
+.map-placeholder iframe {
     width: 100% !important;
 }
+
 .map-text {
     color: #333;
     font-size: 1.5rem;
     text-align: center;
-    position: absolute; /* Para que no se vea el texto en un mapa real */
-    opacity: 0; 
+    position: absolute;
+    /* Para que no se vea el texto en un mapa real */
+    opacity: 0;
 }
 
 
@@ -202,7 +227,7 @@
 
 .social-icons {
     /* Mover a la esquina inferior derecha en desktop */
-    margin-top: 30px; 
+    margin-top: 30px;
     gap: 15px;
 }
 
@@ -213,6 +238,7 @@
     padding: 5px;
     border-radius: 12px;
 }
+
 .social-icon-link {
     display: flex;
     justify-content: center;
@@ -225,9 +251,10 @@
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
 
-.social-icon-link i{
+.social-icon-link i {
     font-size: 2.5rem;
 }
+
 .social-icon-link:hover {
     border-color: var(--green-color);
     background-color: var(--green-color);
@@ -237,17 +264,37 @@
 /* Ajuste Responsivo para la columna del mapa */
 @media (min-width: 992px) {
     .map-column {
-        padding-left: 50px; /* Espacio entre el formulario y el mapa */
+        padding-left: 50px;
+        /* Espacio entre el formulario y el mapa */
     }
 
-    
+
 }
 
 @media (max-width: 992px) {
     .btn-send-message {
-       font-size: 0.9rem !important;
-       width: 55%;
+        font-size: 0.9rem !important;
+        width: 55%;
     }
+
+    .form-group-custom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-label-custom {
+        margin-bottom: 0px;
+    }
+
+    .form-column {
+        width: 100%;
+    }
+
+    .conten-from {
+        width: 100%;
+    }
+
+
     .conten-from {
         display: flex;
         flex-direction: column;
