@@ -107,14 +107,18 @@
     color: #232323;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 990.98px) {
     .blog-card {
         min-height: 420px;
         max-width: 100%;
     }
     .blog-img {
-        max-width: 100%;
+        max-width: 70%;
         height: 160px;
+    }
+
+    .containar{
+        margin-top: 40px;
     }
 }
 
@@ -127,6 +131,6 @@
         padding: 1rem 0.5rem;
     }
     .blog-img {
-        height: 120px;
+        height: 300px;
     }
 }
