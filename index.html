@@ -109,6 +109,9 @@
             animation-timeline: view();
             animation-range: entry 0% cover 40%;
         }   
+        .section_animate2--active {
+                animation: appear s both;
+            }
 
         .movie_top {
             animation: movie_top linear;
@@ -362,7 +365,7 @@
         </div>
 
         <!--Referencia unidades-->
-        <section class="section_animate2  unidades" id="unidades">
+        <section class=" unidades" id="unidades">
             <!-- Contenido de la sección con glow verde a la derecha -->
             <div class="container-fluid section-body unidades-section d-flex align-items-center justify-content-center">
 
@@ -371,7 +374,7 @@
                     <!-- El resto de tu contenido aquí -->
                     <div class="col-12 col-sm-12 col-md-2 content-unidad">
                         <div class=" unidades-title-vertical">
-                            <span class="unidades-nombre">UNI
+                            <span class="unidades-nombre ">UNI
                                 <br>
                                 DA
                                 <br>
@@ -391,23 +394,23 @@
                             <!-- Columna central y derecha igual... -->
                             <div class="col-12 d-flex flex-column align-items-center" style="z-index: 1;">
                                 <div class="unidades-box p-5">
-                                    <div class="unidades-item mb-3">
+                                    <div class="unidades-item mb-3 animation-blur">
                                         <img src="sections/coworking_box_2.png" alt="">
                                         <div class="unidades-desc">Rentas comerciales y turísticas con máxima rentabilidad
                                         </div>
                                     </div>
-                                    <div class="unidades-item mb-3">
+                                    <div class="unidades-item mb-3 animation-blur">
                                         <img src="sections/rental_box_2.png" alt="">
                                         <div class="unidades-desc">Tu espacio de trabajo colaborativo y flexible</div>
                                     </div>
-                                    <div class="unidades-item ">
+                                    <div class="unidades-item animation-blur ">
                                         <img src="sections/investmest_box_1.png" alt="">
                                         <div class="unidades-desc">Conviértete con respaldo y asesoría de expertos</div>
                                     </div>
 
 
                                 </div>
-                                <a href="#" class="unidades-btn unidades-btn1 mt-3 d-flex align-items-center">
+                                <a href="#" class="animation-blur unidades-btn unidades-btn1 mt-3 d-flex align-items-center">
                                     Conoce más sobre nuestras unidades
                                     <span class="aqui"><span>aquí</span></span>
                                 </a>
@@ -419,7 +422,7 @@
                                 </a>
                             </div>
                             <!-- Columna derecha: Glow verde -->
-                            <div class="col-3 esfera">
+                            <div class="col-3 esfera animation-blur">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     viewBox="0 0 1235.4 1169.48">
                                     <defs>
@@ -458,7 +461,7 @@
         </section>
 
         <!-- section nosotros segunda parte  -->
-        <section class="section_animate2 testimonio-section py-5 ">
+        <section class=" testimonio-section py-5 ">
             <div class="container">
                 <div class="row align-items-center justify-content-center content-testimonio">
                     <!-- Imagen con fondo verde -->
@@ -482,8 +485,6 @@
 
         </section>
 
-        
-
         <!-- section blog  -->
         <section class="blog-section pt-5 pb-5">
             <div class="container content-blog">
@@ -491,7 +492,7 @@
                 <div class="row">
                     <div class="col-12 text-center">
                         <h2 class="blog-title fw-bold mb-1">BLOG</h2>
-                        <p class="blog-subtitle mb-4">
+                        <p class="blog-subtitle  mb-4">
                             Accede a las últimas <span class="text-green">novedades</span> de cada una de nuestras unidades
                         </p>
                     </div>
@@ -533,7 +534,7 @@
                         </div>
                     </div>
                     <!-- Tarjeta 3 -->
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center mt-0">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center tag3">
                         <div class="blog-card h-100 d-flex flex-column align-items-center">
                             <div class="blog-card-header investments-bg d-flex align-items-end">
                                 <!-- <span class="blog-card-title">INVESTMENTS</span> -->
@@ -696,20 +697,22 @@
             <div class="row align-items-start">
                 <!-- Logo y dirección -->
                 <div class="col-md-5 mb-4 mb-md-0 d-flex align-items-md-start align-items-center">
-                    <div class="mb-2 me-4">
-                        <img src="ruta/a/tu/logo-se-grupo-blanco.png" alt="Grupo SE" style="height: 48px;">
+                    <div class="mb-2 me-4 cotent_logo_footer">
+                        <img src="./img/grupose_logo.png" alt="Grupo SE">
                     </div>
-                    <div class="footer-text footer-text1 text-white small">
+                    <div class="footer-text footer-text1 text-white small flex-column">
                         © 2025 Grupo SE<br>
-                        Todos los derechos reservados.<br>
-                        Plaza Central, local 3A-B, tercer nivel, Avenida 27 de Febrero, esquina Winston
-                        Churchill<br>
-                        Planta: Santo Domingo
+                        <span class="derechos">Todos los derechos reservados.</span>
+                        <span class="w-50">
+                            Plaza Central, local 3A-B, tercer nivel, Avenida 27 de Febrero, esquina Winston
+                            Churchill  Planta: Santo Domingo
+                        </span>
+                        
                     </div>
 
-                    <div class="footer-text footer-text2 text-white small">
+                    <div class="footer-text footer-text2 text-white small flex-column">
                         © 2025 Grupo SE<br>
-                        Todos los derechos reservados.
+                        <span>Todos los derechos reservados.</span>
                     </div>
 
                     <!-- Legal -->
@@ -725,8 +728,8 @@
                 <div class="col-md-2 mb-4 mb-md-0 conten-menu">
                     <div class="footer-menu-title text-green mb-1">MENÚ</div>
                     <ul class="footer-menu list-unstyled mb-0">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#nosotros">Sobre Nosotros</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
                         <li><a href="#unidades">Unidades</a></li>
                         <li><a href="#">Inversiones</a></li>
                         <li><a href="#">Blog</a></li>
@@ -742,7 +745,7 @@
                 </div>
                 <!-- Redes sociales -->
                 <div class="col-md-3  falign-items-md-end align-items-center content-redes">
-                    <div class="footer-social mb-2 d-flex flex-column align-items-center align-items-center">
+                    <div class="footer-social d-flex flex-column align-items-center align-items-center">
                         <a href="#" class="footer-social-icon me-2"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="footer-social-icon me-2"><i class="fab fa-whatsapp"></i></a>
                         <a href="#" class="footer-social-icon"><i class="fas fa-envelope"></i></a>
@@ -752,46 +755,6 @@
         </div>
     </footer>
 
-    <script>
-       
-
-//          document.addEventListener('DOMContentLoaded', () => {
-//     // 1. Seleccionar todos los elementos que quieres animar
-//     const elementosAnimables = document.querySelectorAll('.section_vista1');
-
-//     // 2. Definir las opciones del observador
-//     const opciones = {
-//         root: null, // Usamos el viewport como área de intersección
-//         rootMargin: '0px',
-//         // Se ejecuta cuando el 10% del elemento es visible
-//         threshold: 0.1 
-//     };
-
-//     // 3. La función que se ejecuta cuando hay intersección
-//     function manejarInterseccion(entries, observer) {
-//         entries.forEach(entry => {
-//             // Si el elemento es visible (está intersectando)...
-//             if (entry.isIntersecting) {
-//                 // a) Añadir la clase que dispara la animación
-//                 entry.target.classList.add('tracking-in-expand-fwd-bottom');
-                
-//                 // b) ¡Importante! Dejar de observar el elemento. 
-//                 // Esto asegura que la animación se ejecute UNA SOLA VEZ.
-//                 observer.unobserve(entry.target);
-//             }
-//             // Si quisieras que la animación se revierta al salir de la vista,
-//             // podrías usar el 'else' aquí, pero no es lo que buscas.
-//         });
-//     }
-
-//     // 4. Crear la instancia del Intersection Observer
-//     const observer = new IntersectionObserver(manejarInterseccion, opciones);
-
-//     // 5. Empezar a observar cada elemento
-//     elementosAnimables.forEach(elemento => {
-//         observer.observe(elemento);
-//     });
-// });
     </script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="animation.js"></script>
