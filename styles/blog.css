@@ -117,15 +117,27 @@
         height: 160px;
     }
 
-    .containar{
-        margin-top: 40px;
+    .blog-title {
+        font-size: 3.5rem;
+    }
+
+    .content-blog{
+        margin-top: 40px !important;
+    }
+    .content-total{
+        margin-top: 0px !important;
+    }
+
+    .blog-card-text {
+        margin-top: 20px;
+        width: 85% !important;
+        text-align: center;
+        font-size: 1.4rem;
     }
 }
 
 @media (max-width: 767.98px) {
-    .blog-title {
-        font-size: 2rem;
-    }
+    
     .blog-card {
         min-height: 340px;
         padding: 1rem 0.5rem;
