@@ -11,6 +11,9 @@
     --input-border: #444;
 }
 
+body  main .content-mapa-secons{
+    display: none !important;
+}
 
 /* Contenedor Principal de la Sección */
 .investment-section {
@@ -198,7 +201,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><rect x="0" y="0" width="100" height="100" fill="%23f0f0f0"/><path d="M50,10 L55,20 L45,20 Z" fill="%23000"/><path d="M50,20 A30,30 0 1,0 50,80 A30,30 0 1,0 50,20 Z" fill="%23fff" stroke="%23333" stroke-width="2"/></svg>');
     background-size: cover;
 }
 
@@ -261,6 +263,10 @@
     color: var(--color-primario-blanco);
 }
 
+body  main .social2{
+        display: none !important;
+    }
+
 /* Ajuste Responsivo para la columna del mapa */
 @media (min-width: 992px) {
     .map-column {
@@ -275,6 +281,54 @@
     .btn-send-message {
         font-size: 0.9rem !important;
         width: 55%;
+    }
+
+    .conten-text-ubicacion h4{
+        color: var(--color-primario-blanco);
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .social-text-content h2{
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--color-primario-blanco);
+    }
+
+    .social2 .row div{
+        width: 50%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-icons {
+        gap: 50px;
+    }
+
+    .social2 .row {
+        padding: 10px;
+    }
+
+    .social-icon-link{
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    body  main .social1{
+        display: none !important;
+    }
+
+    body  main .social2{
+        display: flex !important;
+    }
+    body main .content-mapa-primary{
+        display: none !important;
+    }
+
+    body  main .content-mapa-secons{
+    display: flex !important;
     }
 
     .form-group-custom {
@@ -314,5 +368,9 @@
         background-color: var(--input-bg);
         border-radius: 40px 40px 0px 0px;
         margin-top: 20px;
+    }
+
+    .content-icons i{
+        font-size: 45px;
     }
 }
