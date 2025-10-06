@@ -1,5 +1,5 @@
 .blog-title {
-    font-size: 2.8rem;
+    font-size: 4rem;
     color: #fff;
     letter-spacing: 2px;
     font-style: italic;
@@ -78,7 +78,6 @@
 }
 
 .blog-card-text {
-    width: 180px;
     line-height: 0.9;
     color: #efefef;
     font-size: 1.05rem;
@@ -105,6 +104,18 @@
 .blog-btn:hover {
     background: #7ec11f;
     color: #232323;
+}
+
+
+.blog-img1, .blog-img3{
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.blog-img2{
+    width: 150px;
+    margin-bottom: 15px;
+
 }
 
 @media (max-width: 990.98px) {

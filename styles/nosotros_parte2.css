@@ -1,7 +1,7 @@
 /* parte 2 de nosotros  */
 /* Sección Misión y Filosofía */
 main {
-    padding-top: 70px;
+    padding-top: 60px;
 }
 
 .mision-filosofia-section {
@@ -88,6 +88,16 @@ main {
     margin-bottom: 0;
     font-weight: 200;
 }
+
+    .content-imagen-laptop svg{
+        height: 10rem;
+    }
+
+   .testimonio-img-bg {
+        margin-right: 12rem;
+        min-width: 420px;
+        min-height: 225px;
+    } 
 @media (max-width: 1200px) {
    .content-imagen-laptop svg{
         height: 180px;
@@ -164,16 +174,25 @@ main {
 
 
 
+
 }
 
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    .testimonio-img-bg{
+        margin-right: 0rem;
+        min-width: 0px; 
+        min-height: 0px;
+        background-size: contain;
+    }
+
+}
 
 /* Responsive: en pantallas grandes, que no sobresalga tanto */
 @media (min-width: 1400px) {
     .testimonio-frase {
         padding-left: 90px;
         font-size: 3.5rem;
-        line-height: 1.2;
+        line-height: 1;
     }
 
     .testimonio-img-bg {
@@ -188,12 +207,12 @@ main {
     }
 
     .mision-title {
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
     .mision-text {
         color: #fff;
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-top: 0.5rem;
     }
 

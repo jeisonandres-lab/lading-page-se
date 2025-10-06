@@ -8,7 +8,7 @@
     width: 100%;
     /* compensar navbar fija */
     background-image: url('../img/bg_hero.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;

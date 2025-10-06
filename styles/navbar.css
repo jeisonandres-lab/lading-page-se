@@ -19,6 +19,9 @@
     color: var(--color-secundario-verde-claro) !important;
 }
 
+.navbar-active{
+    color: var(--color-secundario-verde-claro);
+}
 
 /* Navbar base (usando Bootstrap para responsividad) */
 .navbar {

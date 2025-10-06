@@ -18,7 +18,7 @@ body  main .content-mapa-secons{
 /* Contenedor Principal de la Sección */
 .investment-section {
     background-color: var(--color-primario-negro);
-    min-height: 100vh;
+    
 }
 
 /* Ajuste del contenedor de Bootstrap para centrar el contenido y dar margen */

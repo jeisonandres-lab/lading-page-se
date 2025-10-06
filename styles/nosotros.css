@@ -14,7 +14,7 @@
 
 .content-img {
     position: relative;
-    height: 40rem;
+    height: 100vh;
     width: 100%;
     z-index: 1;
     /* compensar navbar fija */
@@ -85,7 +85,7 @@
     font-size: 1.6rem;
     color: #f2f2f2;
     line-height: 1.4;
-    max-width: 500px;
+    max-width: 480px;
     margin-top: 1.5rem;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.01em;
@@ -130,7 +130,7 @@
 
 .testimonio-frase {
     font-size: 2rem;
-    line-height: 1.2;
+    line-height: 1;
 }
 
 .testimonio-green {
@@ -151,7 +151,7 @@
     }
 
     .content-img{
-        background-position: -318px !important;
+        background-position: -300px !important;
     }
 
     body main .testimonio-autor {
@@ -172,7 +172,7 @@
     }
 
     .testimonio-img-bg {
-        width: 80%;
+        width: 100%;
         height: 12rem;
 
     }
@@ -274,8 +274,11 @@
     }
 
     .legado-text {
-        max-width: 100000px;
+        
         width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .legado-parrafo {
@@ -285,7 +288,7 @@
 
     .legado-title,
     .legado-green {
-        font-size: 8rem;
+        font-size: 7rem;
     }
 
 }

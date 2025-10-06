@@ -124,6 +124,10 @@
         }
 
         .movie_top {
+            /* Sin animación por defecto */
+        }
+
+        .movie_top--active {
             animation: movie_top linear;
             animation-timeline: view();
             animation-range: entry 0% cover 40%;
@@ -217,14 +221,14 @@
                                     <div class="legado-text">
                                         <h2
                                             class="legado-title mb-4 d-flex justify-content-center legado-titulo-doslineas">
-                                            <div class="text-start ">
-                                                <span class="legado-blanco animation-text"
+                                            <div class="text-start animation-blur">
+                                                <span class="legado-blanco "
                                                     id="legado-blanco">Nuestro</span><br>
-                                                <span class="legado-green animation-text ">Legado</span>
+                                                <span class="legado-green  ">Legado</span>
                                             </div>
 
                                         </h2>
-                                        <p class="legado-parrafo ">
+                                        <p class="legado-parrafo tracking-in-expand-fwd-bottom ">
                                             Grupo SE surge con el propósito de invertir en propiedades de alta
                                             rentabilidad;
                                             el nombre,
@@ -275,10 +279,7 @@
                     <!-- Imagen izquierda -->
                     <div
                         class="col-sm-12 col-md-12 col-xl-4 d-flex justify-content-center mb-4 mb-md-0 content-imagen-laptop ">
-                        <svg 
-                        class="me-4" 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        <svg class="me-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             viewBox="0 0 188.55 160.96">
                             <defs>
                                 <style>
@@ -320,7 +321,7 @@
                     </div>
                     <!-- Texto derecha -->
                     <div class="col-sm-12 col-md-12 col-xl-6 d-flex flex-column justify-content-center ">
-                        <div class="mision-img-text">
+                        <div class="mision-img-text tracking-in-expand-fwd-bottom">
                             <p class="mision-img-frase mision-img-frase1 mb-2">
                                 Nuestra misión<br>
                                 es que tu inversión<br>
@@ -340,4 +341,6 @@
             </div>
         </section>
     </main>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="animation.js"></script>
 </body>

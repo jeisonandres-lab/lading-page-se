@@ -36,4 +36,30 @@ document.addEventListener('DOMContentLoaded', () => {
     blurElements.forEach(elemento => {
         blurObserver.observe(elemento);
     });
+
+    const elementos3 = document.querySelectorAll('.movie_top');
+    const opciones3 = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const callback2 = (entries, observer2) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('movie_top--active');
+                observer.unobserve(entry.target); // Deja de observar después de la primera vez
+            }
+        });
+    };
+
+    const observer2 = new IntersectionObserver(callback2, opciones3);
+    elementos3.forEach(elemento => {
+        observer.observe(elemento);
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    
 });
