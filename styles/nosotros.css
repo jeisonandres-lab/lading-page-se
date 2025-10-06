@@ -1,6 +1,15 @@
 @import url(./variables.css
 );
 
+.cuadrado-nosotros{
+    width: 50px !important;
+    height: 50px;
+    background: var(--color-secundario-verde-claro);
+    position: relative;
+    top: 3rem;
+    left: -1rem;
+    display: none;
+}
 .legado-section {
     position: relative;
     height: 100vh;
@@ -153,7 +162,10 @@
 }
 
 @media (max-width: 991.98px) {
-
+    .cuadrado-nosotros{
+        display: block;
+        
+    }
     .legado-title,
     .legado-green {
         font-size: 3rem;
@@ -169,6 +181,7 @@
     }
 
     .legado-text {
+        padding-left: 70px;
         display: flex;
         width: 100%;
         flex-direction: column;
@@ -201,6 +214,15 @@
 
     .legado-parrafo {
         max-width: 80%;
+    }
+
+    .cuadrado-nosotros{
+        width: 40px !important;
+        height: 40px;
+        
+    }
+    .legado-text {
+        padding-left: 30px;
     }
 
 

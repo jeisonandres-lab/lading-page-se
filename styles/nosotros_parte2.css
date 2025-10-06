@@ -7,6 +7,10 @@
     align-items: center;
 }
 
+.mision-img-frase2 {
+    display: none;
+}
+
 .mision-title {
     font-size: 4rem;
     color: #fff;
@@ -49,30 +53,56 @@
     font-size: 3rem;
     color: #fff;
     margin-bottom: 0;
+    font-weight: 200;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 990.98px) {
+    .mision-img-frase2 {
+        display: block !important;
+    }
+
+    .mision-img-frase1 {
+        display: none !important;
+    }
+
     .mision-title {
         font-size: 2rem;
     }
 
+    .contenido-mision-text2{
+        align-items: center ;
+    }
+
     .mision-img-frase,
     .mision-img-text {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .mision-img-text{
+        width: 80%;
+        text-align: center;
     }
 
     .mision-img {
         max-width: 160px;
     }
 
-    
+
     .mision-title {
         font-size: 3rem !important;
     }
-    
+
     .mision-text {
         font-size: 1.6rem !important;
     }
+
+}
+
+@media (max-width: 767.98px) {
+    
+
+
 }
 
 /* Responsive: en pantallas grandes, que no sobresalga tanto */
@@ -108,4 +138,6 @@
         color: #7ec11f;
         font-weight: 600;
     }
+
+
 }
