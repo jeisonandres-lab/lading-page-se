@@ -182,6 +182,14 @@
 
     }
 
+    .mision-title {
+        font-size: 3rem !important;
+    }
+    
+    .mision-text {
+        font-size: 1.6rem !important;
+    }
+
 
 }
 
