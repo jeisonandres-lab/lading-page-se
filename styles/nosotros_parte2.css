@@ -17,7 +17,7 @@
     color: #fff;
     font-size: 1.8rem;
     margin-top: 0.5rem;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 1;
 }
 
@@ -63,6 +63,15 @@
 
     .mision-img {
         max-width: 160px;
+    }
+
+    
+    .mision-title {
+        font-size: 3rem !important;
+    }
+    
+    .mision-text {
+        font-size: 1.6rem !important;
     }
 }
 

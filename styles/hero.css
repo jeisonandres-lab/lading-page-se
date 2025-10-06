@@ -92,6 +92,7 @@
 }
 
 .content-hero-sub {
+    font-weight: 200 !important; 
     align-items: center;
     padding: 6px 15px;
     border: 2px solid var(--color-primario-blanco);

@@ -61,7 +61,7 @@
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.01em;
     word-break: break-word;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .legado-text {
@@ -182,13 +182,6 @@
 
     }
 
-    .mision-title {
-        font-size: 3rem !important;
-    }
-    
-    .mision-text {
-        font-size: 1.6rem !important;
-    }
 
 
 }
