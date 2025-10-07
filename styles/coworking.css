@@ -1,9 +1,14 @@
 @import url(./variables.css
 );
 
+.green-text:nth-child(1) {
+    color: var(--color-primario-blanco) !important;
+}
+
 .contenedor-texto {
     margin-top: 90px;
 }
+
 .section-degradado {
     /* Fondo degradado de gris a negro de izquierda a derecha */
     background: linear-gradient(90deg, #4B4F53 30%, #181818 100%);
@@ -106,16 +111,21 @@
 }
 
 .btn-send-message-nuevo:hover {
+    box-shadow: 0 0 20px var(--color-secundario-verde-claro);
     background-color: var(--color-secundario-verde-claro);
     border-color: var(--color-secundario-verde-claro);
     color: #fff;
 }
 
+.gradient-bar{   
+    background: linear-gradient(to right, var(  --color-primario-gris-oscuro) 0%, #1a1a1a 90%, transparent 100%) !important;
+}
 
 @media (max-width: 991.98px) {
-    .contenedor-texto{
+    .contenedor-texto {
         margin-top: 0px;
     }
+
     .legado-parrafo {
         font-size: 1.2rem;
         width: 100%;
@@ -158,7 +168,7 @@
 
 @media (max-width: 760.98px) {
 
-    .btn-send-message-nuevo{
+    .btn-send-message-nuevo {
         min-width: 250px;
     }
 
@@ -176,7 +186,8 @@
         text-align: center;
 
     }
-     .img-lado {
+
+    .img-lado {
         height: 40vh;
         width: 65%;
     }
@@ -192,7 +203,8 @@
         max-width: 100%;
         margin-bottom: 1.5rem;
     }
-    .btn-class-btn{
+
+    .btn-class-btn {
         font-size: 1.5rem !important;
     }
 
@@ -200,5 +212,11 @@
         padding: 1rem 0.5rem;
         text-align: center;
         align-items: center !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .header-text {
+        width: 75%;
     }
 }

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/coworking.css">
     <link rel="stylesheet" href="styles/contacto.css">
     <link rel="stylesheet" href="styles/footer.css">
+    
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- animete.css  -->
@@ -127,7 +128,7 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" tabindex="0">
-    <header class="navbar fixed-top">
+     <header class="navbar fixed-top">
         <nav class="container-fluid nav-container navbar-expand-lg">
             <div class=" d-flex justify-content-end content-button">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -170,7 +171,7 @@
                     <li class="nav-item"><a class="nav-link pagin" href="index.html">INICIO</a></li>
                     <li class="nav-item"><a class="nav-link pagin" href="nosotros.html">NOSOTROS</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle pagin" href="unidades.html">
+                        <a class="nav-link dropdown-toggle pagin navbar-active" href="unidades.html">
                             UNIDADES
                         </a>
                         <!-- <ul class="dropdown-menu" aria-labelledby="unidadesDropdown">
@@ -183,13 +184,7 @@
                     <li class="nav-item"><a class="nav-link pagin_contact" href="#contacto">CONTACTO</a></li>
                 </ul>
             </div>
-
-
-
             </div>
-
-
-
         </nav>
     </header>
     <main class="view">
@@ -205,17 +200,17 @@
                         <!-- Aquí va tu contenido, por ejemplo: -->
                         <div class="section_contendo">
                             <div class="legado-text">
-                                <h2 class="legado-title mb-4 text-start legado-titulo-doslineas">
+                                <h2 class="legado-title mb-4 text-start legado-titulo-doslineas animation-blur">
                                     <span class="legado-blanco">Tu espacio</span>
                                     <span class="legado-green">colaborativo</span>
                                 </h2>
-                                <p class="legado-parrafo">
+                                <p class="legado-parrafo tracking-in-expand-fwd-bottom">
                                     Grupo SE surge con el propósito de invertir en propiedades de alta rentabilidad;
                                     el nombre, basado en los apellidos de la fundadora, representa valores transmitidos
                                     por generaciones:
                                     honestidad, responsabilidad, puntualidad, organización y lealtad.
                                 </p>
-                                <div class="btn-class">
+                                <div class="btn-class tracking-in-expand-fwd-bottom">
                                     <a href="#" class="btn-class-btn">únete a la lista de eseprar</a>
                                 </div>
 
@@ -233,11 +228,11 @@
                 <div class="row justify-content-center ">
                     <div class="col-lg-6 content-proxi">
                         <div class="contendor-frase">
-                            <div class="header-content mb-5">
-                                <h1 class="header-text">
-                                    <span class="header-text-primario">CONVERSEMOS </span>SOBRE TU&nbsp;<br>
+                            <div class="header-content mb-5 ">
+                                <h1 class="header-text ">
+                                    <span class="header-text-primario animation-blur">CONVERSEMOS </span>SOBRE TU&nbsp;<br>
                                     <div class="d-flex container-fluid">
-                                        <div class="row">
+                                        <div class="row animation-blur">
                                             <span class="green-text">PRÓXIMA</span>
                                             <span class="col-lg-7 green-text"> INVERSIÓN</span>
                                         </div>
@@ -272,12 +267,7 @@
 
                                 <div class="mb-3 form-group-custom">
                                     <label for="interes" class="form-label-custom">Interés</label>
-                                    <select class="form-select-custom" id="interes">
-                                        <option selected disabled>Elige una opción</option>
-                                        <option value="1">Coworking</option>
-                                        <option value="2">Rental</option>
-                                        <option value="3">Invesments</option>
-                                    </select>
+                                    <input type="text" class="form-control-custom" value="Coworking" id="telefono" readonly>
                                 </div>
 
                                 <div class=" form-group-custom">

@@ -60,8 +60,9 @@
 }
 
 .tag2{
-    width: 75% !important;
+    width: 95% !important;
 }
+
 .blog-img {
     width: 100%;
     max-width: 260px;
@@ -70,11 +71,6 @@
     border-radius: 12px;
     /* filter: grayscale(0.8); */
     margin-bottom: 0.5rem;
-}
-
-
-.blog-card:nth-child(1) .blog-img {
-    /* filter: grayscale(1); */
 }
 
 .blog-card-text {
@@ -103,7 +99,10 @@
 
 .blog-btn:hover {
     background: #7ec11f;
-    color: #232323;
+    box-shadow: 0 0 20px var(--color-secundario-verde-claro);
+    background-color: var(--color-secundario-verde-claro);
+    border-color: var(--color-secundario-verde-claro);
+    color: #fff;
 }
 
 

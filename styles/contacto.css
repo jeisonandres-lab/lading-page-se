@@ -180,11 +180,11 @@ body  main .content-mapa-secons{
 }
 
 .btn-send-message:hover {
+    box-shadow: 0 0 20px var(--color-secundario-verde-claro);
     background-color: var(--color-secundario-verde-claro);
     border-color: var(--color-secundario-verde-claro);
     color: #fff;
 }
-
 
 /* --- Columna del Mapa y Dirección --- */
 
