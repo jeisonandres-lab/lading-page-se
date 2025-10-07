@@ -18,6 +18,8 @@
         <?php require_once './components/contacto.php'; ?>
         <?php require_once './components/footer.php'; ?>
     </main>
+        <?php require_once './components/footer.php'; ?>
+
     <?php require_once './components/scrips.php'; ?>
 </body>
 </html>

@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <!-- Imagen izquierda -->
             <div class="col-md-6 d-flex justify-content-center">
-                <img src="../img/investbase.png" alt="Imagen" class="img-lado">
+                <img src="../img/rentalbase.png" alt="Imagen" class="img-lado">
             </div>
             <!-- Contenido derecha -->
             <div class="col-md-6 d-flex flex-column justify-content-center contenedor-nosotros">
@@ -11,16 +11,17 @@
                 <div class="section_contendo">
                     <div class="legado-text">
                         <h2 class="legado-title mb-4 text-start legado-titulo-doslineas animation-blur">
-                            <span class="legado-blanco">Coninversión</span>
-                            <span class="legado-green">inteligente</span>
+                            <span class="legado-blanco">Rentas</span>
+                            <span class="legado-green">comerciales</span>
+                            <span class="legado-green">y turísmo</span>
                         </h2>
                         <p class="legado-parrafo tracking-in-expand-fwd-bottom">
-                            Grupo SE ofrece asesoría y coinversión; Administramos
-                            el inmueble y garantizamos seguridad de títulos;
-                            Te acompañamos con proyecciones de ganancia y gestión de tu inversión
+                            Incluye inmuebles comerciales y turísticos;
+                            corta, mediana y larga estancia; Seguridad jurídica,
+                            administración profesional y ubicaciones estratégicas
                         </p>
                         <div class="btn-class tracking-in-expand-fwd-bottom">
-                            <a href="#" class="btn-class-btn">Solicita asesoría</a>
+                            <a href="#" class="btn-class-btn">Consulta disponibilidad</a>
                         </div>
 
                     </div>

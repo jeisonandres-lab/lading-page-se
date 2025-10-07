@@ -87,7 +87,7 @@ body  main .content-mapa-secons{
 .conten-map {
     position: relative;
     /* compensar navbar fija */
-    background-image: url('../img/cont_box map.svg');
+    background-image: url('../svg/cont_box map.svg');
     background-size: contain;
     background-position: 115px;
     background-repeat: no-repeat;
@@ -432,8 +432,9 @@ body  main .social2{
         width: 40px;
         height: 40px;
     }
-    .header-content{
-        margin-top: 70px !important;
+
+    .investment-section {
+        margin-top: 20px; 
     }
 }
 

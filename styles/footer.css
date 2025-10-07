@@ -60,7 +60,7 @@
     display: none !important;
 }
 
-body main .footer-se .footer-text.footer-text2 {
+body .footer-se .footer-text.footer-text2 {
     display: none !important;
 }
 
@@ -100,7 +100,7 @@ body main .footer-se .footer-text.footer-text2 {
         display: none !important;
     }
 
-    .footer-text2 {
+    body  .footer-se .footer-text.footer-text2 {
         display: flex !important;
         text-align: left;
         font-size: 0.8rem;

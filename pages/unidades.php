@@ -17,8 +17,8 @@
     <?php require_once './components/navbar.php'; ?>
     <main class="view">
         <?php require_once './components/unidades.php'; ?>
-        <?php require_once './components/footer.php'; ?>
     </main>
+    <?php require_once './components/footer.php'; ?>
     <?php require_once './components/scrips.php'; ?>
 </body>
 </html>

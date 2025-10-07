@@ -60,7 +60,7 @@
                         <img src="../img/investbase.png" alt="Rental" class="blog-img img3 mb-2 scale-up-tl">
                     </a>
 
-                    <a href="./coworking.php class="content-img-2">
+                    <a href="./coworking.php" class="content-img-2">
                         <img src="../img/coworking_mbl.png" alt="Rental" class="blog-img img1-2 mb-2 scale-up-tl">
                     </a>
                 </div>

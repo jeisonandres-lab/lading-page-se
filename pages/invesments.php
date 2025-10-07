@@ -18,8 +18,9 @@
     <main class="view">
         <?php require_once './components/invesments.php'; ?>
         <?php require_once './components/contacto_inv.php'; ?>
-        <?php require_once './components/footer.php'; ?>
+        
     </main>
+    <?php require_once './components/footer.php'; ?>
     <?php require_once './components/scrips.php'; ?>
 </body>
 </html>

@@ -264,9 +264,6 @@
     
     .cta.boton-unidades {
         font-size: clamp(9px, 1.8vw, 0.9rem);
-        padding: 4px 10px;
-        margin-top: 20px;
-        width: 90%;
     }
     body .contenedor-grip{
         padding-right: 20px !important;

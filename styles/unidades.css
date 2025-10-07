@@ -159,7 +159,7 @@
     display: none;
     left: -225px;
     bottom: 0px;
-    background-image: url('../img/unidades/gradiente-amarillo.svg');
+    background-image: url('../svg/gradiente-amarillo.svg');
 }
 
 /* Esfera derecha superior */
@@ -167,7 +167,7 @@
     display: none;
     right: -195px;
     top: 10%;
-    background-image: url('../img/unidades/gradiente-verde.svg');
+    background-image: url('../svg/gradiente-verde.svg');
 }
 
 /* Esfera derecha inferior */
@@ -175,7 +175,7 @@
     display: none;
     right: -205px;
     bottom: -120px;
-    background-image: url('../img/unidades/gradiente-gris.svg');
+    background-image: url('../svg/gradiente-gris.svg');
 }
 
 .unidad-sub-2 {
@@ -226,7 +226,7 @@
 
     .view .blog-section {
         background-image: url();
-        padding-top: 0px !important;
+        padding-top: 60px !important;
     }
 
     .blog-subtitle.unidad-sub-2 {
@@ -283,7 +283,9 @@
 }
 
 @media (max-width: 767.98px) {
-
+    .blog-title {
+        margin-top: 0px !important;
+    }
     .blog-card {
         min-height: 0px;
         padding: 1rem 0.5rem;

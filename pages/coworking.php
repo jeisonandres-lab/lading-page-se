@@ -18,8 +18,9 @@
     <main class="view">
         <?php require_once './components/coworking.php'; ?>
         <?php require_once './components/contacto_w.php'; ?>
-        <?php require_once './components/footer.php'; ?>
     </main>
+        <?php require_once './components/footer.php'; ?>
+
     <?php require_once './components/scrips.php'; ?>
 </body>
 </html>
