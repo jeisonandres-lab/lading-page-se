@@ -110,6 +110,10 @@ main {
 
 }
 @media (max-width: 990.98px) {
+    .content-imagen-laptop svg {
+        height: 130px;
+    }
+
     .mision-img-frase2 {
         display: block !important;
     }
@@ -183,6 +187,14 @@ main {
         min-width: 0px; 
         min-height: 0px;
         background-size: contain;
+    }
+
+}
+
+
+@media (max-width: 390.98px) {
+    .content-imagen-laptop svg {
+        height: 85px;
     }
 
 }

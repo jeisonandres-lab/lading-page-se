@@ -17,6 +17,7 @@ body  main .content-mapa-secons{
 
 /* Contenedor Principal de la Sección */
 .investment-section {
+    margin-top: 60px; 
     background-color: var(--color-primario-negro);
     
 }
@@ -318,9 +319,20 @@ body  main .social2{
         padding-left: 50px;
         /* Espacio entre el formulario y el mapa */
     }
+    .conten-map {
+        background-position: right;
+    }
 
 
 }
+
+@media (max-width: 992px) {
+.conten-map {
+        background-position: right;
+    }
+}
+    
+  
 
 @media (max-width: 992px) {
     
@@ -420,17 +432,11 @@ body  main .social2{
         width: 40px;
         height: 40px;
     }
-}
-
-
-@media (max-width: 390px) {
-    
-    .social-icon-link {
-        width: 10px !important;
-        height: 10px !important;
+    .header-content{
+        margin-top: 70px !important;
     }
 }
-   
+
 @media (max-width:490px) {
     .header-text {
         font-size: 1.4rem;
@@ -438,6 +444,10 @@ body  main .social2{
         /* Reducir en móvil */
     }
 
+    .green-text {
+   
+    font-size: 2rem;
+    }
     
 .conten-map {
         background-position: 100px;
@@ -450,19 +460,21 @@ body  main .social2{
 
 }
 
-@media (max-width:390px) {
+@media (max-width: 390px) {
     
-    .green-text {
-   
-    font-size: 2.5rem;
+    .social-icon-link {
+        width: 10px !important;
+        height: 10px !important;
     }
-.conten-map {
-        background-position: 52px;
+
+    .conten-map {
+        background-position: 47px;
     }
     .map-container{
         height: 259px;
         width: 87%;
     }
 }
+   
 
 

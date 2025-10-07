@@ -252,7 +252,7 @@ body main .unidades-btn2 {
 
 .esfera {
     z-index: 0;
-    width: 100vw;
+    /* width: 100vw; */
     position: absolute;
     right: 9rem;
 }

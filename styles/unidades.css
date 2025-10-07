@@ -2,7 +2,7 @@
 );
 
 .blog-section {
-    background-image: url('../img/unidades/gradiente-verde.svg');
+    background-image: url('../svg/gradiente-verde.svg');
     background-size: 100% auto;
     background-repeat: no-repeat;
     min-height: 100vh;
