@@ -75,7 +75,10 @@ body  main .content-mapa-secons{
     background: linear-gradient(to right, var(--color-secundario-verde-claro) 0%, #1a1a1a 90%, transparent 100%);
 }
 
-
+.content-icons a img{
+    width: 32px;
+    height: 30px;
+}
 /* Responsividad del Título */
 @media (max-width: 992px) {
     .header-text {
@@ -263,11 +266,6 @@ body  main .content-mapa-secons{
     font-size: 2.5rem;
 }
 
-.social-icon-link:hover {
-    border-color: var(--green-color);
-    background-color: var(--green-color);
-    color: var(--color-primario-blanco);
-}
 
 body  main .social2{
         display: none !important;
@@ -376,7 +374,8 @@ body  main .social2{
         margin-top: 20px;
     }
 
-    .content-icons i{
-        font-size: 45px;
+    .content-icons a img{
+        width: 40px;
+        height: 40px;
     }
 }

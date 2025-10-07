@@ -1,0 +1,40 @@
+@import url(./variables.css
+);
+.section-degradado {
+    /* Fondo degradado de gris a negro de izquierda a derecha */
+    background: linear-gradient(90deg, #444 0%, #181818 60%);
+    min-height: 480px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-lado {
+    max-width: 90%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #0003;
+    display: block;
+}
+
+.contenedor-nosotros {
+    color: #fff;
+    padding: 2rem 1rem;
+    z-index: 2;
+}
+
+@media (max-width: 991.98px) {
+    .section-degradado {
+        min-height: 320px;
+        padding: 2rem 0;
+    }
+    .img-lado {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .contenedor-nosotros {
+        padding: 1rem 0.5rem;
+        text-align: center;
+        align-items: center !important;
+    }
+}

@@ -1,0 +1,166 @@
+.blog-title {
+    margin-top: 30px;
+    font-size: 4rem;
+    color: #fff;
+    letter-spacing: 2px;
+
+}
+
+.blog-subtitle {
+    color: #efefef;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.text-green {
+    color: #7ec11f;
+    font-weight: 600;
+}
+
+.blog-card {
+    
+    border-radius: 18px;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    
+    width: 100%;
+    max-width: 340px;
+    justify-content: flex-start;
+}
+
+.blog-card-header {
+    width: 100%;
+    min-height: 48px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+}
+
+.coworking-bg {
+    background: none;
+    color: #fff;
+}
+
+.rental-bg {
+    background: none;
+    color: #fff;
+}
+
+.investments-bg {
+    background: none;
+    color: #fff;
+}
+
+.blog-card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tag2{
+    width: 75% !important;
+}
+.blog-img {
+    width: 100%;
+    max-width: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    /* filter: grayscale(0.8); */
+    margin-bottom: 0.5rem;
+}
+
+
+.blog-card:nth-child(1) .blog-img {
+    /* filter: grayscale(1); */
+}
+
+.blog-card-text {
+    line-height: 0.9;
+    color: #efefef;
+    font-size: 1.05rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.blog-btn {
+    text-decoration: none;
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #7ec11f;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    transition: background 0.2s, color 0.2s;
+    margin-top: 15px;
+    margin-bottom: auto;
+}
+
+.blog-btn:hover {
+    background: #7ec11f;
+    color: #232323;
+}
+
+
+.blog-img1, .blog-img3{
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.blog-img2{
+    width: 150px;
+    margin-bottom: 15px;
+
+}
+
+@media (max-width: 990.98px) {
+    .blog-card {
+        min-height: 420px;
+        max-width: 100%;
+    }
+    .blog-img {
+        max-width: 70%;
+        height: 160px;
+    }
+
+    .blog-title {
+        font-size: 3.5rem;
+    }
+
+    .content-blog{
+        margin-top: 40px !important;
+    }
+    .content-total{
+        margin-top: 0px !important;
+    }
+
+    .blog-card-text {
+        margin-top: 20px;
+        width: 85% !important;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .tag3{
+        margin-top: 0 !important;
+    }
+
+    .blog-subtitle{
+        line-height: 0.9;
+    }
+}
+
+@media (max-width: 767.98px) {
+    
+    .blog-card {
+        min-height: 340px;
+        padding: 1rem 0.5rem;
+    }
+    .blog-img {
+        height: 300px;
+    }
+}

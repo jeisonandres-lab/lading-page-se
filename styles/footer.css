@@ -78,6 +78,10 @@ body main .footer-se .footer-text.footer-text2 {
     font-weight: 600 !important;
 }
 
+.footer-social-icon img{
+    width: 30px;
+    height: 30px;
+}
 @media (max-width: 990.98px) {
     .footer-se .row>div {
         text-align: center !important;
