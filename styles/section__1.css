@@ -354,7 +354,7 @@ body main .unidades-btn2 {
 
     .unidades-btn {
         margin-bottom: 30px;
-        font-size: clamp(19px, 3vw, 1.6rem);
+        font-size: clamp(16px, 3vw, 1.6rem);
     }
 
     

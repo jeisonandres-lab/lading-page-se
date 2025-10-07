@@ -245,7 +245,7 @@
 }
 
 /* Teléfonos muy pequeños (320px y menos) */
-@media (max-width: 330px) {
+@media (max-width: 390px) {
     .hero-content {
         margin: 0 6px;
         padding: 0 2px;
@@ -268,7 +268,12 @@
         margin-top: 20px;
         width: 90%;
     }
+    body .contenedor-grip{
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+    }
 }
+
 
 /* Orientación landscape en móviles */
 @media (max-width: 768px) and (orientation: landscape) {

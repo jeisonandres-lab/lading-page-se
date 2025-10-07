@@ -423,8 +423,21 @@ body  main .social2{
 }
 
 
-@media (max-width:490px) {
+@media (max-width: 390px) {
     
+    .social-icon-link {
+        width: 10px !important;
+        height: 10px !important;
+    }
+}
+   
+@media (max-width:490px) {
+    .header-text {
+        font-size: 1.4rem;
+        margin-top: 70px;
+        /* Reducir en móvil */
+    }
+
     
 .conten-map {
         background-position: 100px;
@@ -433,13 +446,18 @@ body  main .social2{
         height: 259px;
         width: 87%;
     }
+
+
 }
 
 @media (max-width:390px) {
     
-    
+    .green-text {
+   
+    font-size: 2.5rem;
+    }
 .conten-map {
-        background-position: -0.0px;
+        background-position: 52px;
     }
     .map-container{
         height: 259px;

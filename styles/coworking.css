@@ -187,9 +187,9 @@
 
     }
 
-    .img-lado {
-        height: 40vh;
-        width: 80%;
+     .img-lado {
+        height: 300px;
+        width: 50%;
     }
 
     body .text-start,
@@ -213,6 +213,17 @@
         text-align: center;
         align-items: center !important;
     }
+}
+
+
+@media (max-width: 760.98px) {
+
+
+     .img-lado {
+        height: 300px;
+        width: 50%;
+    }
+
 }
 
 @media (min-width: 1400px) {

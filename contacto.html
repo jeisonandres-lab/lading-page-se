@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo SE</title>
-    <meta name="description"
+<meta name="description"
         content="o vendemos metros cuadrados, aseguramos flujos de caja: Tu propiedad, optimizada para el éxito financiero">
     <meta name="keywords"
         content="coworking, consultorios, oficinas, renta, espacios , profesionales, bienestar, inversión, retorno, rental, investments">
@@ -20,17 +20,19 @@
     <meta name="twitter:description" content="Llenamos tu agenda con pacientes calificados en menos de 30 días">
     <link rel="icon" href="./img/grupose_logo.png" type="image/x-icon">
     <link rel="icon" href="./img/grupose_logo.png" type="image/png">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/animaciones.css">
     <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/unidaes.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/nosotros.css">
+    <link rel="stylesheet" href="styles/nosotros_parte2.css">
+    <link rel="stylesheet" href="styles/section__1.css">
+    <link rel="stylesheet" href="styles/blog.css">
     <link rel="stylesheet" href="styles/contacto.css">
     <link rel="stylesheet" href="styles/footer.css">
 
@@ -48,6 +50,7 @@
             background-color: var(--color-primario-negro) !important;
         }
 
+               
         @keyframes appear_1 {
             from {
                 opacity: 0;
@@ -64,63 +67,54 @@
 
 
         @keyframes appear {
-            from {
+           from {
                 transform: scale(0.50);
                 filter: brightness(0.5);
                 opacity: 0.5;
             }
-
             to {
                 transform: scale(1);
                 filter: brightness(1);
-                opacity: 1;
-                /*  <-- Assumed, as it's typically the default 'to' state */
+                opacity: 1; /*  <-- Assumed, as it's typically the default 'to' state */
             }
         }
 
-
+        
         @keyframes movie_top {
-            from {
+           from {
                 transform: scale(0.50);
                 filter: brightness(0.5);
                 opacity: 0.5;
             }
-
             to {
                 transform: scale(1);
                 filter: brightness(1);
-                opacity: 1;
-                /*  <-- Assumed, as it's typically the default 'to' state */
+                opacity: 1; /*  <-- Assumed, as it's typically the default 'to' state */
             }
         }
 
         @keyframes slideUpFade {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-                /* Comienza 30px más abajo */
-                filter: blur(5px);
-                /* Comienza ligeramente borroso */
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-                /* Vuelve a su posición original */
-                filter: blur(0);
-                /* Totalmente nítido */
-            }
+                from {
+                    opacity: 0;
+                    transform: translateY(30px); /* Comienza 30px más abajo */
+                    filter: blur(5px);           /* Comienza ligeramente borroso */
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);    /* Vuelve a su posición original */
+                    filter: blur(0);             /* Totalmente nítido */
+                }
         }
+
 
         .movie_top2 {
             /* 1. Cambia el nombre de la animación */
             animation: slideUpFade linear;
             animation-timeline: view();
             /* 2. Suaviza la animación para que el efecto "entre" más elegante */
-            animation-timing-function: ease-out;
-            /* Hace que el final sea más suave */
+            animation-timing-function: ease-out; /* Hace que el final sea más suave */
             /* 3. Ajusta el rango para que se complete en el primer 30% del viewport */
-            animation-range: entry 0% cover 30%;
+            animation-range: entry 0% cover 30%; 
         }
 
         .section_animate1 {
@@ -129,21 +123,31 @@
             animation-range: entry 0% cover 40%;
         }
 
+        .section_animate2 {
+            animation: appear_1 linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }   
         .section_animate2--active {
-            /* Tu animación aquí, por ejemplo: */
-            animation: tu_animacion 1s both;
-        }
+                animation: appear s both;
+            }
 
         .movie_top {
             animation: movie_top linear;
             animation-timeline: view();
             animation-range: entry 0% cover 40%;
         }
+
+
+
+
+
+        
     </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" tabindex="0">
-     <header class="navbar fixed-top">
+    <header class="navbar fixed-top">
         <nav class="container-fluid nav-container navbar-expand-lg">
             <div class=" d-flex justify-content-end content-button">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -183,10 +187,10 @@
             </a>
             <div class=" collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto nav-links">
-                    <li class="nav-item"><a class="nav-link pagin " href="index.html">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link pagin  href="index.html">INICIO</a></li>
                     <li class="nav-item"><a class="nav-link pagin" href="nosotros.html">NOSOTROS</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle pagin navbar-active" href="unidades.html">
+                        <a class="nav-link dropdown-toggle pagin" href="unidades.html">
                             UNIDADES
                         </a>
                         <!-- <ul class="dropdown-menu" aria-labelledby="unidadesDropdown">
@@ -196,7 +200,7 @@
                         </ul> -->
                     </li>
                     <li class="nav-item "><a class="nav-link pagin" href="blog.html">NOVEDADES</a></li>
-                    <li class="nav-item"><a class="nav-link pagin_contact" href="contacto.html">CONTACTO</a></li>
+                    <li class="nav-item"><a class="nav-link pagin_contact navbar-active"" href="contacto.html">CONTACTO</a></li>
                 </ul>
             </div>
 
@@ -208,107 +212,144 @@
 
         </nav>
     </header>
-    <main class="view">
-        <!-- section blog  -->
-        <section class="blog-section pt-5 pb-5">
-            <!-- Esfera izquierda -->
-            <div class="esfera esfera-izq"></div>
-            <!-- Esfera derecha arriba -->
-            <div class="esfera esfera-der1"></div>
-            <!-- Esfera derecha abajo -->
-            <div class="esfera esfera-der2"></div>
+    <main class="view mt-sm-5">
+        <!-- section contactanos section_animate2  -->   
+        <section class="investment-section">
+            <div class="container custom-container  py-md-5 px-md-3">
+                <div class="row justify-content-center ">
+                    <div class="col-12 col-sm-12 col-lg-12">
+                        <div class="header-content mb-5">
+                            <h1 class="header-text">
+                                <span class="header-text-primario">CONVERSEMOS </span>SOBRE TU&nbsp;<br>
+                                <div class="d-flex container-fluid">
+                                    <div class="row">
+                                        <span class="col-lg-7 green-text">PRÓXIMA INVERSIÓN</span>
+                                        <div class="col-lg-5 gradient-bar-container d-flex align-items-center ">
+                                            <div class="gradient-bar"></div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </h1>
+                            
+                        </div>
+                        <div class="col-lg-12 d-flex comten-contacto">
+                            <div class="col-sm-12 conten-from col-lg-6 ">
+                                <form class="form-column">
+                                    <div class="mb-3 form-group-custom">
+                                        <label for="nombre" class="form-label-custom">Nombre</label>
+                                        <input type="text" class="form-control-custom" id="nombre">
+                                    </div>
 
-            <div class="container content-blog">
-                <!-- Título principal -->
-                <div class="row">
-                    <div class="col-12 text-center animation-blur">
-                        <h2 class="blog-title fw-bold mb-1">UNIDADES</h2>
-                        <p class="blog-subtitle unidad-sub-1 mb-4">
-                            Accede a las últimas <span class="text-green">novedades</span> de cada una de nuestras
-                            unidades
-                        </p>
+                                    <div class="mb-3 form-group-custom">
+                                        <label for="email" class="form-label-custom">E-mail</label>
+                                        <input type="email" class="form-control-custom" id="email" placeholder="Ej: franciscoamora@gmail.com">
+                                    </div>
 
-                        <p class="blog-subtitle unidad-sub-2 blog-text mb-1">
-                            Amplio abanico de<span class="text-green"> beneficios comerciales</span>
-                            , todo dentro de un mismo sistema
+                                    <div class="mb-3 form-group-custom">
+                                        <label for="telefono" class="form-label-custom">Teléfono</label>
+                                        <input type="tel" class="form-control-custom" id="telefono">
+                                    </div>
 
-                        </p>
-                    </div>
-                </div>
-                <!-- Tarjetas de blog -->
-                <div class="row justify-content-center g-4">
-                    <!-- Tarjeta 1 -->
-                    <div
-                        class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center ">
-                        <div class="blog-img-wrapper blog-card h-100 d-flex flex-column align-items-center conten-card">
-                            <a href="./coworking.html">
-                                <img src="./img/unidades/coworkingbase.png" alt="Rental" class="blog-img img1 mb-2 scale-up-tl">
-        
-                            </a>
+                                    <div class="mb-3 form-group-custom">
+                                        <label for="interes" class="form-label-custom">Interés</label>
+                                        <select class="form-select-custom" id="interes">
+                                            <option selected disabled>Elige una opción</option>
+                                            <option value="1">Coworking</option>
+                                            <option value="2">Rental</option>
+                                            <option value="3">Invesments</option>
+                                        </select>
+                                    </div>
 
-                            <a href="./investments.html" class="content-img-3">
+                                    <div class=" form-group-custom">
+                                        <label for="mensaje" class="form-label-custom">Mensaje</label>
+                                        <textarea class="form-control-custom textarea-custom" id="mensaje" rows="3" placeholder="¡Hola!, quiero agendar una asesoría con ustedes."></textarea>
+                                    </div>              
+                                </form>
+
+                                <button type="submit" class="btn-send-message">
+                                        ENVÍA UN MENSAJE
+                                </button>
+                            </div>
+                            <!-- mapa numero 1 -->
+                            <div class="content-mapa-primary col-sm-12 col-lg-5 map-column w-sm-100 mt-5 mt-lg-0 d-flex flex-column justify-content-between content-map">
+                                <div class="conten-map">
+                                    <div class="map-header">
+                                            <div class="map-container mb-4">
+                                                <div class="map-placeholder">
+                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1083.0355302771789!2d-69.93542243979967!3d18.463647400347412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea563d92a3824df%3A0x4b258914d8f6f964!2sPlaza%20Central!5e0!3m2!1ses-419!2sve!4v1759590727599!5m2!1ses-419!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                </div>
+                                            </div>
+                                    </div>
+
                                 
-                                <img src="./img/unidades/invstmet_mb.png" alt="Rental" class="blog-img img3-2 mb-2 scale-up-tl">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Tarjeta 2 -->
-                    <div
-                        class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center content-total">
-                        <div class="blog-card h-100 d-flex flex-column align-items-center">
-                            <a href="./rental.html"> 
-                                <img src="./img/unidades/rentalbase.png" alt="Rental" class="blog-img img2 mb-2 scale-up-tl">
-                                <img src="./img/unidades/rental_mb.png" alt="Rental" class="blog-img img2-2 mb-2 scale-up-tl">
-
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Tarjeta 3 -->
-                    <div
-                        class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center tag3 ">
-                        <div class="blog-card h-100 d-flex flex-column align-items-center">
-                            <a href="./investments.html">
-                                <img src="./img/unidades/investbase.png" alt="Rental" class="blog-img img3 mb-2 scale-up-tl">
-                            </a>
-
-                            <a href="./coworking.html" class="content-img-2">
-                                <img src="./img/unidades/coworking_mbl.png" alt="Rental" class="blog-img img1-2 mb-2 scale-up-tl">
-                            </a>
+                                </div>
+                                <p class="address-text text-center ">
+                                        Plaza Central local 34i-B, tercer nivel. Avenida<br>
+                                        27 de Febrero, esquina Winston Churchill<br>
+                                        Piantini, Santo Domingo
+                                    </p>
+                                <div class="socila1 social-icons mt-4 d-flex justify-content-center justify-content-lg-center">
+                                    <div class="content-icons">
+                                        <a href="#" class="social-icon-link" aria-label="Instagram"> <img src="./icons/instagram_3.png" alt=""></a>
+                                        <a href="#" class="social-icon-link" aria-label="WhatsApp"> <img src="./icons/whatsapp_1.png" alt=""></a>
+                                        <a href="#" class="social-icon-link" aria-label="Correo Electrónico">
+                                            <img src="./icons/gmail_1.png"></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Columna derecha: Glow verde -->
-            <!-- <div class="col-3 esfera animation-blur">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 1169.48 1235.4">
-                    <defs>
-                        <style>
-                            .cls-1 {
-                                fill: url(#Degradado_sin_nombre_29);
-                            }
-                        </style>
-                        <radialGradient id="Degradado_sin_nombre_29" cx="1901.03" cy="320.52" r="655.66"
-                            gradientTransform="translate(870.59 -1173.26) rotate(90) scale(0.94 0.89)"
-                            gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#70af22" />
-                            <stop offset="0.01" stop-color="#6daa22" />
-                            <stop offset="0.11" stop-color="#55821e" />
-                            <stop offset="0.23" stop-color="#41601a" />
-                            <stop offset="0.34" stop-color="#304418" />
-                            <stop offset="0.47" stop-color="#232e16" />
-                            <stop offset="0.61" stop-color="#1a1f14" />
-                            <stop offset="0.77" stop-color="#151613" />
-                            <stop offset="1" stop-color="#131313" />
-                        </radialGradient>
-                    </defs>
-                    <g id="Capa_2" data-name="Capa 2">
-                        <g id="Units">
-                            <ellipse class="cls-1" cx="584.74" cy="617.7" rx="584.74" ry="617.7" />
-                        </g>
-                    </g>
-                </svg>
-            </div> -->
+
+            <!-- mapa numero 2 -->
+            <div class="content-mapa-secons py-5 px-3 col-sm-12 col-lg-5 map-column w-sm-100 mt-xl-5 mt-lg-0 d-flex flex-column justify-content-between content-map">
+
+                <div class="conten-text-ubicacion d-flex text-center mb-4 justify-content-center">
+                    <h4>
+                        UBÍCANOS
+                    </h4>
+                </div>
+                <div class="conten-map">
+                    <div class="map-header">
+                            <div class="map-container mb-4">
+                                <div class="map-placeholder">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1083.0355302771789!2d-69.93542243979967!3d18.463647400347412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea563d92a3824df%3A0x4b258914d8f6f964!2sPlaza%20Central!5e0!3m2!1ses-419!2sve!4v1759590727599!5m2!1ses-419!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                    </div>
+
+                
+                </div>
+                <p class="address-text text-center ">
+                        Plaza Central local 34i-B, tercer nivel. Avenida<br>
+                        27 de Febrero, esquina Winston Churchill<br>
+                        Piantini, Santo Domingo
+                    </p>
+                <div class="social1 social-icons mt-4 d-flex justify-content-center justify-content-lg-center">
+                    <div class="content-icons">
+                        <a href="#" class="social-icon-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon-link" aria-label="Correo Electrónico"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid social2 social-icons mt-4 d-flex justify-content-center justify-content-lg-center">
+                <div class="row">
+                    <div class="col-sm-3 social-text-content">
+                        <h2>CONTÁCTANOS POR NUESTRAS REDES</h2>
+                    </div>
+                    <div class="col-sm-3 content-icons">
+                        <a href="#" class="social-icon-link" aria-label="Instagram"> <img src="./icons/instagram_3.png" alt=""></a>
+                                        <a href="#" class="social-icon-link" aria-label="WhatsApp"> <img src="./icons/whatsapp_1.png" alt=""></a>
+                                        <a href="#" class="social-icon-link" aria-label="Correo Electrónico">
+                                            <img src="./icons/gmail_1.png"></a>
+                    </div>
+                </div>
+                
+            </div>
         </section>
     </main>
 
@@ -325,9 +366,9 @@
                         <span class="derechos">Todos los derechos reservados.</span>
                         <span class="w-75">
                             Plaza Central, local 3A-B, tercer nivel, Avenida 27 de Febrero, esquina Winston
-                            Churchill Planta: Santo Domingo
+                            Churchill  Planta: Santo Domingo
                         </span>
-
+                        
                     </div>
 
                     <div class="footer-text footer-text2 text-white small flex-column">
@@ -370,7 +411,7 @@
                             <img src="./icons/instagram_3.png" alt="">
                         </a>
                         <a href="#" class="footer-social-icon me-2">
-                            <img src="./icons/whatsapp_1.png" alt="">
+                           <img src="./icons/whatsapp_1.png" alt="">
                         </a>
                         <a href="#" class="footer-social-icon">
                             <img src="./icons/gmail_1.png" alt="">
@@ -381,9 +422,9 @@
         </div>
     </footer>
 
+    </script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="animation.js"></script>
-    <script src="unidades.js"></script>
 </body>
 
 </html>

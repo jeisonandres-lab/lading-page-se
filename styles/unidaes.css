@@ -1,13 +1,16 @@
 @import url(./variables.css
 );
+
 .blog-section {
     background-image: url('../img/unidades/gradiente-verde.svg');
     background-size: 100% auto;
     background-repeat: no-repeat;
-    min-height: 100vh; /* Mejor que height: 100vh para que crezca si hay más contenido */
+    min-height: 100vh;
+    /* Mejor que height: 100vh para que crezca si hay más contenido */
     position: relative;
     overflow: hidden;
 }
+
 .blog-title {
     margin-top: 30px;
     font-size: 4rem;
@@ -27,10 +30,10 @@
 }
 
 .blog-card {
-    
+
     border-radius: 18px;
     padding: 1.5rem 1rem 1.5rem 1rem;
-    
+
     width: 100%;
     max-width: 340px;
     justify-content: flex-start;
@@ -68,9 +71,10 @@
     text-transform: uppercase;
 }
 
-.tag2{
+.tag2 {
     width: 75% !important;
 }
+
 .blog-img {
     width: 100%;
     max-width: 260px;
@@ -111,24 +115,26 @@
 }
 
 
-.blog-img1, .blog-img3{
+.blog-img1,
+.blog-img3 {
     width: 200px;
     margin-bottom: 15px;
 }
 
-.blog-img2{
+.blog-img2 {
     width: 150px;
     margin-bottom: 15px;
 
 }
 
 .blog-card {
-    transition: 
-        transform 0.3s cubic-bezier(.4,2,.6,1),
+    transition:
+        transform 0.3s cubic-bezier(.4, 2, .6, 1),
         background 0.3s,
         box-shadow 0.3s;
     will-change: transform, background, box-shadow;
 }
+
 /* Efecto de deslizar hacia arriba */
 .blog-card:hover {
     transform: translateY(-12px) scale(1.03);
@@ -172,59 +178,91 @@
     background-image: url('../img/unidades/gradiente-gris.svg');
 }
 
-.unidad-sub-2{
-        display: none;
-    }
-
-@media (max-width: 991.98px) {
-   
+.unidad-sub-2 {
+    display: none;
 }
+
+.img1-2,
+.img2-2,
+.img3-2 {
+    display: none;
+}
+
+@media (max-width: 991.98px) {}
 
 @media (max-width: 990.98px) {
-.esfera-der1,
-.esfera-der2, 
-.esfera-izq{
-    display: block;
+
+.blog-section{
+    
 }
+    .esfera-der1,
+    .esfera-der2,
+    .esfera-izq {
+        display: block;
+    }
+
+    body .img1,
+    body .img2,
+    body .img3 {
+        display: none !important;
+    }
+
+    .img1-2,
+    .img2-2,
+    .img3-2 {
+        display: block;
+    }
 
     .blog-section {
-         background-image: url('../img/unidades/BG_UNITS.png');
+        background-image: url('../img/unidades/BG_UNITS.png');
         background-size: cover;
         background-repeat: no-repeat;
-        min-height: 100vh; /* Mejor que height: 100vh para que crezca si hay más contenido */
+        min-height: 100vh;
+        /* Mejor que height: 100vh para que crezca si hay más contenido */
         position: relative;
-        overflow: hidden; 
-  
+        overflow: hidden;
+
     }
-    .blog-section {
-     background-image: url();
+
+    .view .blog-section {
+        background-image: url();
+        padding-top: 0px !important;
     }
-    .blog-subtitle.unidad-sub-2{
+
+    .blog-subtitle.unidad-sub-2 {
         display: block;
         font-weight: 200;
         margin-bottom: 55px !important;
     }
-    
-     .unidad-sub-1{
+
+    .unidad-sub-1 {
         display: none;
     }
+
     .blog-card {
         min-height: 420px;
         max-width: 100%;
     }
+
     .blog-img {
         max-width: 100%;
-        height: 200px;
+        height: 118px;
     }
 
     .blog-title {
         font-size: 2rem;
     }
 
-    .content-blog{
-        margin-top: 40px !important;
+    .content-blog {
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
     }
-    .content-total{
+
+    .content-total {
         margin-top: 0px !important;
     }
 
@@ -235,26 +273,25 @@
         font-size: 1.4rem;
     }
 
-    .tag3{
+    .tag3 {
         margin-top: 0 !important;
     }
 
-    .blog-subtitle{
+    .blog-subtitle {
         line-height: 0.9;
     }
 }
 
 @media (max-width: 767.98px) {
-    
+
     .blog-card {
         min-height: 0px;
         padding: 1rem 0.5rem;
     }
+
     .blog-img {
-        height: 200px;
+        height: 118px;
     }
-    .img1, .img2, .img3{
-        width: 100% !important;
-        height: 100px !important;
-    }
+
+    
 }
