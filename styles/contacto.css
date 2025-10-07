@@ -54,7 +54,7 @@ body  main .content-mapa-secons{
 .green-text {
     color: var(--color-secundario-verde-claro);
     padding: 0px !important;
-    font-size: 2.3rem;
+    font-size: 3rem;
 }
 
 /* Barra degradada */
@@ -67,8 +67,11 @@ body  main .content-mapa-secons{
     margin-top: 10px;
 }
 
+.gradient-bar-container{
+    padding: 0px !important;
+}
 .gradient-bar {
-    height: 5px;
+    height: 15px;
     width: 400px;
     /* Ancho de la barra */
     /* Degradado de verde a negro/transparente */
@@ -79,6 +82,40 @@ body  main .content-mapa-secons{
     width: 32px;
     height: 30px;
 }
+
+.conten-map {
+    position: relative;
+    /* compensar navbar fija */
+    background-image: url('../img/cont_box map.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px 0px 0px 0px;
+    /* Quita border-image y border-color aquí */
+}
+/* 
+.conten-map::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 5px; 
+    border-radius: 0px 80px 20px 0px;
+  
+    background: linear-gradient(
+        to right,
+        #131313  50%,
+        var(--color-secundario-verde-claro) 50% 100%
+    );
+    z-index: -1;
+    box-sizing: border-box;
+} */
+/* .map-header{
+     
+} */
 /* Responsividad del Título */
 @media (max-width: 992px) {
     .header-text {

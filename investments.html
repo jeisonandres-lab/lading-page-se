@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo SE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/animaciones.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/investments.css">
+    <link rel="stylesheet" href="styles/contacto.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- animete.css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Grupo SE</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: var(--color-primario-negro) !important;
+        }
+
+        @keyframes appear_1 {
+            from {
+                opacity: 0;
+                clip-path: inset(0 100% 0 0);
+                /* Oculta todo desde la derecha */
+            }
+
+            to {
+                opacity: 1;
+                clip-path: inset(0 0 0 0);
+                /* Muestra todo */
+            }
+        }
+
+
+        @keyframes appear {
+            from {
+                transform: scale(0.50);
+                filter: brightness(0.5);
+                opacity: 0.5;
+            }
+
+            to {
+                transform: scale(1);
+                filter: brightness(1);
+                opacity: 1;
+                /*  <-- Assumed, as it's typically the default 'to' state */
+            }
+        }
+
+
+        @keyframes movie_top {
+            from {
+                transform: scale(0.50);
+                filter: brightness(0.5);
+                opacity: 0.5;
+            }
+
+            to {
+                transform: scale(1);
+                filter: brightness(1);
+                opacity: 1;
+                /*  <-- Assumed, as it's typically the default 'to' state */
+            }
+        }
+
+        @keyframes slideUpFade {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+                /* Comienza 30px más abajo */
+                filter: blur(5px);
+                /* Comienza ligeramente borroso */
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+                /* Vuelve a su posición original */
+                filter: blur(0);
+                /* Totalmente nítido */
+            }
+        }
+
+        .movie_top2 {
+            /* 1. Cambia el nombre de la animación */
+            animation: slideUpFade linear;
+            animation-timeline: view();
+            /* 2. Suaviza la animación para que el efecto "entre" más elegante */
+            animation-timing-function: ease-out;
+            /* Hace que el final sea más suave */
+            /* 3. Ajusta el rango para que se complete en el primer 30% del viewport */
+            animation-range: entry 0% cover 30%;
+        }
+
+        .section_animate1 {
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+
+        .section_animate2--active {
+            /* Tu animación aquí, por ejemplo: */
+            animation: tu_animacion 1s both;
+        }
+
+        .movie_top {
+            animation: movie_top linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" tabindex="0">
+     <header class="navbar fixed-top">
+        <nav class="container-fluid nav-container navbar-expand-lg">
+            <div class=" d-flex justify-content-end content-button">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars icons-menu"></i>
+                </button>
+            </div>
+
+            <a class="navbar-brand brand" href="#inicio">
+                <svg style="width: 110px;" viewBox="0 0 138.62 35.39">
+                    <defs>
+                        <style>
+                            .cls-2 {
+                                fill: #fdfdfd;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Capa_2" data-name="Capa 2">
+                        <g id="Units">
+                            <path class="cls-2"
+                                d="M138.62,7.85V0H110.49a18.58,18.58,0,0,0-6.84,1.19A10.76,10.76,0,0,0,98.9,4.7a9,9,0,0,0-1.73,5.54,8.93,8.93,0,0,0,1.6,5.5A10.47,10.47,0,0,0,102.6,19a44.31,44.31,0,0,0,5.65,2.19A25.9,25.9,0,0,1,112.94,23a2.65,2.65,0,0,1,1.48,2.41,2.23,2.23,0,0,1-.74,1.81,3.07,3.07,0,0,1-2.06.63,3.7,3.7,0,0,1-2.51-.88,3.76,3.76,0,0,1-1.17-2.68H97.27a10.34,10.34,0,0,0,4.42,8.19A17.42,17.42,0,0,0,112,35.39h26.6V27.54h-10v-6.4h8.45V13.7H128.6V7.85ZM118.31,1.53a12.06,12.06,0,0,1,2.11,1.27,10.25,10.25,0,0,1,4,7.87h-6.15V1.53h0ZM123.6,30.3a10.36,10.36,0,0,1-4.48,3.7c-.26.12-.54.24-.81.34V15.66c-1.24-.55-2.69-1.1-4.35-1.67a27,27,0,0,1-4.57-1.85,2.54,2.54,0,0,1-1.45-2.29,2.23,2.23,0,0,1,.66-1.76,2.69,2.69,0,0,1,1.84-.58,3.13,3.13,0,0,1,2.22.78,3.8,3.8,0,0,1,1,2.38h4.6v5c.47.21.91.42,1.32.62a11.22,11.22,0,0,1,3.87,3.26,9,9,0,0,1,1.63,5.56,9.32,9.32,0,0,1-1.53,5.21" />
+                            <path class="cls-2"
+                                d="M15.87,12.32a7.16,7.16,0,0,0-5.49-2.77,7.68,7.68,0,0,0-7.44,7.87,7.7,7.7,0,0,0,7.47,7.76,7.38,7.38,0,0,0,6.93-5H8V17.42H20.68A10.34,10.34,0,1,1,0,17.42,10.36,10.36,0,0,1,10.27,6.83a10.3,10.3,0,0,1,9,5.49Z" />
+                            <path class="cls-2"
+                                d="M32.94,27.51l-6.63-9.4h-.06v9.4H23.32V7.22h6.22c2.83,0,4.3.68,5.36,1.69a6.8,6.8,0,0,1,1.84,4.81A5.8,5.8,0,0,1,31,19.94l5.63,7.57Zm-6.69-9.82h2c1.2,0,5.55-.05,5.55-4,0-1.7-1.14-3.79-4.46-3.79h-3.1Z" />
+                            <path class="cls-2"
+                                d="M53.16,21a6.86,6.86,0,0,1-2,5.21,7.25,7.25,0,0,1-9.4,0,6.86,6.86,0,0,1-2-5.21V7.22h2.94V20.88c0,3.75,2.71,4.3,3.8,4.3s3.81-.55,3.81-4.3V7.22h2.93Z" />
+                            <path class="cls-2"
+                                d="M59.87,27.51H56.94V7.22h5.81c4.81,0,7.1,2.52,7.1,6.14s-2.29,6.14-7.1,6.14H59.87Zm0-10.72h2.88c3.35,0,4.16-1.92,4.16-3.43s-.81-3.43-4.16-3.43H59.87Z" />
+                            <path class="cls-2"
+                                d="M81.86,27.9A10.54,10.54,0,1,1,92.32,17.42,10.52,10.52,0,0,1,81.86,27.9m0-18.35c-5.19,0-7.53,4.58-7.53,7.81s2.37,7.82,7.53,7.82,7.53-4.55,7.53-7.73c0-3.6-2.53-7.9-7.53-7.9" />
+                            <path class="cls-2"
+                                d="M102.21,35.39H97.3V30.74a7.93,7.93,0,0,0,1.55,2.45,8.5,8.5,0,0,0,3.36,2.2" />
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <div class=" collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav-links">
+                    <li class="nav-item"><a class="nav-link pagin" href="index.html">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link pagin" href="nosotros.html">NOSOTROS</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle pagin navbar-active" href="unidades.html">
+                            UNIDADES
+                        </a>
+                        <!-- <ul class="dropdown-menu" aria-labelledby="unidadesDropdown">
+                            <li><a class="dropdown-item" href="#">COWORKING</a></li>
+                            <li><a class="dropdown-item" href="#">RENTAL</a></li>
+                            <li><a class="dropdown-item" href="#">INVESTMENTS</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="nav-item "><a class="nav-link pagin" href="#novedades">NOVEDADES</a></li>
+                    <li class="nav-item"><a class="nav-link pagin_contact" href="#contacto">CONTACTO</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main class="view">
+        <section class="section-degradado d-flex align-items-center justify-content-center py-5">
+            <div class="container contenedor-texto" >
+                <div class="row align-items-center">
+                    <!-- Imagen izquierda -->
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <img src="./img/unidades/investbase.png" alt="Imagen" class="img-lado">
+                    </div>
+                    <!-- Contenido derecha -->
+                    <div class="col-md-6 d-flex flex-column justify-content-center contenedor-nosotros">
+                        <!-- Aquí va tu contenido, por ejemplo: -->
+                        <div class="section_contendo">
+                            <div class="legado-text">
+                                <h2 class="legado-title mb-4 text-start legado-titulo-doslineas animation-blur">
+                                    <span class="legado-blanco">Coninversión</span>
+                                    <span class="legado-green">inteligente</span>
+                                </h2>
+                                <p class="legado-parrafo tracking-in-expand-fwd-bottom">
+                                    Grupo SE ofrece asesoría y coinversión; Administramos 
+                                    el inmueble y garantizamos seguridad de títulos; 
+                                    Te acompañamos con proyecciones de ganancia y gestión de tu inversión
+                                </p>
+                                <div class="btn-class tracking-in-expand-fwd-bottom">
+                                    <a href="#" class="btn-class-btn">Solicita asesoría</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section contactanos section_animate2  -->
+        <section class="investment-section">
+            <div class="container custom-container  py-md-5 px-md-3">
+                <div class="row justify-content-center ">
+                    <div class="col-lg-6 content-proxi">
+                        <div class="contendor-frase">
+                            <div class="header-content mb-5 ">
+                                <h1 class="header-text ">
+                                    <span class="header-text-primario animation-blur">CONVERSEMOS </span>SOBRE TU&nbsp;<br>
+                                    <div class="d-flex container-fluid">
+                                        <div class="row animation-blur">
+                                            <span class="green-text">PRÓXIMA</span>
+                                            <span class="col-lg-7 green-text"> INVERSIÓN</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 gradient-bar-container d-flex align-items-center ">
+                                        <div class="gradient-bar h-25"></div>
+                                    </div>
+                                </h1>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 d-flex comten-contacto">
+                        <div class=" conten-from ">
+                            <form class="form-column">
+                                <div class="mb-3 form-group-custom">
+                                    <label for="nombre" class="form-label-custom">Nombre</label>
+                                    <input type="text" class="form-control-custom" id="nombre">
+                                </div>
+
+                                <div class="mb-3 form-group-custom">
+                                    <label for="email" class="form-label-custom">E-mail</label>
+                                    <input type="email" class="form-control-custom" id="email"
+                                        placeholder="Ej: franciscoamora@gmail.com">
+                                </div>
+
+                                <div class="mb-3 form-group-custom">
+                                    <label for="telefono" class="form-label-custom">Teléfono</label>
+                                    <input type="tel" class="form-control-custom" id="telefono">
+                                </div>
+
+                                <div class="mb-3 form-group-custom">
+                                    <label for="interes" class="form-label-custom">Interés</label>
+                                    <input type="text" class="form-control-custom" value="Rental" id="telefono" readonly>
+                                </div>
+
+                                <div class=" form-group-custom">
+                                    <label for="mensaje" class="form-label-custom">Mensaje</label>
+                                    <textarea class="form-control-custom textarea-custom" id="mensaje" rows="3"
+                                        placeholder="¡Hola!, quiero agendar una asesoría con ustedes."></textarea>
+                                </div>
+                            </form>
+
+                            <button type="submit" class="btn-send-message-nuevo">
+                                ENVÍA UN MENSAJE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-se py-4">
+        <div class="container">
+            <div class="row align-items-start">
+                <!-- Logo y dirección -->
+                <div class="col-md-5 mb-4 mb-md-0 d-flex align-items-md-start align-items-center">
+                    <div class="mb-2 me-4 cotent_logo_footer">
+                        <img src="./img/grupose_logo.png" alt="Grupo SE">
+                    </div>
+                    <div class="footer-text footer-text1 text-white small flex-column">
+                        © 2025 Grupo SE<br>
+                        <span class="derechos">Todos los derechos reservados.</span>
+                        <span class="w-75">
+                            Plaza Central, local 3A-B, tercer nivel, Avenida 27 de Febrero, esquina Winston
+                            Churchill Planta: Santo Domingo
+                        </span>
+
+                    </div>
+
+                    <div class="footer-text footer-text2 text-white small flex-column">
+                        © 2025 Grupo SE<br>
+                        <span>Todos los derechos reservados.</span>
+                    </div>
+
+                    <!-- Legal -->
+                    <div class="col-md-2 mb-4 mb-md-0 content-legal2">
+                        <div class="footer-menu-title text-green mb-1">LEGAL</div>
+                        <ul class="footer-menu list-unstyled mb-0">
+                            <li><a href="#">Aviso legal</a></li>
+                            <li><a href="#">Política de privacidad</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Menú -->
+                <div class="col-md-2 mb-4 mb-md-0 conten-menu">
+                    <div class="footer-menu-title text-green mb-1">MENÚ</div>
+                    <ul class="footer-menu list-unstyled mb-0">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="#unidades">Unidades</a></li>
+                        <li><a href="#">Inversiones</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <!-- Legal -->
+                <div class="col-md-2 mb-4 mb-md-0 content-legal1">
+                    <div class="footer-menu-title text-green mb-1">LEGAL</div>
+                    <ul class="footer-menu list-unstyled mb-0">
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <!-- Redes sociales -->
+                <div class="col-md-3  falign-items-md-end align-items-center content-redes">
+                    <div class="footer-social d-flex flex-column align-items-center align-items-center">
+                        <a href="#" class="footer-social-icon me-2">
+                            <img src="./icons/instagram_3.png" alt="">
+                        </a>
+                        <a href="#" class="footer-social-icon me-2">
+                            <img src="./icons/whatsapp_1.png" alt="">
+                        </a>
+                        <a href="#" class="footer-social-icon">
+                            <img src="./icons/gmail_1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="animation.js"></script>
+</body>
+
+</html>

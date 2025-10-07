@@ -11,7 +11,7 @@
 
 .section-degradado {
     /* Fondo degradado de gris a negro de izquierda a derecha */
-    background: linear-gradient(90deg, #4B4F53 30%, #181818 100%);
+    background: linear-gradient(90deg, #71AE15 30%, #181818 100%);
     min-height: 480px;
     width: 100%;
     position: relative;
@@ -118,7 +118,7 @@
 }
 
 .gradient-bar{   
-    background: linear-gradient(to right, var(  --color-primario-gris-oscuro) 0%, #1a1a1a 90%, transparent 100%) !important;
+    background: linear-gradient(to right, var(--color-secundario-verde-claro) 0%, #1a1a1a 90%, transparent 100%) !important;
 }
 
 @media (max-width: 991.98px) {
@@ -174,7 +174,7 @@
 
     .section-degradado {
         /* Fondo degradado de gris a negro de izquierda a derecha */
-        background: linear-gradient(180deg, #4B4F53 40%, #131313 100%);
+        background: linear-gradient(180deg, var(--color-secundario-verde-claro) 40%, #131313 100%);
         width: 100%;
         position: relative;
 
@@ -182,7 +182,7 @@
 
     .legado-parrafo {
         font-size: 0.9rem;
-        width: 100%;
+        width: 80%;
         text-align: center;
 
     }

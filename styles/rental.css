@@ -116,9 +116,11 @@
     border: none ;
     color: #fff;
 }
-
+.green-text {
+    color: var(--color-complemento-amarillo-mostaza) !important;
+}
 .gradient-bar{   
-    background: linear-gradient(to right, var(  --color-primario-gris-oscuro) 0%, #1a1a1a 90%, transparent 100%) !important;
+    background: linear-gradient(to right, var(--color-complemento-amarillo-mostaza) 0%, #1a1a1a 90%, transparent 100%) !important;
 }
 
 @media (max-width: 991.98px) {

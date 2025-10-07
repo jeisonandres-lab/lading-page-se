@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     min-height: 100vh; /* Mejor que height: 100vh para que crezca si hay más contenido */
     position: relative;
+    overflow: hidden;
 }
 .blog-title {
     margin-top: 30px;
@@ -80,10 +81,6 @@
 }
 
 
-.blog-card:nth-child(1) .blog-img {
-    /* filter: grayscale(1); */
-}
-
 .blog-card-text {
     line-height: 0.9;
     color: #efefef;
@@ -136,18 +133,74 @@
 .blog-card:hover {
     transform: translateY(-12px) scale(1.03);
 }
+
+
+.esfera-izq,
+.esfera-der1,
+.esfera-der2 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    z-index: 0;
+    pointer-events: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+/* Esfera izquierda inferior */
+.esfera-izq {
+    left: -225px;
+    bottom: 0px;
+    background-image: url('../img/unidades/gradiente-amarillo.svg');
+}
+
+/* Esfera derecha superior */
+.esfera-der1 {
+    right: -195px;
+    top: 30%;
+    background-image: url('../img/unidades/gradiente-verde.svg');
+}
+
+/* Esfera derecha inferior */
+.esfera-der2 {
+    right: -205px;
+    bottom: -120px;
+    background-image: url('../img/unidades/gradiente-gris.svg');
+}
+
+.unidad-sub-2{
+        display: none;
+    }
+
+@media (max-width: 991.98px) {
+   
+}
+
 @media (max-width: 990.98px) {
+    .blog-section {
+     background-image: url();
+    }
+    .blog-subtitle.unidad-sub-2{
+        display: block;
+        font-weight: 200;
+        margin-bottom: 55px !important;
+    }
+    
+     .unidad-sub-1{
+        display: none;
+    }
     .blog-card {
         min-height: 420px;
         max-width: 100%;
     }
     .blog-img {
-        max-width: 70%;
+        max-width: 100%;
         height: 160px;
     }
 
     .blog-title {
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
 
     .content-blog{
