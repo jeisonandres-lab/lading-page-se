@@ -1,20 +1,21 @@
 @import url(./variables.css
 );
+
+.contenedor-texto {
+    margin-top: 90px;
+}
 .section-degradado {
     /* Fondo degradado de gris a negro de izquierda a derecha */
-    background: linear-gradient(90deg, #444 0%, #181818 60%);
+    background: linear-gradient(90deg, #4B4F53 30%, #181818 100%);
     min-height: 480px;
     width: 100%;
     position: relative;
-    overflow: hidden;
+
 }
 
 .img-lado {
-    max-width: 90%;
-    height: auto;
-    border-radius: 18px;
-    box-shadow: 0 4px 24px #0003;
-    display: block;
+    height: 70vh;
+    width: 60%;
 }
 
 .contenedor-nosotros {
@@ -23,15 +24,178 @@
     z-index: 2;
 }
 
+.btn-class .btn-class-btn {
+    background-color: #181818;
+    text-decoration: none;
+    border-radius: 10px;
+    color: var(--color-primario-blanco);
+    border: 1px solid var(--color-primario-blanco);
+    padding: 3px 10px 3px 10px;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.legado-text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.legado-parrafo {
+    font-weight: 200;
+    text-align: end;
+    width: 80%;
+    font-size: 1.5em;
+}
+
+.text-start {
+    display: flex;
+    text-align: left !important;
+    flex-direction: column;
+    align-items: end;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 0.8;
+}
+
+.legado-green {
+    font-size: 3.5rem !important;
+}
+
+.conten-from {
+    width: 100%;
+}
+
+.contendor-frase {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradient-bar-container {
+    width: 100% !important;
+    height: 90px;
+    margin-top: 0rem !important;
+}
+
+.gradient-bar-container .gradient-bar {
+    width: 100% !important;
+}
+
+
+/* Botón de Envío */
+.btn-send-message-nuevo {
+    display: block;
+    width: 55%;
+    /* Ajuste a la imagen */
+    max-width: 300px;
+    /* Limitar el ancho como en la imagen */
+    margin-top: 20px;
+    background-color: transparent;
+    padding: 5px 10px 5px 10px;
+    color: var(--color-primario-blanco);
+    border: 2px solid var(--color-primario-blanco);
+    border-radius: 10px;
+    /* Bordes redondeados */
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-send-message-nuevo:hover {
+    background-color: var(--color-secundario-verde-claro);
+    border-color: var(--color-secundario-verde-claro);
+    color: #fff;
+}
+
+
 @media (max-width: 991.98px) {
-    .section-degradado {
-        min-height: 320px;
-        padding: 2rem 0;
+    .contenedor-texto{
+        margin-top: 0px;
     }
+    .legado-parrafo {
+        font-size: 1.2rem;
+        width: 100%;
+        margin-bottom: 4rem;
+
+    }
+
+    .btn-class .btn-class-btn {
+        font-size: 2rem;
+        display: block;
+    }
+
+    .img-lado {
+        height: 70vh;
+        width: 90%;
+    }
+
+    .contenedor-nosotros {
+        padding: 1rem 0.5rem;
+        text-align: center;
+        align-items: center !important;
+    }
+
+    .content-proxi {
+        display: none;
+    }
+
+    .legado-text {
+        align-items: center;
+        text-align: center !important;
+    }
+
+    .btn-send-message-nuevo {
+        min-width: 400px;
+        width: 100%;
+        font-size: 1.5rem !important;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 760.98px) {
+
+    .btn-send-message-nuevo{
+        min-width: 250px;
+    }
+
+    .section-degradado {
+        /* Fondo degradado de gris a negro de izquierda a derecha */
+        background: linear-gradient(180deg, #4B4F53 40%, #131313 100%);
+        width: 100%;
+        position: relative;
+
+    }
+
+    .legado-parrafo {
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: center;
+
+    }
+     .img-lado {
+        height: 40vh;
+        width: 65%;
+    }
+
+    body .text-start,
+    .legado-green {
+        text-align: center !important;
+        align-items: center;
+        font-size: 3rem !important;
+    }
+
     .img-lado {
         max-width: 100%;
         margin-bottom: 1.5rem;
     }
+    .btn-class-btn{
+        font-size: 1.5rem !important;
+    }
+
     .contenedor-nosotros {
         padding: 1rem 0.5rem;
         text-align: center;
