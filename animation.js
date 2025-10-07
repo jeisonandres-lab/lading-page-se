@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    
+   
 
     // Animación para movie_top (solo una vez)
     const elementos3 = document.querySelectorAll('.movie_top');
@@ -74,6 +74,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     };
+
+
+
+
+    // Animación para blur (solo una vez)
+    const movimiento_abajo = document.querySelectorAll('.tracking-in-expand-fwd-bottom');
+    const blurCallback_abajo = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('tracking-in-expand-fwd-bottom--active');
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const blurObserver_abajo = new IntersectionObserver( blurCallback_abajo, opciones);
+    movimiento_abajo.forEach(elemento => {
+        blurObserver_abajo.observe(elemento);
+    });
 
    
 });

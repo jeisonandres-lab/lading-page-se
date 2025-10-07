@@ -11,7 +11,7 @@
 
 .section-degradado {
     /* Fondo degradado de gris a negro de izquierda a derecha */
-    background: linear-gradient(90deg, #4B4F53 30%, #181818 100%);
+    background: linear-gradient(90deg, #BBBB00 30%, #181818 100%);
     min-height: 480px;
     width: 100%;
     position: relative;
@@ -111,9 +111,9 @@
 }
 
 .btn-send-message-nuevo:hover {
-    box-shadow: 0 0 20px var(--color-secundario-verde-claro);
-    background-color: var(--color-secundario-verde-claro);
-    border: none;
+    box-shadow: 0 0 20px var(--color-complemento-amarillo-mostaza);
+    background-color: var(--color-complemento-amarillo-mostaza);
+    border: none ;
     color: #fff;
 }
 
@@ -174,7 +174,7 @@
 
     .section-degradado {
         /* Fondo degradado de gris a negro de izquierda a derecha */
-        background: linear-gradient(180deg, #4B4F53 40%, #131313 100%);
+        background: linear-gradient(180deg, #BBBB00 40%, #131313 100%);
         width: 100%;
         position: relative;
 
@@ -182,7 +182,7 @@
 
     .legado-parrafo {
         font-size: 0.9rem;
-        width: 100%;
+        width: 80%;
         text-align: center;
 
     }

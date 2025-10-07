@@ -113,7 +113,7 @@
 .btn-send-message-nuevo:hover {
     box-shadow: 0 0 20px var(--color-secundario-verde-claro);
     background-color: var(--color-secundario-verde-claro);
-    border: none;
+    border-color: var(--color-secundario-verde-claro);
     color: #fff;
 }
 
