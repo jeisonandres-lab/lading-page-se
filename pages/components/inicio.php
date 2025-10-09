@@ -24,7 +24,7 @@
                 </div>
                 <div class="col-12 col-md-12  tracking-in-expand-fwd-bottom ">
                     <div class="   ">
-                        <a class="cta boton-unidades " href="unidades.html">Descubre nuestras <span
+                        <a class="cta boton-unidades " href="./unidades.php">Descubre nuestras <span
                                 class="accent title-primery">unidades</span></a>
                     </div>
                 </div>

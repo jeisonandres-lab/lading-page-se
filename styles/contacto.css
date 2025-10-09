@@ -337,8 +337,8 @@ body  main .social2{
 @media (max-width: 992px) {
     
     .btn-send-message {
-        font-size: 0.9rem !important;
-        width: 55%;
+        font-size: 1.3rem !important;
+        width: 80%;
     }
 
     .conten-text-ubicacion h4{
@@ -439,6 +439,9 @@ body  main .social2{
 }
 
 @media (max-width:490px) {
+    .map-container{
+        width: 135%;
+    }
     .header-text {
         font-size: 1.4rem;
         margin-top: 70px;
@@ -451,7 +454,7 @@ body  main .social2{
     }
     
 .conten-map {
-        background-position: 100px;
+        background-position: 80px;
     }
     .map-container{
         height: 259px;
