@@ -27,7 +27,6 @@
         <?php require_once './components/grey-strip.php'; ?>
         <?php require_once './components/unidadesPresen.php'; ?>
         <?php require_once './components/testimonio.php'; ?>
-        <?php require_once './components/contacto.php'; ?>
     </main>
         <?php require_once './components/footer.php'; ?>
 

@@ -12,8 +12,8 @@
             <div class="col-sm-12 col-md-6 col-xxl-7 d-flex flex-column justify-content-center  contenido-testimonio">
                 <div class="testimonio-text animation-blur">
                     <p class="testimonio-frase ">
-                        “Con <strong>GRUPO SE</strong> encontré un espacio
-                        <span class="testimonio-green">rentable y seguro</span>;”
+                        “En <strong>GRUPO SE</strong> encontré el espacio que
+                        <span class="testimonio-green">garantiza mi inversión </span> y se corresponde a mis objetivos;”
                     </p>
                     <p class="testimonio-autor mb-0">- <strong>Cliente satisfecho</strong></p>
                 </div>

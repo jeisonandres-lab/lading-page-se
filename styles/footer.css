@@ -1,9 +1,9 @@
 .footer-se {
-    background: #181818;
+    /* background: #181818; */
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
-    border-top: 2px solid #232323;
+    /* border-top: 2px solid #232323; */
 }
 
 .footer-menu-title {
@@ -47,11 +47,15 @@
 .footer-text1 {
     font-size: 0.95rem;
     line-height: 1.3;
-    font-weight: 300;
+    font-weight: 600;
     display: flex;
 }
 
-.footer-text1 .derechos{
+.footer-text1 .datos-footer {
+    font-weight: 300 !important;
+}
+
+.footer-text1 .derechos {
     font-weight: 600 !important;
     margin-bottom: 10px;
 }
@@ -71,18 +75,31 @@ body .footer-se .footer-text.footer-text2 {
 .cotent_logo_footer img {
     height: 90px;
 }
-.fooeter-text{
+
+.fooeter-text {
     font-weight: 200 !important;
 }
-.fooeter-textspan{
+
+.fooeter-textspan {
     font-weight: 600 !important;
 }
 
-.footer-social-icon img{
+.footer-social-icon img {
     width: 30px;
     height: 30px;
 }
+
+.content__datos {
+    position: relative;
+    top: 30px;
+}
+
 @media (max-width: 990.98px) {
+    .content__datos {
+        margin-bottom: 0px !important;
+        top: 0px;
+    }
+
     .footer-se .row>div {
         text-align: center !important;
         align-items: center !important;
@@ -100,20 +117,21 @@ body .footer-se .footer-text.footer-text2 {
         display: none !important;
     }
 
-    body  .footer-se .footer-text.footer-text2 {
-        display: flex !important;
-        text-align: left;
-        font-size: 0.8rem;
-        font-weight: 200;
+    .footer-se {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
-
-    .footer-text2 span {
+    body .footer-se .footer-text.footer-text2 {
+        display: flex !important;
+        text-align: left;
+        font-size: 0.5rem;
         font-weight: 600;
+        margin-right: 35px !important;
     }
 
     .content-legal2 .footer-menu a {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     /* body main .footer-se  .footer-text .footer-text1{
@@ -125,15 +143,39 @@ body .footer-se .footer-text.footer-text2 {
     } */
 
     .content-legal2 {
+        width: 8rem;
+        text-align-last: left;
         flex-direction: column;
         display: flex !important;
+        margin-bottom: 0px !important;
+        font-size: 0.5rem;
+    }
 
-        font-size: 0.8rem;
+    .cotent_logo_footer {
+        margin-bottom: 0 !important;
+        
     }
 
     .content-legal1,
     .content-redes,
     .conten-menu {
         display: none !important;
+    }
+
+    .content__datos {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 490.98px) {
+    .footer-social {
+        justify-content: left;
+        align-items: flex-end;
+        height: 35px !important;
+    }
+
+    .footer-social-icon img {
+        width: 20px;
+        height: 20px;
     }
 }

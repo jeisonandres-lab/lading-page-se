@@ -1,3 +1,7 @@
+.blog-section{
+    padding-top: 120px !important;
+}
+
 .blog-title {
     font-size: 4rem;
     color: #fff;
@@ -118,6 +122,9 @@
 }
 
 @media (max-width: 990.98px) {
+    .blog-section{
+        padding-top: 80px !important;
+    }
     .blog-card {
         min-height: 420px;
         max-width: 100%;

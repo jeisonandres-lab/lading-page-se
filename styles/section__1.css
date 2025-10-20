@@ -2,8 +2,8 @@
 );
 
 .unidades {
-   display: flex;
-   height: 100vh;
+    display: flex;
+    height: 100vh;
 }
 
 .barra-verde {
@@ -46,6 +46,7 @@
 
 /* Tira gris con degradado desde los lados al centro */
 .grey-strip {
+    top: -12px;
     position: relative;
     background: #2a2a2a;
     padding: 18px 0;
@@ -122,6 +123,7 @@
 }
 
 .unidades-box {
+    padding-right: 12px !important;
     border-radius: 40px 0px 0px 40px;
     border-bottom: 1px solid #fff;
     border-left: 1px solid #fff;
@@ -129,6 +131,14 @@
     /* box-shadow: 0 0 30px #000a; */
     width: 100%;
     max-width: 720px;
+}
+
+.unidades-box .unidades-item:nth-child(2) .unidades-desc {
+    padding-right: 32px !important;
+}
+
+.unidades-box .unidades-item:nth-child(3) .unidades-desc {
+    padding-right: 7rem !important;
 }
 
 .unidades-item {
@@ -156,7 +166,7 @@
 
 .unidades-desc {
     color: #fff;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     line-height: 0.9;
     font-weight: 200;
 
@@ -183,7 +193,7 @@
     border-radius: 6px;
     padding: 0px 5px 0px 5px;
     font-weight: 700;
-    margin:0px 5px 0px 5px;
+    margin: 0px 5px 0px 5px;
     display: flex;
     justify-content: center;
 }
@@ -246,7 +256,7 @@
 }
 
 body main .unidades-btn2 {
-    display:  none !important;
+    display: none !important;
     transition: all 0.3s ease-in-out;
 }
 
@@ -260,7 +270,7 @@ body main .unidades-btn2 {
 .esfera svg {
     width: 85rem !important;
 }
- 
+
 
 
 
@@ -268,10 +278,17 @@ body main .unidades-btn2 {
 
 /* Responsive: en móviles, que no sobresalga tanto */
 @media (max-width: 768px) {
+    .grey-strip {
+        padding: 40px 0px;
+    }
     .unidades {
-  
-   height: 100% ;
-}
+        height: 100%;
+    }
+
+    .unidades-desc {
+        width: 85%;
+        font-size: 1rem;
+    }
 
     .content-unidad {
         display: flex;
@@ -279,13 +296,23 @@ body main .unidades-btn2 {
         align-items: center;
     }
 
-    .unidades-title-vertical .unidades-nombre:nth-child(2) {
-    display: flex !important;
-    transition: all 0.3s ease-in-out;
+    .unidades-box .unidades-item:nth-child(2) .unidades-desc {
+        padding-right: 0px !important;
     }
+
+    .unidades-box .unidades-item:nth-child(3) .unidades-desc {
+        padding-right: 0rem !important;
+    }
+
+
+    .unidades-title-vertical .unidades-nombre:nth-child(2) {
+        display: flex !important;
+        transition: all 0.3s ease-in-out;
+    }
+
     .unidades-title-vertical .unidades-nombre:nth-child(1) {
-    display: none !important;
-    transition: all 0.3s ease-in-out;
+        display: none !important;
+        transition: all 0.3s ease-in-out;
     }
 
 
@@ -313,7 +340,7 @@ body main .unidades-btn2 {
     }
 
     .unidades-title-vertical {
-        margin-top: 90px;
+        margin-top: 140px;
         display: flex;
         justify-content: center;
         position: relative;
@@ -331,16 +358,17 @@ body main .unidades-btn2 {
     }
 
     .unidades-item {
+        width: 21rem;
         flex-direction: column;
         text-align: center;
     }
 
     .unidades-item img {
         width: 80%;
-        margin-bottom: 5px;
     }
 
-     .unidades-item:nth-child(1), .unidades-item:nth-child(2) {
+    .unidades-item:nth-child(1),
+    .unidades-item:nth-child(2) {
         margin-bottom: 50px !important;
     }
 
@@ -357,18 +385,18 @@ body main .unidades-btn2 {
         font-size: clamp(16px, 3vw, 1.6rem);
     }
 
-    
+
     body main .unidades-btn2 {
         margin-bottom: 7rem;
-        display:  flex !important;
+        display: flex !important;
     }
 
-    
+
     body main .unidades-btn1 {
-        display:  none !important;
+        display: none !important;
     }
 
-    .esfera{
+    .esfera {
         right: 0
     }
 
@@ -381,8 +409,8 @@ body main .unidades-btn2 {
     }
 
     .icon-item svg {
-        width: 40px !important;
-        height: 40px !important;
+        width: 60px !important;
+        height: 60px !important;
     }
 
     .icon-item span {
@@ -392,15 +420,18 @@ body main .unidades-btn2 {
 
 
     .grey-strip .content-icon-varios {
-    padding: 0px 10px 0px 10px !important;
+        padding: 0px 10px 0px 10px !important;
     }
 
     body main .barra-verde {
         display: none !important;
     }
 
-     body main .unidades-box {
+    body main .unidades-box {
+        display: flex;
         padding: 0px 0px 20px 0px !important;
+        flex-direction: column;
+        align-items: center;
     }
 
 

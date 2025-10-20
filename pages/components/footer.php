@@ -3,14 +3,15 @@
     <div class="container">
         <div class="row align-items-start">
             <!-- Logo y dirección -->
-            <div class="col-md-5 mb-4 mb-md-0 d-flex align-items-md-start align-items-center">
-                <div class="mb-2 me-4 cotent_logo_footer">
+            <div class="col-sm-12 col-md-5 mb-4 mb-md-0 d-flex align-items-md-start align-items-center content__datos">
+                
+                <div class="mb-2 me-3 cotent_logo_footer">
                     <img src="../img/grupose_logo.png" alt="Grupo SE">
                 </div>
                 <div class="footer-text footer-text1 text-white small flex-column">
                     © 2025 Grupo SE<br>
                     <span class="derechos">Todos los derechos reservados.</span>
-                    <span class="w-75">
+                    <span class="w-75 datos-footer ">
                         Plaza Central, local 3A-B, tercer nivel, Avenida 27 de Febrero, esquina Winston
                         Churchill Planta: Santo Domingo
                     </span>
@@ -18,12 +19,25 @@
                 </div>
 
                 <div class="footer-text footer-text2 text-white small flex-column">
-                    © 2025 Grupo SE<br>
-                    <span>Todos los derechos reservados.</span>
+                    <div class="col-md-3  falign-items-md-end align-items-center content__redes_footer">
+                        <div class="footer-social d-flex">
+                            <a href="#" class="footer-social-icon me-2">
+                                <img src="../img/instagram_3.png" alt="">
+                            </a>
+                            <a href="#" class="footer-social-icon me-2">
+                                <img src="../img/whatsapp_1.png" alt="">
+                            </a>
+                            <a href="#" class="footer-social-icon">
+                                <img src="../img/gmail_1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    © 2025 Grupo SE Todos<br>
+                    <span> los derechos reservados;</span>
                 </div>
 
                 <!-- Legal -->
-                <div class="col-md-2 mb-4 mb-md-0 content-legal2">
+                <div class="col-md-3 mb-4 mb-md-0 content-legal2">
                     <div class="footer-menu-title text-green mb-1">LEGAL</div>
                     <ul class="footer-menu list-unstyled mb-0">
                         <li><a href="#">Aviso legal</a></li>

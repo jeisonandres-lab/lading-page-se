@@ -7,13 +7,13 @@
  <!-- Open Graph / Facebook -->
  <meta property="og:type" content="grupose">
  <meta property="og:title" content="Espacios diseñados para producir, generar el mejor retorno posible">
- <meta property="og:image" content="../img/grupose_logo.png">
+ <meta property="og:image" content="../img/favicon.png">
  <!-- Twitter -->
  <meta name="twitter:card" content="summary_large_image">
  <meta name="twitter:title" content="Nuestra misión  es que tu inversión siempre genere frutos">
  <meta name="twitter:description" content="Llenamos tu agenda con pacientes calificados en menos de 30 días">
- <link rel="icon" href="../img/grupose_logo.png" type="image/x-icon">
- <link rel="icon" href="../img/grupose_logo.png" type="image/png">
+ <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+ <link rel="icon" href="../img/favicon.png" type="image/png">
 
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

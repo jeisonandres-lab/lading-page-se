@@ -11,7 +11,7 @@
                 <div class="section_contendo">
                     <div class="legado-text">
                         <h2 class="legado-title mb-4 text-start legado-titulo-doslineas animation-blur">
-                            <span class="legado-blanco">Coninversión</span>
+                            <span class="legado-blanco">Coinversión</span>
                             <span class="legado-green">inteligente</span>
                         </h2>
                         <p class="legado-parrafo tracking-in-expand-fwd-bottom">

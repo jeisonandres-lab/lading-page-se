@@ -101,7 +101,7 @@
 /* testimonio */
 .testimonio-section {
     background: #232323;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     align-items: center;
 
@@ -180,6 +180,7 @@
     body main .testimonio-frase {
         margin-bottom: 1rem !important;
         font-size: 2.5rem;
+        text-align: center
     }
 }
 
@@ -231,7 +232,7 @@
 
 @media (max-width: 490.98px) {
     body main .testimonio-frase {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     body main .testimonio-autor {
@@ -260,7 +261,12 @@
 
 @media (max-width: 390.98px) {
     body main .testimonio-frase {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
+    }
+
+    .contenido-testimonio {
+        align-items: center;
+        margin-top: 90px;
     }
 
 }

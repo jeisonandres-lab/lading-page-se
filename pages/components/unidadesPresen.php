@@ -26,18 +26,21 @@
                      <!-- Columna central y derecha igual... -->
                      <div class="col-12 d-flex flex-column align-items-center animation-blur" style="z-index: 1;">
                          <div class="unidades-box p-5 animation-blur">
+                            <div class="unidades-item mb-3 animation-blur">
+                                 <img src="../img/rental_box_2.png" alt="">
+                                 <div class="unidades-desc">Espacios colaborativos de alquiler, para expandir su negocio</div>
+                             </div>
+
                              <div class="unidades-item mb-3 animation-blur">
                                  <img src="../img/coworking_box_2.png" alt="">
-                                 <div class="unidades-desc">Rentas comerciales y turísticas con máxima rentabilidad
+                                 <div class="unidades-desc">
+                                    Renta de espacios dinámicos que fomentan la colaboración y el crecimiento emprendedor
                                  </div>
                              </div>
-                             <div class="unidades-item mb-3 animation-blur">
-                                 <img src="../img/rental_box_2.png" alt="">
-                                 <div class="unidades-desc">Tu espacio de trabajo colaborativo y flexible</div>
-                             </div>
+                             
                              <div class="unidades-item animation-blur ">
                                  <img src="../img/investmest_box_1.png" alt="">
-                                 <div class="unidades-desc">Conviértete con respaldo y asesoría de expertos</div>
+                                 <div class="unidades-desc">Invierta con la asesoría de expertos</div>
                              </div>
 
 

@@ -203,7 +203,7 @@ main {
 @media (min-width: 1400px) {
     .testimonio-frase {
         padding-left: 90px;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         line-height: 1;
     }
 
@@ -214,6 +214,7 @@ main {
     }
 
     .testimonio-autor {
+        margin-top: 50px;
         font-size: 2.1rem;
         padding-left: 90px;
     }
