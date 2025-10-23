@@ -1,56 +1,14 @@
-/* parte 2 de nosotros  */
-/* Sección Misión y Filosofía */
-main {
-    padding-top: 60px;
-}
-
-.mision-filosofia-section {
-    background: #2a2a2a;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-}
-
 .mision-img-frase2 {
     display: none;
 }
 
-.mision-title {
-    font-size: 4rem;
-    color: #fff;
-    letter-spacing: 1px;
-}
-
-.mision-text {
-    color: #fff;
-    font-size: 1.8rem;
-    margin-top: 0.5rem;
-    font-weight: 200;
-    line-height: 1;
-}
-
-.text-green {
-    color: #7ec11f;
-    font-weight: 600;
-}
-.section_vista1 {
-    width: 100%;
-}
-/* Sección Misión con imagen */
-/* .mision-imagen-section {
-    background: #181818;
-    
-    display: flex;
-    align-items: center;
-} */
-
 .mision-imagen-section {
-      background-color: #131313;
+    background-color: #131313;
     background-image: url('../img/background_quote.png');
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 90vh;
     /* Ajusta según tu diseño */
     border-radius: 18px;
     width: 100%;
@@ -77,57 +35,122 @@ main {
 }
 
 .mision-img-text {
+    width: 383.5px;
     color: #fff;
     line-height: 1.2;
     text-align: left;
 }
 
 .mision-img-frase {
-    font-size: 3rem;
+    font-size: 1.8rem;
     color: #fff;
     margin-bottom: 0;
     font-weight: 200;
 }
 
-    .content-imagen-laptop svg{
-        height: 10rem;
-    }
+.content-imagen-laptop svg {
+    height: 10rem;
+}
 
-   .testimonio-img-bg {
-        margin-right: 12rem;
-        min-width: 420px;
-        min-height: 225px;
-    } 
-@media (max-width: 1200px) {
-   .content-imagen-laptop svg{
-        height: 180px;
-    }
+.testimonio-img-bg {
+    margin-right: 12rem;
+    min-width: 420px;
+    min-height: 225px;
+}
 
-    .mision-img-text{
-        margin-top: 15px;
-        text-align: center;
+.title-vision {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.mision-text-vision {
+    width: 46.43rem;
+    font-size: 1.6em;
+    color: #fff;
+    font-weight: 200;
+    line-height: 1;
+    text-align: center;
+
+}
+
+.content_vision {
+    margin-bottom: 80px;
+}
+
+.img-content {
+    margin-right: 5rem;
+}
+
+
+
+@media (max-width: 390.98px) {
+    .content-imagen-laptop svg {
+        height: 85px;
     }
 
 }
+
+@media (max-width: 490.98px) {
+    .mision-text-vision {
+        width: 80%;
+        font-size: 1.1rem;
+    }
+
+    .mision-img-frase,
+    .mision-img-text {
+        font-size: 1.1rem;
+    }
+
+    .mision-img-frase1 {
+        width: 65%;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .mision-text-vision {
+        font-weight: 100;
+        font-size: 1.3rem;
+    }
+
+    .mision-img-frase,
+    .mision-img-text {
+        padding-top: 1.5rem;
+        font-size: 1.6rem;
+        font-weight: 100;
+    }
+
+    .content-imagen-laptop {
+        flex-direction: column;
+    }
+
+    .img-content {
+        margin-right: 0rem;
+
+    }
+
+    .mision-text-vision {
+        width: 100%;
+    }
+
+    .testimonio-img-bg {
+        margin-right: 0rem;
+        min-width: 0px;
+        min-height: 0px;
+        background-size: contain;
+    }
+
+    .title-vision {
+        margin-bottom: 2rem;
+    }
+
+}
+
 @media (max-width: 990.98px) {
     .content-imagen-laptop svg {
         height: 130px;
-    }
-
-    .mision-img-frase2 {
-        display: block !important;
-    }
- 
-    .mision-img-frase1 {
-        display: none !important;
-    }
-
-    .mision-title {
-        font-size: 2rem;
-    }
-
-    .contenido-mision-text2 {
-        align-items: center;
     }
 
     .mision-img-frase,
@@ -144,59 +167,9 @@ main {
         display: flex;
     }
 
-    .mision-img-frase2{
-        width: 75%;
-    }
-
     .mision-img {
         max-width: 160px;
     }
-
-
-    .mision-title {
-        font-size: 3rem !important;
-    }
-
-    .mision-text {
-        font-size: 1.6rem !important;
-    }
-
-    /* .content-imagen-laptop {
-        background-image: url('../img/background_quote.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 320px;
-        border-radius: 18px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    } */
-
-
-
-
-
-
-}
-
-@media (max-width: 767.98px) {
-    .testimonio-img-bg{
-        margin-right: 0rem;
-        min-width: 0px; 
-        min-height: 0px;
-        background-size: contain;
-    }
-
-}
-
-
-@media (max-width: 390.98px) {
-    .content-imagen-laptop svg {
-        height: 85px;
-    }
-
 }
 
 /* Responsive: en pantallas grandes, que no sobresalga tanto */
@@ -219,20 +192,54 @@ main {
         padding-left: 90px;
     }
 
-    .mision-title {
+    .title-vision {
         font-size: 4rem;
     }
 
-    .mision-text {
-        color: #fff;
-        font-size: 2rem;
-        margin-top: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+    .content-imagen-laptop svg {
+        height: 180px;
     }
 
-    .text-green {
-        color: #7ec11f;
-        font-weight: 600;
+    .mision-img-text {
+        margin-top: 15px;
+        text-align: center;
     }
 
+}
 
+@media (min-width: 1600px) {
+    .title-vision {
+        font-size: 5rem !important;
+    }
+
+    .mision-text-vision {
+        font-size: 1.6rem !important;
+        width: 50.43rem !important;
+    }
+
+    .contenedor-nosotros {
+        left: 85px !important;
+    }
+
+    .mision-img-frase {
+        font-size: 2rem !important;
+    }
+
+    .mision-img-text {
+        display: flex;
+        width: 543.5px !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-imagen-laptop svg {
+        height: 12rem !important;
+    }
+
+    .content_vision {
+        margin-bottom: 11rem !important;
+    }
 }

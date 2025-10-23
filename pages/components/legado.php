@@ -24,12 +24,22 @@
 
                                 </h2>
                                 <p class="legado-parrafo tracking-in-expand-fwd-bottom ">
-                                    Grupo SE surge con el propósito de invertir en propiedades de alta
-                                    rentabilidad;
-                                    el nombre,
-                                    basado en los apellidos de la fundadora, representa valores transmitidos por
-                                    generaciones:
-                                    honestidad, responsabilidad, puntualidad, organización y lealtad.
+                                    El nombre del grupo está sustentado en las iniciales de los apellidos
+                                    de su fundadora, quien se manifiesta en la creación de un ecosistema
+                                    empresarial que impulsa el crecimiento de emprendedores, profesionales
+                                    e inversionistas, guiado por los valores de honestidad, responsabilidad
+                                    y lealtad.
+                                </p>
+
+                                <p class="legado-parrafo tracking-in-expand-fwd-bottom ">
+                                    Su capacidad para transformar espacios en oportunidades y su enfoque humano
+                                    y organizado han dejado una marca duradera en cada persona y proyecto que ha
+                                    tocado.
+                                </p>
+
+                                <p class="legado-parrafo legado-parrafo-tercero tracking-in-expand-fwd-bottom ">
+                                    Más que una empresa, ha construido una comunidad de confianza, desarrollo
+                                    y visión compartida.
                                 </p>
                             </div>
                         </div>

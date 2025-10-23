@@ -27,30 +27,36 @@
                      <div class="col-12 d-flex flex-column align-items-center animation-blur" style="z-index: 1;">
                          <div class="unidades-box p-5 animation-blur">
                             <div class="unidades-item mb-3 animation-blur">
-                                 <img src="../img/rental_box_2.png" alt="">
+                                 <img class="rental-pc img-pc" src="../img/rental_box_2.png" alt="">
+                                 <img class="rental-movil img-movil" src="../img/rental_movil.png" alt="">
+
                                  <div class="unidades-desc">Espacios colaborativos de alquiler, para expandir su negocio</div>
                              </div>
 
                              <div class="unidades-item mb-3 animation-blur">
-                                 <img src="../img/coworking_box_2.png" alt="">
+                                 <img class="cowor-pc img-pc" src="../img/coworking_box_2.png" alt="">
+                                 <img class="cowor-movil img-movil" src="../img/coworking_movil.png" alt="">
+
                                  <div class="unidades-desc">
                                     Renta de espacios dinámicos que fomentan la colaboración y el crecimiento emprendedor
                                  </div>
                              </div>
                              
                              <div class="unidades-item animation-blur ">
-                                 <img src="../img/investmest_box_1.png" alt="">
+                                 <img class="inves-pc img-pc" src="../img/investment_box_1.png" alt="">
+                                 <img class="inves-movil img-movil" src="../img/investment_movil.png" alt="">
+
                                  <div class="unidades-desc">Invierta con la asesoría de expertos</div>
                              </div>
 
 
                          </div>
-                         <a href="unidades.html" class="animation-blur unidades-btn unidades-btn1 mt-3 d-flex align-items-center">
+                         <a href="unidades.php" class="animation-blur unidades-btn unidades-btn1 mt-3 d-flex align-items-center">
                              Conoce más sobre nuestras unidades
                              <span class="aqui"><span>aquí</span></span>
                          </a>
 
-                         <a href="unidades.html" class="unidades-btn unidades-btn2 mt-3 d-flex align-items-center">
+                         <a href="unidades.php" class="unidades-btn unidades-btn2 mt-3 d-flex align-items-center">
                              presiona
                              <span class="aqui"><span class="d-flex align-items-center">aquí</span></span>
                              para conocer más

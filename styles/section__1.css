@@ -272,12 +272,20 @@ body main .unidades-btn2 {
 }
 
 
-
+.img-movil {
+    display: none;
+}
 
 
 
 /* Responsive: en móviles, que no sobresalga tanto */
 @media (max-width: 768px) {
+    .img-movil {
+    display: flex;
+}
+    .img-pc {
+        display: none;
+    }
     .grey-strip {
         padding: 40px 0px;
     }
@@ -369,7 +377,7 @@ body main .unidades-btn2 {
 
     .unidades-item:nth-child(1),
     .unidades-item:nth-child(2) {
-        margin-bottom: 50px !important;
+        margin-bottom: 25px !important;
     }
 
     .unidades-box {

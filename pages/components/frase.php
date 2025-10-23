@@ -7,10 +7,23 @@
     </div>
     <div class="container">
         <div class="row align-items-center justify-content-center contenido-mision-text p-0">
-            <!-- Imagen izquierda -->
-            <div
-                class="col-sm-12 col-md-12 col-xl-4 d-flex justify-content-center mb-4 mb-md-0 content-imagen-laptop ">
-                <svg class="me-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            <div class="d-flex flex-column align-items-center content_vision tracking-in-expand-fwd-bottom">
+                <h3 class="title-vision">VISIÓN</h3>
+                <P class="mision-text-vision">
+                    Ser un referente en la creación de espacios que conectan 
+                    oportunidades, personas e inversiones, fomentando el desarrollo
+                     comercial, profesional y turístico con integridad, innovación y 
+                     resultados tangibles
+                </P>
+            </div>
+            <!-- Imagen izquierda
+            <div class="col-sm-12 col-md-12 col-xl-6 d-flex justify-content-center mb-4 mb-md-0 content-imagen-laptop ">
+                
+            </div> -->
+            <!-- Texto derecha -->
+            <div class="col-sm-12 col-md-12 col-xl-12 d-flex  justify-content-center content-imagen-laptop">
+                <div class="img-content tracking-in-expand-fwd-bottom d-flex justify-content-center" >
+                    <svg class="me-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="0 0 188.55 160.96">
                     <defs>
                         <style>
@@ -48,23 +61,12 @@
                                 d="M22.93,161H.61V139.8A36.1,36.1,0,0,0,7.67,151a38.42,38.42,0,0,0,15.26,10" />
                         </g>
                     </g>
-                </svg>
-            </div>
-            <!-- Texto derecha -->
-            <div class="col-sm-12 col-md-12 col-xl-6 d-flex flex-column justify-content-center ">
+                    </svg>
+                </div>
                 <div class="mision-img-text tracking-in-expand-fwd-bottom">
                     <p class="mision-img-frase mision-img-frase1 mb-2">
-                        Nuestra misión<br>
-                        es que tu inversión<br>
-                        <span class="fw-bold text-white">siempre <span class="text-green">genere
-                                frutos</span></span>
-                    </p>
-
-                    <p class="mision-img-frase mision-img-frase2 mb-2">
-                        Nuestra misión
-                        es que tu inversión
-                        <span class="fw-bold text-white">siempre <span class="text-green">genere
-                                frutos</span></span>
+                        Nos sustentamos en los valores de la honestidad
+                        la lealtad, la responsabilidad y el compromiso
                     </p>
                 </div>
             </div>

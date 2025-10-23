@@ -28,7 +28,7 @@
         <div class="row justify-content-center g-4">
             <!-- Tarjeta 1 -->
             <div
-                class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center ">
+                class="col-12 col-md-12 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center ">
                 <div class="blog-img-wrapper blog-card h-100 d-flex flex-column align-items-center conten-card">
                     <a href="./coworking.php">
                         <img src="../img/coworkingbase.png" alt="Rental" class="blog-img img1 mb-2 scale-up-tl">
@@ -37,13 +37,13 @@
 
                     <a href="./invesments.php" class="content-img-3">
 
-                        <img src="../img/invstmet_mb.png" alt="Rental" class="blog-img img3-2 mb-2 scale-up-tl">
+                        <img src="../img/investment_mb.png" alt="Rental" class="blog-img img3-2 mb-2 scale-up-tl">
                     </a>
                 </div>
             </div>
             <!-- Tarjeta 2 -->
             <div
-                class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center content-total">
+                class="col-12 col-md-12 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center content-total">
                 <div class="blog-card h-100 d-flex flex-column align-items-center">
                     <a href="./rental.php">
                         <img src="../img/rentalbase.png" alt="Rental" class="blog-img img2 mb-2 scale-up-tl">
@@ -54,10 +54,10 @@
             </div>
             <!-- Tarjeta 3 -->
             <div
-                class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center tag3 ">
+                class="col-12 col-md-12 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center tag3 ">
                 <div class="blog-card h-100 d-flex flex-column align-items-center">
                     <a href="./invesments.php">
-                        <img src="../img/investbase.png" alt="Rental" class="blog-img img3 mb-2 scale-up-tl">
+                        <img src="../img/investment_card.png" alt="Rental" class="blog-img img3 mb-2 scale-up-tl">
                     </a>
 
                     <a href="./coworking.php" class="content-img-2">

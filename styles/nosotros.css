@@ -30,7 +30,6 @@
     align-items: center !important;
     justify-content: center !important;
     overflow: hidden !important;
-    opacity: 0.2;
 }
 
 .content-datos{
@@ -48,7 +47,7 @@
 
 /* Sección legado */
 .legado-section {
-    background: #18191a;
+    /* background: #18191a; */
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -62,7 +61,8 @@
 }
 
 .legado-title {
-    font-size: 6rem;
+    justify-content: end !important;
+    font-size: 4rem;
     line-height: 1;
     color: #fff;
     line-height: 0.4;
@@ -72,19 +72,19 @@
 
 .legado-green {
     color: var(--color-secundario-verde-claro);
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 600;
     display: inline-block;
     line-height: 1.1;
 }
 
 .legado-parrafo {
-    text-align: justify;
-    text-align-last: left;
+    /* text-align: justify;
+    text-align-last: left; */
     /* Para la última línea alineada a la izquierda */
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: #f2f2f2;
-    line-height: 1.4;
+    line-height: 1.1;
     max-width: 480px;
     margin-top: 1.5rem;
     font-family: 'Poppins', sans-serif;
@@ -93,6 +93,11 @@
     font-weight: 200;
 }
 
+.legado-parrafo-tercero {
+    font-weight: 600;
+    text-align: right;
+    font-size: 1rem;
+}
 .legado-text {
     max-width: 600px;
     width: 40%;
@@ -151,7 +156,7 @@
     }
 
     .content-img{
-        background-position: -300px !important;
+        background-position: -210px !important;
     }
 
     body main .testimonio-autor {
@@ -185,8 +190,12 @@
 }
 
 @media (max-width: 991.98px) {
+    .legado-parrafo-tercero {
+        display: none;
+    }
     .content-img{
        height: 100%;
+       opacity: 0.2;
     }
     .cuadrado-nosotros{
         display: block;
@@ -203,6 +212,7 @@
     }
 
     .legado-parrafo {
+        margin: 0px !important;
         font-size: 1.3rem;
         max-width: 70%;
     }
@@ -231,6 +241,11 @@
 }
 
 @media (max-width: 490.98px) {
+    
+    .legado-section {
+        min-height: 90vh;
+           
+    }
     body main .testimonio-frase {
         font-size: 1.4rem;
     }
@@ -244,7 +259,8 @@
     }
 
     .legado-parrafo {
-        max-width: 80%;
+        max-width: 85%;
+        font-size: 1.1rem;
     }
 
     .cuadrado-nosotros{
@@ -273,7 +289,9 @@
 
 /* Responsive: en pantallas grandes, que no sobresalga tanto */
 @media (min-width: 1400px) {
-
+    #nosotros{
+        padding-top: 4rem;
+    }
     .g-5,
     .gx-5 {
         --bs-gutter-x: 10rem !important;
@@ -288,13 +306,33 @@
     }
 
     .legado-parrafo {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+        max-width: 557px;
         
     }
 
     .legado-title,
     .legado-green {
-        font-size: 7rem;
+        
+        font-size: 6rem;
+    }
+
+}
+
+@media (min-width: 1800px) {
+        .legado-parrafo {
+        font-size: 1.6rem;
+    }
+
+    .legado-parrafo{
+        max-width: 650px;
+    }
+
+
+    .legado-title,
+    .legado-green {
+        
+        font-size: 8rem;
     }
 
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../styles/nosotros.css">
     <link rel="stylesheet" href="../styles/nosotros_parte2.css">
     <link rel="stylesheet" href="../styles/section__1.css">
+    <link rel="stylesheet" href="../styles/misivi.css">
     <link rel="stylesheet" href="../styles/contacto.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <?php require_once './components/style.php'; ?>
