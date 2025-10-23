@@ -89,6 +89,7 @@
     .content-imagen-laptop svg {
         height: 85px;
     }
+    
 
 }
 
@@ -104,8 +105,22 @@
     }
 
     .mision-img-frase1 {
-        width: 65%;
+        width: 100%;
     }
+
+    .mision-imagen-section {
+        height: 100vh;
+    }
+
+    .content_vision {
+        margin-bottom: 70px;
+    }
+
+    .content-imagen-laptop svg {
+        height: 120px !important;  
+    }
+
+
 
 }
 
