@@ -110,6 +110,12 @@
     height: 60vh;
     display: flex;
     align-items: center;
+    background-image: url('../svg/degradado_testimonio.svg');
+    background-size: cover;
+    /* que cubra toda el área */
+    /* background-position: center top;   ajustar el corte del gradiente */
+    background-repeat: no-repeat;
+    overflow: hidden;
 
 }
 

@@ -22,7 +22,30 @@
     color: #efefef;
     font-size: 1.3rem;
     font-weight: 300;
+    line-height: 1;
 }
+
+.title-notion {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 15px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+
+    /* Fondo con degradado diagonal (esquina a esquina) */
+    /* background: linear-gradient(135deg, rgba(126,193,31,0.20) 0%, rgba(11,45,24,0.20) 100%); */
+
+    /* Borde blanco visible y suave */
+    border: 1px solid rgba(255,255,255,0.95);
+    /* Mejora renderizado de la tipografía */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Opcional: efecto de vidrio si quieres un poco de difuminado detrás */
+    /* backdrop-filter: blur(4px); */
+}
+
 
 .text-green {
     color: #7ec11f;
