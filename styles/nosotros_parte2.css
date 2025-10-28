@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap');
+
 .mision-img-frase2 {
     display: none;
 }
@@ -89,7 +91,7 @@
     .content-imagen-laptop svg {
         height: 85px;
     }
-    
+
 
 }
 
@@ -117,7 +119,7 @@
     }
 
     .content-imagen-laptop svg {
-        height: 120px !important;  
+        height: 120px !important;
     }
 
 
@@ -189,23 +191,7 @@
 
 /* Responsive: en pantallas grandes, que no sobresalga tanto */
 @media (min-width: 1400px) {
-    .testimonio-frase {
-        padding-left: 90px;
-        font-size: 2.5rem;
-        line-height: 1;
-    }
-
-    .testimonio-img-bg {
-        margin-right: 12rem;
-        min-width: 420px;
-        min-height: 225px;
-    }
-
-    .testimonio-autor {
-        margin-top: 50px;
-        font-size: 2.1rem;
-        padding-left: 90px;
-    }
+    
 
     .title-vision {
         font-size: 4rem;

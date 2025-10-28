@@ -113,12 +113,22 @@
 }
 
 @media (max-width: 490.98px) {
+    .mision-filosofia-section {
+        min-height:100%;
+    }
+
+    .contendor-misi {
+        height: auto;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
     .mision-title {
         font-size: 2.5rem !important;
     }
 
     .mision-text {
-        font-size: 1.1rem !important;
+        font-size: 1rem !important;
     }
 
     .mision-text-filosofia {
@@ -129,12 +139,17 @@
         padding-right: 0rem;
     }
 
-    .mision-filosofia-section {
-        padding: 0rem 2.5rem !important;
+     .mision-filosofia-section {
+       padding-top: 5rem !important;
+         padding-bottom: 5rem   !important;
+    } 
+
+    .contendor-misi .row {
+        margin-top: auto;
     }
 
     .content__mision-filosofia .content__text:nth-child(1) {
-        margin-bottom: 50px !important;
+        margin-bottom: 29px !important;
     }
 
     .content__mision-filosofia .content__text:nth-child(1)::after {

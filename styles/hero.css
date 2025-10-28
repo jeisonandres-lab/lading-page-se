@@ -185,6 +185,10 @@
         margin-top: 35px;
        
     }
+
+    .content-hero-sub p {
+        display: inline !important;
+    }
 }
 
 /* Teléfonos grandes (480px y menos) */

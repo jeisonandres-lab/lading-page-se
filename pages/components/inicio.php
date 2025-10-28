@@ -22,8 +22,8 @@
                 <div class="col-12 col-md-12 col-sm-12">
                     <div class="hero-sub text-center d-flex flex-column">
                         <div class="content-hero-sub tracking-in-expand-fwd-bottom  ">
-                            <p class="m-0 lh-1">
-                                Espacios diseñados para
+                            <p class="m-0 lh-1 d-flex flex-column align-items-center ">
+                                <span>Espacios diseñados para </span>
                                 <strong class="fw-bold">producir, generar
                                     y garantizar retorno
                                 </strong>

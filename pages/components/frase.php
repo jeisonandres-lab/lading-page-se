@@ -8,12 +8,14 @@
     <div class="container">
         <div class="row align-items-center justify-content-center contenido-mision-text p-0">
             <div class="d-flex flex-column align-items-center content_vision tracking-in-expand-fwd-bottom">
-                <h3 class="title-vision">VISIÓN</h3>
+                <h3 class="title-vision">FILOSOFÍA</h3>
                 <P class="mision-text-vision">
-                    Ser un referente en la creación de espacios que conectan 
-                    oportunidades, personas e inversiones, fomentando el desarrollo
-                     comercial, profesional y turístico con integridad, innovación y 
-                     resultados tangibles
+                    Creemos en el poder de la honestidad, la responsabilidad
+                    y la experiencia para construir relaciones duraderas.
+                    Nuestra gestión se basa en la lealtad, la organización
+                    y el compromiso con el éxito de cada cliente, creando
+                    entornos que inspiran desarrollo, colaboración e inversión
+                    inteligente
                 </P>
             </div>
             <!-- Imagen izquierda
@@ -22,45 +24,45 @@
             </div> -->
             <!-- Texto derecha -->
             <div class="col-sm-12 col-md-12 col-xl-12 d-flex  justify-content-center content-imagen-laptop">
-                <div class="img-content tracking-in-expand-fwd-bottom d-flex justify-content-center" >
+                <div class="img-content tracking-in-expand-fwd-bottom d-flex justify-content-center">
                     <svg class="me-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 188.55 160.96">
-                    <defs>
-                        <style>
-                            .cls-12 {
-                                fill: url(#Degradado_sin_nombre_37);
-                            }
+                        viewBox="0 0 188.55 160.96">
+                        <defs>
+                            <style>
+                                .cls-12 {
+                                    fill: url(#Degradado_sin_nombre_37);
+                                }
 
-                            .cls-22 {
-                                fill: url(#Degradado_sin_nombre_39);
-                            }
-                        </style>
-                        <linearGradient id="Degradado_sin_nombre_37" y1="80.48" x2="188.55" y2="80.48"
-                            gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#131313" />
-                            <stop offset="0.11" stop-color="#181818" />
-                            <stop offset="0.24" stop-color="#262626" />
-                            <stop offset="0.38" stop-color="#3d3d3d" />
-                            <stop offset="0.52" stop-color="#5e5e5e" />
-                            <stop offset="0.67" stop-color="#888" />
-                            <stop offset="0.83" stop-color="#bcbcbc" />
-                            <stop offset="0.98" stop-color="#f8f8f8" />
-                            <stop offset="1" stop-color="#fff" />
-                        </linearGradient>
-                        <linearGradient id="Degradado_sin_nombre_39" x1="0.61" y1="150.38" x2="22.93"
-                            y2="150.38" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#131313" />
-                            <stop offset="1" stop-color="#171717" />
-                        </linearGradient>
-                    </defs>
-                    <g id="Capa_2" data-name="Capa 2">
-                        <g id="About">
-                            <path class="cls-12"
-                                d="M188.55,35.69V0H60.61Q43.2,0,29.49,5.43T7.9,21.4Q0,31.93,0,46.56q0,15.3,7.32,25A47.38,47.38,0,0,0,24.73,86.25a211.25,211.25,0,0,0,25.67,10q14.63,4.66,21.36,8.54t6.74,11c0,3.54-1.13,6.28-3.37,8.2s-5.38,2.88-9.41,2.88a16.87,16.87,0,0,1-11.38-4q-4.64-4-5.34-12.19H.47q1.62,24.17,20.08,37.24t47,13.08h121V125.27H143V96.17h38.45V62.29H143V35.69ZM96.16,7a54.89,54.89,0,0,1,9.6,5.79q16.78,12.75,18.4,35.79h-28V7h0Zm24.07,130.87q-6.95,10.63-20.38,16.84c-1.2.55-2.43,1.07-3.69,1.55v-85q-8.47-3.75-19.75-7.61Q62.23,59,55.62,55.21T49,44.79q0-5.32,3-8t8.36-2.67a14.29,14.29,0,0,1,10.1,3.55q3.84,3.56,4.76,10.87H96.16V71.19q3.21,1.41,6,2.82a50.33,50.33,0,0,1,17.6,14.84q7.41,9.75,7.4,25.26a42.42,42.42,0,0,1-6.94,23.71" />
-                            <path class="cls-22"
-                                d="M22.93,161H.61V139.8A36.1,36.1,0,0,0,7.67,151a38.42,38.42,0,0,0,15.26,10" />
+                                .cls-22 {
+                                    fill: url(#Degradado_sin_nombre_39);
+                                }
+                            </style>
+                            <linearGradient id="Degradado_sin_nombre_37" y1="80.48" x2="188.55" y2="80.48"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#131313" />
+                                <stop offset="0.11" stop-color="#181818" />
+                                <stop offset="0.24" stop-color="#262626" />
+                                <stop offset="0.38" stop-color="#3d3d3d" />
+                                <stop offset="0.52" stop-color="#5e5e5e" />
+                                <stop offset="0.67" stop-color="#888" />
+                                <stop offset="0.83" stop-color="#bcbcbc" />
+                                <stop offset="0.98" stop-color="#f8f8f8" />
+                                <stop offset="1" stop-color="#fff" />
+                            </linearGradient>
+                            <linearGradient id="Degradado_sin_nombre_39" x1="0.61" y1="150.38" x2="22.93"
+                                y2="150.38" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#131313" />
+                                <stop offset="1" stop-color="#171717" />
+                            </linearGradient>
+                        </defs>
+                        <g id="Capa_2" data-name="Capa 2">
+                            <g id="About">
+                                <path class="cls-12"
+                                    d="M188.55,35.69V0H60.61Q43.2,0,29.49,5.43T7.9,21.4Q0,31.93,0,46.56q0,15.3,7.32,25A47.38,47.38,0,0,0,24.73,86.25a211.25,211.25,0,0,0,25.67,10q14.63,4.66,21.36,8.54t6.74,11c0,3.54-1.13,6.28-3.37,8.2s-5.38,2.88-9.41,2.88a16.87,16.87,0,0,1-11.38-4q-4.64-4-5.34-12.19H.47q1.62,24.17,20.08,37.24t47,13.08h121V125.27H143V96.17h38.45V62.29H143V35.69ZM96.16,7a54.89,54.89,0,0,1,9.6,5.79q16.78,12.75,18.4,35.79h-28V7h0Zm24.07,130.87q-6.95,10.63-20.38,16.84c-1.2.55-2.43,1.07-3.69,1.55v-85q-8.47-3.75-19.75-7.61Q62.23,59,55.62,55.21T49,44.79q0-5.32,3-8t8.36-2.67a14.29,14.29,0,0,1,10.1,3.55q3.84,3.56,4.76,10.87H96.16V71.19q3.21,1.41,6,2.82a50.33,50.33,0,0,1,17.6,14.84q7.41,9.75,7.4,25.26a42.42,42.42,0,0,1-6.94,23.71" />
+                                <path class="cls-22"
+                                    d="M22.93,161H.61V139.8A36.1,36.1,0,0,0,7.67,151a38.42,38.42,0,0,0,15.26,10" />
+                            </g>
                         </g>
-                    </g>
                     </svg>
                 </div>
                 <div class="mision-img-text tracking-in-expand-fwd-bottom">

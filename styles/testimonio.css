@@ -1,0 +1,78 @@
+
+/* testimonio */
+.testimonio-section {
+    background: #232323;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.testimonio-img-bg {
+    /* compensar navbar fija */
+    background-image: url('../img/hands.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.testimonio-img {
+    border-radius: 12px;
+    max-height: 110px;
+    object-fit: cover;
+}
+
+.testimonio-text {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: 200;
+}
+
+.testimonio-frase {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.testimonio-frase::before,
+.testimonio-frase::after {
+    /* o usa content: open-quote / close-quote según tu uso */
+    font-family: 'Poppins', sans-serif !important;
+
+    /* evita lecturas TTS si es decorativo */
+}
+
+.testimonio-green {
+    color: #7ec11f;
+    font-weight: 400 !important;
+}
+
+.grupose {
+    font-weight: 600 !important;
+}
+
+.testimonio-autor {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+/* Responsive: en pantallas grandes, que no sobresalga tanto */
+@media (min-width: 1400px) {
+
+   .testimonio-frase {
+        padding-left: 90px;
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+
+    .testimonio-frase::before,
+    .testimonio-frase::after {
+           /* o usa content: open-quote / close-quote según tu uso */
+        font-family: 'Poppins', sans-serif !important;
+      
+        /* evita lecturas TTS si es decorativo */
+    }
+
+}

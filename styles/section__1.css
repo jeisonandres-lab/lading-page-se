@@ -168,7 +168,7 @@
     color: #fff;
     font-size: 1.4rem;
     line-height: 0.9;
-    font-weight: 200;
+    font-weight: 100;
 
 }
 
@@ -463,9 +463,16 @@ body main .unidades-btn2 {
 @media (min-width: 1600px) {
     .unidades-title-vertical {
         font-size: clamp(10rem, 10vw, 200rem);
-        width: 16%;
+        width: 16.5%;
     }
 }
+
+@media (min-width: 1400px) {
+    .grey-strip{
+        top: 0 !important;
+    }
+}
+
 
 
 /* ...existing code... */
