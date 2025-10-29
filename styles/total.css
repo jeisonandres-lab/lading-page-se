@@ -10,5 +10,5 @@
 
 a {
     /* Elimina la línea de subrayado */
-    text-decoration: none; 
+    text-decoration: none !important; 
 }

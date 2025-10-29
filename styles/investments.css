@@ -1,6 +1,24 @@
 @import url(./variables.css
 );
 
+.content-flecha-atras {
+    margin-top: 50px !important;
+
+}
+
+.content-flecha-atras svg {
+    width: 40px;
+    height: 40px;
+}
+
+.content-flecha-atras h3 {
+    color: var(--color-primario-blanco);
+}
+
+.img-lado-mobile {
+    display: none;
+}
+
 .green-text:nth-child(1) {
     color: var(--color-primario-blanco) !important;
 }
@@ -19,8 +37,8 @@
 }
 
 .img-lado {
-    height: 70vh;
-    width: 60%;
+    height: 75vh;
+    width: 75%;
 }
 
 .contenedor-nosotros {
@@ -35,7 +53,7 @@
     border-radius: 10px;
     color: var(--color-primario-blanco);
     border: 1px solid var(--color-primario-blanco);
-    padding: 3px 10px 3px 10px;
+    padding: 5px 35px 5px 35px;
     font-weight: 600;
     font-size: 1.6rem;
 }
@@ -47,10 +65,11 @@
 }
 
 .legado-parrafo {
+    line-height: 1.1;
     font-weight: 200;
     text-align: end;
-    width: 80%;
-    font-size: 1.5em;
+    width: 84%;
+    font-size: 2em;
 }
 
 .text-start {
@@ -63,8 +82,13 @@
     line-height: 0.8;
 }
 
+.legado-blanco {
+    font-size: 4.5rem !important;
+}
+
 .legado-green {
-    font-size: 3.5rem !important;
+    font-size: 5rem !important;
+    margin-bottom: 30px;
 }
 
 .conten-from {
@@ -80,29 +104,26 @@
 
 .gradient-bar-container {
     width: 100% !important;
-    height: 90px;
-    margin-top: 0rem !important;
+    margin-top: 0.50rem !important;
 }
 
 .gradient-bar-container .gradient-bar {
     width: 100% !important;
+    height: 20px !important;
 }
 
 
 /* Botón de Envío */
 .btn-send-message-nuevo {
     display: block;
-    width: 55%;
-    /* Ajuste a la imagen */
-    max-width: 300px;
-    /* Limitar el ancho como en la imagen */
+    width: 70%;
+    max-width: 800px;
     margin-top: 20px;
     background-color: transparent;
     padding: 5px 10px 5px 10px;
     color: var(--color-primario-blanco);
     border: 2px solid var(--color-primario-blanco);
     border-radius: 10px;
-    /* Bordes redondeados */
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -117,8 +138,16 @@
     color: #fff;
 }
 
-.gradient-bar{   
+.gradient-bar {
     background: linear-gradient(to right, var(--color-secundario-verde-claro) 0%, #1a1a1a 90%, transparent 100%) !important;
+}
+
+.btn-class {
+    margin-top: 40px;
+}
+
+.mobil-parrafo {
+    display: none;
 }
 
 @media (max-width: 991.98px) {
@@ -167,32 +196,78 @@
 }
 
 @media (max-width: 760.98px) {
+    .btn-class {
+        margin-top: 0px;
+    }
+
+    .img-lado-mobile {
+        display: flex;
+    }
+
+    .mobil-parrafo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pc-parrafo {
+        display: none;
+    }
+
+    .img-lado-desktop {
+        display: none !important;
+
+    }
+
+    .content-flecha-atras {
+        justify-content: flex-start !important;
+        position: absolute;
+        top: 68px;
+        margin-left: 40px;
+    }
+
+    .content-flecha-atras h3 {
+        display: none;
+    }
+
+    .btn-clasificador {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 
     .btn-send-message-nuevo {
+        font-size: 1.1rem !important;
+        width: 80% !important;
         min-width: 250px;
+
     }
 
     .section-degradado {
         /* Fondo degradado de gris a negro de izquierda a derecha */
-        background: linear-gradient(180deg, var(--color-secundario-verde-claro) 40%, #131313 100%);
+        background: linear-gradient(180deg, var(--color-secundario-verde-claro) 20%, #131313 100%);
         width: 100%;
         position: relative;
 
     }
 
     .legado-parrafo {
-        font-size: 0.9rem;
-        width: 80%;
+        font-size: 1.2rem;
+        width: 90%;
         text-align: center;
 
     }
 
-     .img-lado {
+    .img-lado {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
         height: 300px;
-        width: 50%;
+        width: 80%;
+        margin-top: 10px;
+        max-width: 100%;
+        margin-bottom: 1.5rem;
     }
 
     body .text-start,
+    .legado-blanco,
     .legado-green {
         text-align: center !important;
         align-items: center;
@@ -213,10 +288,19 @@
         text-align: center;
         align-items: center !important;
     }
+
+    .content-imagenes {
+        padding-top: 40px;
+        margin-top: 10px;
+    }
 }
 
 @media (min-width: 1400px) {
     .header-text {
         width: 75%;
+    }
+
+    .btn-class .btn-class-btn {
+        font-size: 2rem;
     }
 }

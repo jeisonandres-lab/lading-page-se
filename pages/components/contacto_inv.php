@@ -3,8 +3,8 @@
       <div class="container custom-container  py-md-5 px-md-3">
           <div class="row justify-content-center ">
               <div class="col-lg-6 content-proxi">
-                  <div class="contendor-frase">
-                      <div class="header-content mb-5 ">
+                  <div class="contendor-frase d-flex flex-column">
+                      <div class="header-content">
                           <h1 class="header-text ">
                               <span class="header-text-primario animation-blur">CONVERSEMOS </span>SOBRE TU&nbsp;<br>
                               <div class="d-flex container-fluid">
@@ -13,11 +13,11 @@
                                       <span class="col-lg-7 green-text"> INVERSIÓN</span>
                                   </div>
                               </div>
-                              <div class="col-lg-5 gradient-bar-container d-flex align-items-center ">
-                                  <div class="gradient-bar h-25"></div>
-                              </div>
-                          </h1>
 
+                          </h1>
+                      </div>
+                      <div class="gradient-bar-container d-flex align-items-center mt-1 ">
+                          <div class="gradient-bar h-25"></div>
                       </div>
                   </div>
 
@@ -43,7 +43,7 @@
 
                           <div class="mb-3 form-group-custom">
                               <label for="interes" class="form-label-custom">Interés</label>
-                              <input type="text" class="form-control-custom" value="Rental" id="telefono" readonly>
+                              <input type="text" class="form-control-custom" value="Invesment" id="telefono" readonly>
                           </div>
 
                           <div class=" form-group-custom">
@@ -53,9 +53,11 @@
                           </div>
                       </form>
 
-                      <button type="submit" class="btn-send-message-nuevo">
-                          ENVÍA UN MENSAJE
-                      </button>
+                      <div class="btn-clasificador d-flex justify-content-start w-100">
+                          <button type="submit" class="btn-send-message-nuevo">
+                              QUIERO AGENDAR UNA CITA
+                          </button>
+                      </div>
                   </div>
               </div>
           </div>

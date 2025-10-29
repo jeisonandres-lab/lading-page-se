@@ -14,7 +14,7 @@
                         <h2 class="legado-title mb-4 text-start legado-titulo-doslineas animation-blur">
                             <span class="legado-blanco">Rentas</span>
                             <span class="legado-green">comerciales</span>
-                            <span class="legado-green">y turísmo</span>
+                            <span class="legado-green legado3">y turísmo</span>
                         </h2>
                         <p class="legado-parrafo tracking-in-expand-fwd-bottom">
                             <strong class="fw-bold">1. Locales comerciales:</strong> en el mejor punto comercial de la

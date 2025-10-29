@@ -32,8 +32,8 @@
 }
 
 .img-lado {
-    height: 70vh;
-    width: 60%;
+    height: 75vh;
+    width: 75%;
 }
 
 .contenedor-nosotros {
@@ -76,8 +76,16 @@
     line-height: 0.8;
 }
 
+.legado-blanco{
+    font-size: 5.2rem;
+}
+
 .legado-green {
-    font-size: 3.5rem !important;
+    font-size: 5.2rem !important;
+}
+
+.legado3{
+    margin-bottom: 30px;
 }
 
 .conten-from {
@@ -144,6 +152,9 @@
 }
 
 @media (max-width: 991.98px) {
+    .legado-blanco{
+    font-size: 3rem;
+}
     .img-lado-desktop {
         display: none;
     }

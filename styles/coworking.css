@@ -37,8 +37,8 @@
 }
 
 .img-lado {
-    height: 70vh;
-    width: 60%;
+    height: 75vh;
+    width: 75%;
 }
 
 .contenedor-nosotros {
@@ -85,8 +85,13 @@
     line-height: 0.8;
 }
 
+.legado-blanco{
+    font-size: 5.2rem;
+}
+
 .legado-green {
-    font-size: 3.5rem !important;
+    font-size: 4.5rem !important;
+    margin-bottom: 30px;
 }
 
 .conten-from {
@@ -261,7 +266,7 @@
         margin-top: 10px;
     }
 
-    body .text-start,
+    body .text-start, .legado-blanco,
     .legado-green {
         text-align: center !important;
         align-items: center;

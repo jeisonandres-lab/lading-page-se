@@ -115,7 +115,7 @@
                 class="col-12 col-md-12 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center tag3 ">
                 <div class="blog-card h-100 d-flex flex-column align-items-center">
                     <a href="./invesments.php">
-                        <img src="../img/investment_card.png" alt="Rental" class="blog-img img3 mb-2 scale-up-tl">
+                        <img src="../img/investment_base.png" alt="Rental" class="blog-img img3 mb-2 scale-up-tl">
                     </a>
 
                     <a href="./invesments.php" class="content-img-2">
