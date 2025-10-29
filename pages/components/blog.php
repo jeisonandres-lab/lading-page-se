@@ -13,31 +13,15 @@
         <!-- Tarjetas de blog -->
         <div class="row justify-content-center g-4">
             <!-- Tarjeta 1 -->
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center ">
-                <div class="blog-img-wrapper blog-card h-100 d-flex flex-column align-items-center">
-                    <div class="blog-card-header coworking-bg d-flex align-items-end ">
-                        <!-- <span class="blog-card-title"><span class="text-green">co</span>WORKING</span> -->
-                        <img class="blog-img1 scale-up-tl" src="./img/cropped_coworking.png" alt="">
-                    </div>
-                    <img src="../img/coworking_photo.png " alt="Rental" class=" scale-up-tl blog-img mb-2">
-                    <div class="blog-card-text text-center mb-2">
-                        El futuro del coworking en República Dominicana
-                    </div>
-                    <div class="d-flex justify-content-center w-100">
-                        <a href="#" class="blog-btn text-center">Leer más</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Tarjeta 2 -->
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center content-total">
+            <div class="col-12 col-md-12 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center content-total">
                 <div class="blog-card h-100 d-flex flex-column align-items-center">
                     <div class="blog-card-header rental-bg d-flex align-items-end">
                         <!-- <span class="blog-card-title">RENTAL</span> -->
-                        <img class="blog-img2 scale-up-tl" src="./img/cropped_rental.png" alt="">
+                        <img class="blog-img2 scale-up-tl" src="../img/cropped_rental.png" alt="">
                     </div>
                     <img src="../img/rental_photo.png" alt="Rental" class="scale-up-tl blog-img mb-2">
                     <div class="blog-card-text text-center tag2 mb-2">
-                        Cómo asegurar el mejor retorno en rentas turísticas
+                        Renta de espacios comerciales en Plaza Central y renta de villas turísticas en las mejores zonas de la República Dominicana
                     </div>
 
                     <div class="d-flex justify-content-center w-100">
@@ -46,16 +30,34 @@
 
                 </div>
             </div>
+            
+            <!-- Tarjeta 2 -->
+            <div class="col-12 col-md-12 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center ">
+                <div class="blog-img-wrapper blog-card h-100 d-flex flex-column align-items-center">
+                    <div class="blog-card-header coworking-bg d-flex align-items-end ">
+                        <!-- <span class="blog-card-title"><span class="text-green">co</span>WORKING</span> -->
+                        <img class="blog-img1 scale-up-tl" src="../img/cropped_coworking.png" alt="">
+                    </div>
+                    <img src="../img/coworking_photo.png " alt="Rental" class=" scale-up-tl blog-img mb-2">
+                    <div class="blog-card-text text-center mb-2">
+                        Renta de espacios flexibles para empresarios independientes, emprendedores, capacitaciones y eventos
+                    </div>
+                    <div class="d-flex justify-content-center w-100">
+                        <a href="#" class="blog-btn text-center">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            
             <!-- Tarjeta 3 -->
             <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center tag3">
                 <div class="blog-card h-100 d-flex flex-column align-items-center">
                     <div class="blog-card-header investments-bg d-flex align-items-end">
                         <!-- <span class="blog-card-title">INVESTMENTS</span> -->
-                        <img class="blog-img3 scale-up-tl" src="./img/cropped_investments.png" alt="">
+                        <img class="blog-img3 scale-up-tl" src="../img/cropped_investments.png" alt="">
                     </div>
                     <img src="../img/invest_photo.png" alt="Rental" class="scale-up-tl blog-img mb-2">
                     <div class="blog-card-text text-center mb-2">
-                        Ventajas de coinvertir con respaldo inmobiliario
+                        Asesoría para la inversión de propiedades comerciales y turísticas
                     </div>
 
                     <div class="d-flex justify-content-center w-100">
