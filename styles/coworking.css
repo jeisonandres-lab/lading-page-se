@@ -1,8 +1,26 @@
 @import url(./variables.css
 );
 
+.content-flecha-atras {
+    margin-top: 50px !important;
+
+}
+
+.content-flecha-atras svg {
+    width: 40px;
+    height: 40px;
+}
+
+.content-flecha-atras h3 {
+    color: var(--color-primario-blanco);
+}
+
+.img-lado-mobile {
+    display: none;
+}
+
 .green-text:nth-child(1) {
-    color: var(--color-primario-blanco) !important;
+    color: var(--color-secundario-verde-claro) !important;
 }
 
 .contenedor-texto {
@@ -35,9 +53,13 @@
     border-radius: 10px;
     color: var(--color-primario-blanco);
     border: 1px solid var(--color-primario-blanco);
-    padding: 3px 10px 3px 10px;
+    padding: 3px 35px 3px 35px;
     font-weight: 600;
     font-size: 1.6rem;
+}
+
+.contenedor-cd{
+    margin-top: 50px;
 }
 
 .legado-text {
@@ -49,7 +71,7 @@
 .legado-parrafo {
     font-weight: 200;
     text-align: end;
-    width: 80%;
+    width: 100%;
     font-size: 1.5em;
 }
 
@@ -80,29 +102,26 @@
 
 .gradient-bar-container {
     width: 100% !important;
-    height: 90px;
-    margin-top: 0rem !important;
+    margin-top: 0.50rem !important;
 }
 
 .gradient-bar-container .gradient-bar {
     width: 100% !important;
+    height: 20px !important;
 }
 
 
 /* Botón de Envío */
 .btn-send-message-nuevo {
     display: block;
-    width: 55%;
-    /* Ajuste a la imagen */
-    max-width: 300px;
-    /* Limitar el ancho como en la imagen */
+    width: 70%;
+    max-width: 800px;
     margin-top: 20px;
     background-color: transparent;
     padding: 5px 10px 5px 10px;
     color: var(--color-primario-blanco);
     border: 2px solid var(--color-primario-blanco);
     border-radius: 10px;
-    /* Bordes redondeados */
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -113,12 +132,16 @@
 .btn-send-message-nuevo:hover {
     box-shadow: 0 0 20px var(--color-secundario-verde-claro);
     background-color: var(--color-secundario-verde-claro);
-    border: none;
+    border: 2px solid var(--color-secundario-verde-claro);
     color: #fff;
 }
 
-.gradient-bar{   
-    background: linear-gradient(to right, var(  --color-primario-gris-oscuro) 0%, #1a1a1a 90%, transparent 100%) !important;
+.gradient-bar {
+    background: linear-gradient(to right, var(--color-primario-gris-oscuro) 0%, #1a1a1a 90%, transparent 100%) !important;
+}
+
+.bt-movile{
+    display: none;
 }
 
 @media (max-width: 991.98px) {
@@ -129,13 +152,12 @@
     .legado-parrafo {
         font-size: 1.2rem;
         width: 100%;
-        margin-bottom: 4rem;
+        margin-bottom: 0rem;
 
     }
 
     .btn-class .btn-class-btn {
         font-size: 2rem;
-        display: block;
     }
 
     .img-lado {
@@ -164,9 +186,52 @@
         font-size: 1.3rem !important;
         margin-bottom: 30px;
     }
+
+    .content-flecha-atras {
+        justify-content: flex-start !important;
+        position: absolute;
+        top: 68px;
+        margin-left: 40px;
+    }
+
+    .content-flecha-atras h3 {
+        display: none;
+    }
+
+    .img-lado {
+        height: 300px;
+        width: 50%;
+    }
+
+    .legado-text .legado-parrafo.parrafo1 {
+        margin-bottom: 20px !important;
+    }
 }
 
 @media (max-width: 760.98px) {
+    .bt-movile{
+        display: flex;
+    }
+
+    .bt-pc{
+        display: none;
+    }
+
+    .img-lado-mobile {
+        display: block;
+    }
+
+    .img-lado-desktop {
+        display: none;
+    }
+
+    .img-lado {
+        height: 300px;
+        width: 80%;
+        margin-top: 10px;
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
 
     .btn-send-message-nuevo {
         min-width: 250px;
@@ -174,22 +239,26 @@
 
     .section-degradado {
         /* Fondo degradado de gris a negro de izquierda a derecha */
-        background: linear-gradient(180deg, #4B4F53 40%, #131313 100%);
+        background: linear-gradient(180deg, #4B4F53 20%, #131313 90%);
         width: 100%;
         position: relative;
 
     }
 
     .legado-parrafo {
-        font-size: 0.9rem;
-        width: 80%;
+        font-size: 1rem;
+        width: 67%;
         text-align: center;
 
     }
 
-     .img-lado {
-        height: 300px;
-        width: 50%;
+    .parrafo2 {
+        width: 74% !important;
+    }
+
+    .content-imagenes {
+        padding-top: 40px;
+        margin-top: 10px;
     }
 
     body .text-start,
@@ -213,21 +282,42 @@
         text-align: center;
         align-items: center !important;
     }
-}
 
+    .btn-class {
+        margin-top: 30px;
+    }
 
-@media (max-width: 760.98px) {
+    .btn-send-message-nuevo {
+        font-size: 1.1rem !important;
+        width: 80% !important;
+    }
 
-
-     .img-lado {
-        height: 300px;
-        width: 50%;
+    .btn-clasificador {
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
 }
 
+
 @media (min-width: 1400px) {
     .header-text {
         width: 75%;
+    }
+}
+
+
+@media (min-width: 1600px) {
+    .btn-class {
+        margin-top: 40px;
+    }
+
+    .btn-class .btn-class-btn {
+        font-size: 2rem;
+    }
+
+    .legado-parrafo {
+        width: 100%;
+        font-size: 1.6rem;
     }
 }

@@ -1,23 +1,25 @@
 <!-- section contactanos rental  -->
-<section class="investment-section">
+<section class="investment-section" id="section-contac-rental">
     <div class="container custom-container  py-md-5 px-md-3">
         <div class="row justify-content-center ">
-            <div class="col-lg-6 content-proxi">
-                <div class="contendor-frase">
-                    <div class="header-content mb-5 ">
+            <div class="col-lg-6 content-proxi ">
+                <div class="contendor-frase d-flex flex-column">
+                    <div class="header-content">
                         <h1 class="header-text ">
-                            <span class="header-text-primario animation-blur">CONVERSEMOS </span>SOBRE TU&nbsp;<br>
+                            <span class="header-text-primario animation-blur">CONVERSEMOS </span>SOBRE SUS&nbsp;<br>
                             <div class="d-flex container-fluid">
                                 <div class="row animation-blur">
-                                    <span class="green-text">PRÓXIMA</span>
-                                    <span class="col-lg-7 green-text"> INVERSIÓN</span>
+
+                                    <span class="col-lg-7 green-text">NECESIDADES</span>
                                 </div>
                             </div>
-                            <div class="col-lg-5 gradient-bar-container d-flex align-items-center ">
-                                <div class="gradient-bar h-25"></div>
-                            </div>
+
                         </h1>
 
+
+                    </div>
+                    <div class="gradient-bar-container d-flex align-items-center mt-1 ">
+                        <div class="gradient-bar h-25"></div>
                     </div>
                 </div>
 
@@ -53,9 +55,12 @@
                         </div>
                     </form>
 
-                    <button type="submit" class="btn-send-message-nuevo">
-                        ENVÍA UN MENSAJE
-                    </button>
+                    <div class="btn-clasificador d-flex justify-content-start w-100">
+                        <button type="submit" class="btn-send-message-nuevo">
+                            QUIERO AGENDAR UNA CITA
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>

@@ -221,6 +221,15 @@
         display: none;
     }
 
+    .testimonio-section {
+        height: auto;
+        padding-bottom: 0rem !important;
+    }
+
+    .conten-imgen-testimonio {
+        margin-bottom: 0rem !important;
+    }
+
     .content-img {
         height: 100%;
         opacity: 0.2;

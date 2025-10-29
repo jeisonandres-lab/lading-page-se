@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row align-items-center justify-content-center content-testimonio">
             <!-- Imagen con fondo verde -->
-            <div class="col-sm-12 col-md-4 col-xxl-3  d-flex justify-content-center mb-4 mb-md-0">
+            <div class="col-sm-12 col-md-4 col-xxl-3  d-flex justify-content-center mb-4 mb-md-0 conten-imgen-testimonio">
                 <div class="testimonio-img-bg d-flex align-items-center justify-content-center">
 
                 </div>

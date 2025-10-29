@@ -1,9 +1,61 @@
 <!-- section blog  -->
 <section class="blog-section pt-5 pb-5">
     <!-- Esfera izquierda -->
-    <div class="esfera esfera-izq"></div>
+    <div class="esfera esfera-izq">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1169.48 1235.4">
+            <defs>
+                <style>
+                    .cls-verde {
+                        fill: url(#Degradado_sin_nombre_29);
+                    }
+                </style>
+                <radialGradient id="Degradado_sin_nombre_29" cx="1901.03" cy="320.52" r="655.66" gradientTransform="translate(870.59 -1173.26) rotate(90) scale(0.94 0.89)" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#70af22" />
+                    <stop offset="0.01" stop-color="#6daa22" />
+                    <stop offset="0.11" stop-color="#55821e" />
+                    <stop offset="0.23" stop-color="#41601a" />
+                    <stop offset="0.34" stop-color="#304418" />
+                    <stop offset="0.47" stop-color="#232e16" />
+                    <stop offset="0.61" stop-color="#1a1f14" />
+                    <stop offset="0.77" stop-color="#151613" />
+                    <stop offset="1" stop-color="#131313" />
+                </radialGradient>
+            </defs>
+            <g id="Capa_2" data-name="Capa 2">
+                <g id="Units">
+                    <ellipse class="cls-verde" cx="584.74" cy="617.7" rx="584.74" ry="617.7" />
+                </g>
+            </g>
+        </svg>
+    </div>
     <!-- Esfera derecha arriba -->
-    <div class="esfera esfera-der1"></div>
+    <div class="esfera esfera-der1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1169.48 1235.4">
+            <defs>
+                <style>
+                    .cls-amarillo {
+                        fill: url(#Degradado_sin_nombre_6);
+                    }
+                </style>
+                <radialGradient id="Degradado_sin_nombre_6" cx="1901.03" cy="320.52" r="655.66" gradientTransform="translate(870.59 -1173.26) rotate(90) scale(0.94 0.89)" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#bb0" />
+                    <stop offset="0.04" stop-color="#aaaa02" />
+                    <stop offset="0.14" stop-color="#828206" />
+                    <stop offset="0.25" stop-color="#60600a" />
+                    <stop offset="0.36" stop-color="#44440d" />
+                    <stop offset="0.48" stop-color="#2e2e10" />
+                    <stop offset="0.62" stop-color="#1f1f12" />
+                    <stop offset="0.77" stop-color="#161613" />
+                    <stop offset="1" stop-color="#131313" />
+                </radialGradient>
+            </defs>
+            <g id="Capa_2" data-name="Capa 2">
+                <g id="Units">
+                    <ellipse class="cls-amarillo" cx="584.74" cy="617.7" rx="584.74" ry="617.7" />
+                </g>
+            </g>
+        </svg>
+    </div>
     <!-- Esfera derecha abajo -->
     <div class="esfera esfera-der2"></div>
 
@@ -16,13 +68,14 @@
                     Compromiso a través del servicio
                     en cada una de nuestras unidades,
                     <br><span class="text-green">proporcionando beneficios, </span>
-                    todo, dentro de un mismo sistema.
+                    todo dentro de un mismo sistema.
                 </p>
 
                 <p class="blog-subtitle unidad-sub-2 blog-text mb-1">
-                    Amplio abanico de<span class="text-green"> beneficios comerciales</span>
-                    , todo dentro de un mismo sistema
-
+                   Compromiso a través del servicio
+                    en cada una de nuestras unidades,
+                    <span class="text-green">proporcionando beneficios, </span>
+                    todo dentro de un mismo sistema.
                 </p>
             </div>
         </div>

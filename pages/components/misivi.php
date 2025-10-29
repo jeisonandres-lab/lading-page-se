@@ -1,5 +1,5 @@
 <!-- section mision y filosofia  -->
-<section class="movie_top mision-filosofia-section py-5">
+<section class=" mision-filosofia-section py-5">
     <div class="container justify-content-center d-flex h-100 align-items-center contendor-misi">
         <div class="row text-center justify-content-center flex-column g-5 w-100 content__mision-filosofia">
 

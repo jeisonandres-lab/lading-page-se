@@ -3,6 +3,7 @@
 
 <head>
     <?php require_once'./components/header.php'; ?>
+    <link rel="stylesheet" href="../styles/total.css">
     <link rel="stylesheet" href="../styles/animaciones.css">
     <link rel="stylesheet" href="../styles/variables.css">
     <link rel="stylesheet" href="../styles/navbar.css">

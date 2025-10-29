@@ -168,37 +168,44 @@
 .esfera-der1,
 .esfera-der2 {
     position: absolute;
-    width: 400px;
+    width: 420px;
     height: 400px;
     z-index: 0;
     pointer-events: none;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.7;
+ 
 }
 
 /* Esfera izquierda inferior */
 .esfera-izq {
     display: none;
-    left: -225px;
-    bottom: 0px;
-    background-image: url('../svg/gradiente-amarillo.svg');
+    right: 150px;
+    bottom: -40px;
+    /* background-image: url('../svg/gradiente-verde.svg');
+    background-size: 30rem;
+    width: 50rem; */
 }
 
 /* Esfera derecha superior */
 .esfera-der1 {
     display: none;
-    right: -195px;
-    top: 10%;
-    background-image: url('../svg/gradiente-verde.svg');
+    left: -175px;
+    top: 15%;
+    /* background-image: url('../svg/gradiente-amarillo.svg');
+    background-size: 30rem;
+       width: 50rem;
+    height: 40rem */
 }
 
 /* Esfera derecha inferior */
 .esfera-der2 {
     display: none;
     right: -205px;
-    bottom: -120px;
+    bottom: 100px;
+     height: 510px !important;
     background-image: url('../svg/gradiente-gris.svg');
+    background-size: 30rem;
 }
 
 .unidad-sub-2 {
@@ -215,9 +222,9 @@
 
 @media (max-width: 990.98px) {
 
-.blog-section{
-    
-}
+    .title-notion {
+        font-size: 1.2rem;
+    }
     .esfera-der1,
     .esfera-der2,
     .esfera-izq {
@@ -250,12 +257,14 @@
     .view .blog-section {
         background-image: url();
         padding-top: 60px !important;
+        padding-bottom: 0 !important;
     }
 
     .blog-subtitle.unidad-sub-2 {
         display: block;
         font-weight: 200;
         margin-bottom: 55px !important;
+        width: 374px;
     }
 
     .unidad-sub-1 {
