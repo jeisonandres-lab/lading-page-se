@@ -2,12 +2,12 @@
     <div class="container contenedor-texto">
         <div class="row align-items-center">
             <!-- Imagen izquierda -->
-            <div class="col-md-6 d-flex justify-content-center content-imagenes">
+            <div class="col-md-12 col-xl-6 d-flex justify-content-center content-imagenes">
                 <img src="../img/rentalbase.png" alt="Imagen" class="img-lado img-lado-desktop">
                 <img src="../img/rental_card.png" alt="Imagen" class="img-lado img-lado-mobile">
             </div>
             <!-- Contenido derecha -->
-            <div class="col-md-6 d-flex flex-column contenedor-nosotros">
+            <div class="col-md-12 col-xl-6 d-flex flex-column contenedor-nosotros">
                 <!-- Aquí va tu contenido, por ejemplo: -->
                 <div class="section_contendo">
                     <div class="legado-text">

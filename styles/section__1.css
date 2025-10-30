@@ -277,12 +277,32 @@ body main .unidades-btn2 {
 }
 
 
+/* Tablets grandes (1024px y menos) */
+@media (max-width: 990px) {
+      .unidades-desc {
+        width: 85%;
+        font-size: 1.6rem !important;
+    }
 
+    .unidades-item {
+        width: 25rem !important;
+    }
+}
+
+@media (max-width: 490px) {
+      .unidades-desc {
+        font-size: 1rem !important;
+    }
+
+    .unidades-item {
+        width: 21rem !important;
+    }
+}
 /* Responsive: en móviles, que no sobresalga tanto */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .img-movil {
     display: flex;
-}
+    }
     .img-pc {
         display: none;
     }
@@ -294,8 +314,9 @@ body main .unidades-btn2 {
     }
 
     .unidades-desc {
-        width: 85%;
-        font-size: 1rem;
+        width: 100%;
+        font-size: clamp(0.8rem, 10vw, 2rem);
+    
     }
 
     .content-unidad {
@@ -366,7 +387,7 @@ body main .unidades-btn2 {
     }
 
     .unidades-item {
-        width: 21rem;
+        width: 35rem;
         flex-direction: column;
         text-align: center;
     }

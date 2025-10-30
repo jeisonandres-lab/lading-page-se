@@ -11,15 +11,15 @@
     --input-border: #444;
 }
 
-body  main .content-mapa-secons{
+body main .content-mapa-secons {
     display: none !important;
 }
 
 /* Contenedor Principal de la Sección */
 .investment-section {
-    margin-top: 60px; 
+    margin-top: 60px;
     background-color: var(--color-primario-negro);
-    
+
 }
 
 /* Ajuste del contenedor de Bootstrap para centrar el contenido y dar margen */
@@ -46,12 +46,23 @@ body  main .content-mapa-secons{
     margin: 0;
     color: var(--color-primario-blanco);
     letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
-.header-text-primario{
+.header-text-primario {
     font-weight: 600;
+    margin-bottom: 20px;
 }
+
+.green-text-segundario {
+    color: var(--color-secundario-verde-claro);
+}
+
+.header-text-segundario {
+    font-weight: 200 !important;
+    font-size: 1.4rem;
+    margin-top: 15px;
+}
+
 .green-text {
     color: var(--color-secundario-verde-claro);
     padding: 0px !important;
@@ -60,7 +71,7 @@ body  main .content-mapa-secons{
 
 /* Barra degradada */
 .gradient-bar-container {
-    width: 100%;
+    /* width: 100%; */
     /* Ocupa el ancho para el layout */
     display: flex;
     justify-content: flex-start;
@@ -68,9 +79,10 @@ body  main .content-mapa-secons{
     margin-top: 10px;
 }
 
-.gradient-bar-container{
+.gradient-bar-container {
     padding: 0px !important;
 }
+
 .gradient-bar {
     height: 15px;
     width: 400px;
@@ -79,18 +91,21 @@ body  main .content-mapa-secons{
     background: linear-gradient(to right, var(--color-secundario-verde-claro) 0%, #1a1a1a 90%, transparent 100%);
 }
 
-.content-icons a img{
+.content-icons a img {
     width: 32px;
     height: 30px;
 }
 
 .conten-map {
+    height: 43% !important;
     position: relative;
+    width: 405px;
     /* compensar navbar fija */
     background-image: url('../svg/cont_box map.svg');
     background-size: contain;
     background-position: 115px;
     background-repeat: no-repeat;
+    /* background-size: 13px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,9 +114,12 @@ body  main .content-mapa-secons{
     /* Quita border-image y border-color aquí */
 }
 
-.conten-map .map-header{
-    width: 25rem;
+.conten-map .map-header {
+    width: 23rem;
+    height: 28rem;
+    padding-top: 4.3rem;
 }
+
 /* 
 .conten-map::before {
     content: "";
@@ -121,18 +139,7 @@ body  main .content-mapa-secons{
 /* .map-header{
      
 } */
-/* Responsividad del Título */
-@media (max-width: 992px) {
-    .header-text {
-        font-size: 1.7rem;
-        /* Reducir en móvil */
-    }
 
-    .gradient-bar {
-        width: 150px;
-        /* Reducir la barra en móvil */
-    }
-}
 
 /* --- Formulario --- */
 
@@ -231,7 +238,7 @@ body  main .content-mapa-secons{
 /* --- Columna del Mapa y Dirección --- */
 
 .map-container {
-    height: 350px;
+    height: 286px;
     /* Altura del mapa */
     width: 100%;
     /* border: 5px solid var(--green-color);  Borde verde como en la imagen */
@@ -270,8 +277,8 @@ body  main .content-mapa-secons{
 
 
 .address-text {
-    font-size: 0.9rem;
-    color: #ccc;
+    font-size: 1.2rem;
+    color: var(--color-primario-blanco);
     line-height: 1.6;
     margin-top: 15px;
 }
@@ -290,6 +297,8 @@ body  main .content-mapa-secons{
     background-color: var(--input-bg);
     padding: 5px;
     border-radius: 12px;
+    position: relative;
+    left: 23px;
 }
 
 .social-icon-link {
@@ -308,56 +317,87 @@ body  main .content-mapa-secons{
     font-size: 2.5rem;
 }
 
+.contenedor-tenefono h4 {
+    color: var(--color-primario-blanco);
+}
 
-body  main .social2{
-        display: none !important;
+.hipervinculo-numero svg {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -7px;
+}
+
+.hipervinculo-numero {
+    height: 100%;
+    align-items: end;
+    display: flex;
+}
+
+.numero {
+    background-color: #242323;
+    padding: 5px 20px 5px 20px;
+    color: var(--color-primario-blanco);
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+body main .social2 {
+    display: none !important;
+}
+
+@media (min-width: 1400px) {
+    .map-column {
+        padding-left: 45px;
+        /* Espacio entre el formulario y el mapa */
     }
+
+}
 
 /* Ajuste Responsivo para la columna del mapa */
 @media (min-width: 992px) {
-    .map-column {
-        padding-left: 50px;
-        /* Espacio entre el formulario y el mapa */
-    }
     .conten-map {
         background-position: right;
+        width: 100%;
     }
-
-
 }
 
 @media (max-width: 992px) {
-.conten-map {
-        background-position: right;
+        .header-text {
+        font-size: 1.7rem;
+        /* Reducir en móvil */
     }
-}
-    
-  
 
-@media (max-width: 992px) {
-    .form-label-custom{
+    .gradient-bar {
+        display: none;
+    }
+
+    .columna-datos{
+        margin: 0px !important;
+    }
+    .form-label-custom {
         font-size: 0.9rem !important;
     }
+
     .btn-send-message {
         font-size: 1.3rem !important;
         width: 80%;
     }
 
-    .conten-text-ubicacion h4{
+    .conten-text-ubicacion h4 {
         color: var(--color-primario-blanco);
         font-size: 2.5rem;
         font-weight: 600;
     }
 
-    .social-text-content h2{
-        font-size: 1.4rem;
+    .social-text-content h2 {
+        font-size: 1rem;
         font-weight: 600;
         color: var(--color-primario-blanco);
     }
 
-    .social2 .row div{
+    .social2 .row div {
         width: 50%;
-        height: 70%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -369,26 +409,28 @@ body  main .social2{
 
     .social2 .row {
         padding: 10px;
+        padding-right: 48px;
     }
 
-    .social-icon-link{
-        width: 20px !important;
-        height: 20px !important;
+    .social-icon-link {
+        width: 18px !important;
+        height: 18px !important;
     }
 
-    body  main .social1{
+    body main .social1 {
         display: none !important;
     }
 
-    body  main .social2{
+    body main .social2 {
         display: flex !important;
     }
-    body main .content-mapa-primary{
+
+    body main .content-mapa-primary {
         display: none !important;
     }
 
-    body  main .content-mapa-secons{
-    display: flex !important;
+    body main .content-mapa-secons {
+        display: flex !important;
     }
 
     .form-group-custom {
@@ -420,54 +462,106 @@ body  main .social2{
         align-items: flex-start;
     }
 
-    .content-map{
+    .content-map {
         width: 100%;
     }
 
-    .content-mapa-secons{
+    .content-mapa-secons {
         background-color: var(--input-bg);
         border-radius: 40px 40px 0px 0px;
         margin-top: 20px;
     }
 
-    .content-icons a img{
+    .content-icons a img {
         width: 40px;
         height: 40px;
     }
 
     .investment-section {
-        margin-top: 20px; 
+        margin-top: 20px;
     }
-}
 
-@media (max-width:490px) {
-    .map-container{
-        width: 135%;
+    .conten-map .map-header{
+        width: auto;
     }
+
+     .conten-map {
+        background-position: center;
+        width: 100%;
+    }
+
+    .conten-map .map-header{
+        height: auto;
+        padding-top: 0% ;
+    }
+
+    .address-text{
+        font-size: 0.8rem;
+    }
+
+    .header-content{
+        margin-bottom: 22px !important;
+    }
+    .header-text-segundario {
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 0px 1px 0px 1px;
+    }
+
+    
     .header-text {
         font-size: 1.4rem;
-        margin-top: 70px;
+        margin-top: 100px;
+        text-align: center;
         /* Reducir en móvil */
     }
 
     .green-text {
-   
-    font-size: 2rem;
+        color: var(--color-primario-blanco);
+        font-size: 2.5rem;
+        font-weight: 700;
     }
+}
+
+@media (max-width:490px) {
     
-.conten-map {
+
+    
+    .map-container {
+        width: 135%;
+    }
+
+
+    .conten-map {
         background-position: 80px;
     }
-    .map-container{
+
+    .map-container {
         height: 259px;
-        width: 87%;
+        width: 90%;
+    }
+
+    .content-icons{
+        gap: 35px;
+    }
+
+    .content-icons a img {
+        width: 34px;
+        height: 34px;
+    }
+    .social2 .row {
+        padding-right: 30px;
+    }
+
+     .conten-map .map-header{
+        width: 23rem;
     }
 
 
 }
 
 @media (max-width: 390px) {
-    
+
     .social-icon-link {
         width: 10px !important;
         height: 10px !important;
@@ -476,11 +570,9 @@ body  main .social2{
     .conten-map {
         background-position: 47px;
     }
-    .map-container{
+
+    .map-container {
         height: 259px;
         width: 87%;
     }
 }
-   
-
-

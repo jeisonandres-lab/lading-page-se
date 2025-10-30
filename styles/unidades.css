@@ -37,7 +37,7 @@
     /* background: linear-gradient(135deg, rgba(126,193,31,0.20) 0%, rgba(11,45,24,0.20) 100%); */
 
     /* Borde blanco visible y suave */
-    border: 1px solid rgba(255,255,255,0.95);
+    border: 1px solid rgba(255, 255, 255, 0.95);
     /* Mejora renderizado de la tipografía */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -174,7 +174,7 @@
     pointer-events: none;
     background-size: cover;
     background-repeat: no-repeat;
- 
+
 }
 
 /* Esfera izquierda inferior */
@@ -203,7 +203,7 @@
     display: none;
     right: -205px;
     bottom: 100px;
-     height: 510px !important;
+    height: 510px !important;
     background-image: url('../svg/gradiente-gris.svg');
     background-size: 30rem;
 }
@@ -225,6 +225,7 @@
     .title-notion {
         font-size: 1.2rem;
     }
+
     .esfera-der1,
     .esfera-der2,
     .esfera-izq {
@@ -317,6 +318,7 @@
     .blog-title {
         margin-top: 0px !important;
     }
+
     .blog-card {
         min-height: 0px;
         padding: 1rem 0.5rem;
@@ -326,5 +328,36 @@
         height: 118px;
     }
 
-    
+
+}
+
+@media (max-width: 380px) {
+    .blog-title {
+        /* margin-top: 120px !important; */
+        padding-top: 80px !important;
+    }
+
+    .blog-card {
+        min-height: 0px;
+        padding: 1rem 0.5rem;
+    }
+
+    .blog-img {
+        height: 85px;
+    }
+    .title-notion{
+        margin-bottom: 90px;
+    }
+    .esfera-izq,
+    .esfera-der1,
+    .esfera-der2 {
+        width: 340px;
+        height: 322px;
+
+    }
+
+    .esfera-der2 {
+        right: -150px;
+        bottom: 27px;
+    }
 }

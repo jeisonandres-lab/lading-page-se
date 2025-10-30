@@ -189,9 +189,26 @@
     }
 }
 
+@media (max-width: 390px) {
+    .mision-text-vision {
+        font-size: 0.8rem;
+    }
+
+    .mision-img-frase,
+    .mision-img-text {
+        font-size: 1.3rem;
+
+    }
+
+    .mision-imagen-section {
+        height: 90vh; 
+    }
+
+}
+
 /* Responsive: en pantallas grandes, que no sobresalga tanto */
 @media (min-width: 1400px) {
-    
+
 
     .title-vision {
         font-size: 4rem;

@@ -10,5 +10,25 @@
 
 a {
     /* Elimina la línea de subrayado */
-    text-decoration: none !important; 
+    text-decoration: none !important;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Este código le dice al navegador qué caracteres usar 
+   para las comillas en los elementos <blockquote> o <q> */
+blockquote {
+    quotes: "“" "”" "‘" "’";
+}
+
+/* Luego, el navegador aplica esto automáticamente si usas
+   la etiqueta <q> o si usas ::before/::after en <blockquote> */
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
 }

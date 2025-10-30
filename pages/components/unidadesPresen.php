@@ -4,7 +4,7 @@
      <div class="container-fluid section-body unidades-section d-flex align-items-center justify-content-center">
          <div class="row">
              <!-- El resto de tu contenido aquí -->
-             <div class="col-12 col-sm-12 col-md-2 content-unidad">
+             <div class="col-12 col-sm-12 col-md-12 content-unidad">
                  <div class=" unidades-title-vertical">
                      <span class="unidades-nombre ">UNI
                          <br>
