@@ -14,14 +14,26 @@
 .comillas{
     font-family: sans-serif; /* Use the same font or a different one */
 }
+/* Si JavaScript detectó la clase 'os-android' en el body */
+.comillas.os-android {
+    font-family: Roboto, "Noto Sans", sans-serif;
+}
 
+/* Si JavaScript detectó la clase 'os-windows' en el body */
+.comillas.os-windows  {
+    font-family: "Segoe UI", sans-serif;
+}
+
+.comillas.os-ios {
+    font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .content-img {
     position: relative;
     height: 100vh;
     width: 100%;
     z-index: 1;
     /* compensar navbar fija */
-    background-image: url('../img/Recurso8.png') !important;
+    background-image: url('../img/Recurso8.webp') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;

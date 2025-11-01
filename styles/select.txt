@@ -1,0 +1,36 @@
+.custom-options .option:hover:nth-child(2) {
+    background-color: var(--color-complemento-amarillo-mostaza); /* 🟢 ¡Tu Color Deseado, ej: un verde! */
+    color: #fff;
+}
+
+.custom-options .option:hover:nth-child(3) {
+    background-color: var(--color-primario-gris-oscuro); /* 🟢 ¡Tu Color Deseado, ej: un verde! */
+    color: #fff;
+}
+
+.custom-options .option:hover:nth-child(4) {
+    background-color: var(--green-color); /* 🟢 ¡Tu Color Deseado, ej: un verde! */
+    color: #fff;
+}
+/* Estilo para la opción seleccionada/actual */
+.custom-options .option.selected {
+    background-color: #3c9c3c; /* 🟢 Color de fondo para la seleccionada */
+    color: #fff;
+}
+
+.custom-options .option.selected:nth-child(2) {
+    background-color: var(--color-complemento-amarillo-mostaza); /* 🟢 Color de fondo para la seleccionada */
+    color: #fff;
+}
+
+
+.custom-options .option.selected:nth-child(3) {
+    background-color: var(--color-primario-gris-oscuro); /* 🟢 Color de fondo para la seleccionada */
+    color: #fff;
+}
+
+
+.custom-options .option.selected:nth-child(4) {
+    background-color: var(--green-color); /* 🟢 Color de fondo para la seleccionada */
+    color: #fff;
+}

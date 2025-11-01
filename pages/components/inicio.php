@@ -1,9 +1,9 @@
 <section class="hero" id="inicio">
     <div class="hero-content">
-        <div class="d-flex justify-content-center ">
+        <div class="d-flex justify-content-center contenedor-prueba">
             <h1 class="hero-title lh-1  tracking-in-expand-fwd-bottom ">
                 <span class="title-thin  ">
-                    Logramos que tu
+                    Logramos que su
                     <stronge class="accent title-primery tracking-in-contract">
                         inversión
                     </stronge>

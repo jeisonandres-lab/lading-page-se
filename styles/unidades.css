@@ -221,6 +221,9 @@
 @media (max-width: 991.98px) {}
 
 @media (max-width: 990.98px) {
+    .blog-subtitle {
+        font-size: 1.2rem !important;
+    }
 
     .title-notion {
         font-size: 1.2rem;
@@ -331,7 +334,7 @@
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 390px) {
     .blog-title {
         /* margin-top: 120px !important; */
         padding-top: 80px !important;
@@ -345,9 +348,12 @@
     .blog-img {
         height: 85px;
     }
-    .title-notion{
+
+    .title-notion {
+        padding: 10px !important;
         margin-bottom: 90px;
     }
+
     .esfera-izq,
     .esfera-der1,
     .esfera-der2 {

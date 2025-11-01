@@ -19,7 +19,7 @@
                         <!-- <span class="blog-card-title">RENTAL</span> -->
                         <img class="blog-img2 scale-up-tl" src="../img/cropped_rental.png" alt="">
                     </div>
-                    <img src="../img/rental_photo.png" alt="Rental" class="scale-up-tl blog-img mb-2">
+                    <img src="../img/rental_photo.webp" alt="Rental" class="scale-up-tl blog-img mb-2">
                     <div class="blog-card-text text-center tag2 mb-2">
                         Renta de espacios comerciales en Plaza Central y renta de villas turísticas en las mejores zonas de la República Dominicana
                     </div>
@@ -38,7 +38,7 @@
                         <!-- <span class="blog-card-title"><span class="text-green">co</span>WORKING</span> -->
                         <img class="blog-img1 scale-up-tl" src="../img/cropped_coworking.png" alt="">
                     </div>
-                    <img src="../img/coworking_photo.png " alt="Rental" class=" scale-up-tl blog-img mb-2">
+                    <img src="../img/coworking_photo.webp " alt="Rental" class=" scale-up-tl blog-img mb-2">
                     <div class="blog-card-text text-center mb-2">
                         Renta de espacios flexibles para empresarios independientes, emprendedores, capacitaciones y eventos
                     </div>
@@ -55,7 +55,7 @@
                         <!-- <span class="blog-card-title">INVESTMENTS</span> -->
                         <img class="blog-img3 scale-up-tl" src="../img/cropped_investments.png" alt="">
                     </div>
-                    <img src="../img/invest_photo.png" alt="Rental" class="scale-up-tl blog-img mb-2">
+                    <img src="../img/invest_photo.webp" alt="Rental" class="scale-up-tl blog-img mb-2">
                     <div class="blog-card-text text-center mb-2">
                         Asesoría para la inversión de propiedades comerciales y turísticas
                     </div>

@@ -6,7 +6,7 @@
 
 .mision-imagen-section {
     background-color: #131313;
-    background-image: url('../img/background_quote.png');
+    background-image: url('../img/background_quote.webp');
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
@@ -166,6 +166,9 @@
 }
 
 @media (max-width: 990.98px) {
+    .mision-imagen-section {
+        background-position: bottom;
+    }
     .content-imagen-laptop svg {
         height: 130px;
     }
@@ -191,7 +194,7 @@
 
 @media (max-width: 390px) {
     .mision-text-vision {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .mision-img-frase,

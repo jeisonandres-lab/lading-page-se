@@ -7,8 +7,8 @@
     height: 100vh;
     width: 100%;
     /* compensar navbar fija */
-    background-image: url('../img/bg_hero.png');
-    background-size: cover;
+    background-image: url('../img/bg_hero.webp');
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -265,7 +265,14 @@
 
 /* Teléfonos muy pequeños (320px y menos) */
 @media (max-width: 390px) {
+    .contenedor-prueba{
+        width: 80%;
+    }
     .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 0 6px;
         padding: 0 2px;
     }
@@ -282,7 +289,7 @@
     }
     
     .cta.boton-unidades {
-        font-size: clamp(9px, 1.8vw, 0.9rem);
+        font-size: clamp(11px, 1.8vw, 0.9rem);
     }
     body .contenedor-grip{
         padding-right: 20px !important;

@@ -27,7 +27,7 @@
                          <form class="form-column">
                              <div class="mb-3 form-group-custom">
                                  <label for="nombre" class="form-label-custom">Nombre</label>
-                                 <input type="text" class="form-control-custom" id="nombre">
+                                 <input type="text" class="form-control-custom" id="nombre" placeholder="Nombre y apellido">
                              </div>
 
                              <div class="mb-3 form-group-custom">
@@ -37,17 +37,24 @@
 
                              <div class="mb-3 form-group-custom">
                                  <label for="telefono" class="form-label-custom">Teléfono</label>
-                                 <input type="tel" class="form-control-custom" id="telefono">
+                                 <input type="tel" class="form-control-custom" id="telefono" placeholder="Ej. +1 809 000 0000">
                              </div>
 
                              <div class="mb-3 form-group-custom">
                                  <label for="interes" class="form-label-custom">Interés</label>
-                                 <select class="form-select-custom" id="interes">
-                                     <option selected disabled>Elige una opción</option>
-                                     <option value="1">Coworking</option>
-                                     <option value="2">Rental</option>
-                                     <option value="3">Invesments</option>
-                                 </select>
+                                 <div class="custom-select-wrapper">
+                                     <div class="custom-select-trigger form-select-custom">
+                                         <span>Elige una opción</span>
+                                         <div class="arrow"></div>
+                                     </div>
+                                     <ul class="custom-options">
+                                         <li class="option selected disabled" data-value="">Elige una opción</li>
+                                         <li class="option" data-value="1">Rental</li>
+                                         <li class="option" data-value="2">Coworking</li>
+                                         <li class="option" data-value="3">Invesments</li>
+                                     </ul>
+                                     <input type="hidden" id="interes" name="interes" value="">
+                                 </div>
                              </div>
 
                              <div class=" form-group-custom">
@@ -93,19 +100,21 @@
                                          <g id="Contacto">
                                              <path class="cls-1" d="M0,5.86c0-.3.08-.61.13-.91A6.7,6.7,0,0,1,1.31,2,7.07,7.07,0,0,1,2.91.39,2,2,0,0,1,5.57.64c1.35,1.33,2.68,2.66,4,4a2.06,2.06,0,0,1,0,2.94C9,8.23,8.36,8.83,7.75,9.44c-.08.08-.17.14-.24.2a19.27,19.27,0,0,0,9.14,9.14L18,17.43c.24-.23.46-.47.7-.69a2.09,2.09,0,0,1,2.48-.38,3.44,3.44,0,0,1,.73.59c1.21,1.2,2.41,2.42,3.62,3.62a2.74,2.74,0,0,1,.78,1.33v.59a4.23,4.23,0,0,1-.48,1,7.5,7.5,0,0,1-2,1.79,6.15,6.15,0,0,1-3,.91A11.72,11.72,0,0,1,18.68,26a16.52,16.52,0,0,1-5.08-1.86,25.65,25.65,0,0,1-4.43-3.05,42.3,42.3,0,0,1-5.08-5.2A20.67,20.67,0,0,1,1,11.12,11.45,11.45,0,0,1,.17,8.36C.1,8,.06,7.59,0,7.2Z" />
                                          </g>
-                                     </g>
                                  </svg>
                              </a>
                              <div class="conten_movil justify-content-center align-items-center d-flex flex-column">
                                  <h4>Número telefónico</h4>
-                                 <strong class="numero">+1(809) 566-1205</strong>
+                                 <a href="tel:+18095661205">
+                                 <strong class="numero">+1(809)000-000</strong>
+                                </a>
                              </div>
                          </div>
+                         <!-- https://wa.me/18095661205 -->
                          <div class="socila1 social-icons mt-4 d-flex justify-content-center justify-content-lg-center">
                              <div class="content-icons">
-                                 <a href="#" class="social-icon-link" aria-label="Instagram"> <img src="../img/instagram_3.png" alt=""></a>
-                                 <a href="#" class="social-icon-link" aria-label="WhatsApp"> <img src="../img/whatsapp_1.png" alt=""></a>
-                                 <a href="#" class="social-icon-link" aria-label="Correo Electrónico">
+                                 <a href="#" target="_blank" class="social-icon-link" aria-label="Instagram"> <img src="../img/instagram_3.png" alt=""></a>
+                                 <a href="#" target="_blank" class="social-icon-link" aria-label="WhatsApp"> <img src="../img/whatsapp_1.png" alt=""></a>
+                                 <a href="#" class="social-icon-link" target="_blank" aria-label="Correo Electrónico">
                                      <img src="../img/gmail_1.png"></a>
                              </div>
                          </div>
@@ -139,9 +148,9 @@
              27 de Febrero, esquina Winston Churchill<br>
              Piantini, Santo Domingo
          </p>
-         <div class="d-flex contenedor-tenefono justify-content-center align-items-center">
+         <div class="d-flex contenedor-tenefono justify-content-center align-items-end">
 
-             <a href="tel:+18095661205" class="me-3 hipervinculo-numero ">
+             <a href="tel:+18095661205" class=" hipervinculo-numero ">
                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.29 26.22">
                      <defs>
                          <style>
@@ -156,11 +165,14 @@
                          </g>
                      </g>
                  </svg>
+
+                 <div class="ms-3 conten_movil justify-content-center align-items-center d-flex flex-column">
+                     <span class="justify-content-center d-flex">
+                         <h4>Número telefónico</h4>
+                     </span>
+                     <strong class="numero">+1(809)000-000</strong>
+                 </div>
              </a>
-             <div class="conten_movil justify-content-center align-items-center d-flex flex-column">
-                 <h4>Número telefónico</h4>
-                 <strong class="numero">+1(809) 566-1205</strong>
-             </div>
          </div>
          <div class="social1 social-icons mt-4 d-flex justify-content-center justify-content-lg-center">
              <div class="content-icons">
@@ -174,12 +186,16 @@
      <div class="container-fluid social2 social-icons mt-4 d-flex justify-content-center justify-content-lg-center">
          <div class="row columna-datos">
              <div class="col-sm-3 social-text-content">
-                 <h2>CONTÁCTANOS POR NUESTRAS REDES</h2>
+                 <h2>ACCESE A
+                     NUESTRAS
+                     REDES SOCIALES
+                    </h2>
              </div>
              <div class="col-sm-3 content-icons">
-                 <a href="#" class="social-icon-link" aria-label="Instagram"> <img src="../img/instagram_3.png" alt=""></a>
-                 <a href="#" class="social-icon-link" aria-label="WhatsApp"> <img src="../img/whatsapp_1.png" alt=""></a>
-                 <a href="#" class="social-icon-link" aria-label="Correo Electrónico">
+                 <!-- "https://wa.me/18095661205" -->
+                 <a href="#" class="social-icon-link" target="_blank" aria-label="Instagram"> <img src="../img/instagram_3.png" alt=""></a>
+                 <a href="https://wa.me/18095661205" target="_blank" class="social-icon-link" aria-label="WhatsApp"> <img src="../img/whatsapp_1.png" alt=""></a>
+                 <a href="#" class="social-icon-link" target="_blank" aria-label="Correo Electrónico">
                      <img src="../img/gmail_1.png"></a>
              </div>
          </div>

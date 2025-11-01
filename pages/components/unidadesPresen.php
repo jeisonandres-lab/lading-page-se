@@ -57,7 +57,7 @@
                          </a>
 
                          <a href="unidades.php" class="unidades-btn unidades-btn2 mt-3 d-flex align-items-center">
-                             presiona
+                             presione
                              <span class="aqui"><span class="d-flex align-items-center">aquí</span></span>
                              para conocer más
                          </a>

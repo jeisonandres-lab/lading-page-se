@@ -27,7 +27,7 @@
                       <form class="form-column">
                           <div class="mb-3 form-group-custom">
                               <label for="nombre" class="form-label-custom">Nombre</label>
-                              <input type="text" class="form-control-custom" id="nombre">
+                              <input type="text" class="form-control-custom" id="nombre" placeholder="Nombre y apellido">
                           </div>
 
                           <div class="mb-3 form-group-custom">
@@ -38,7 +38,7 @@
 
                           <div class="mb-3 form-group-custom">
                               <label for="telefono" class="form-label-custom">Teléfono</label>
-                              <input type="tel" class="form-control-custom" id="telefono">
+                              <input type="tel" class="form-control-custom" id="telefono" placeholder="Ej. +1 809 000 0000">
                           </div>
 
                           <div class="mb-3 form-group-custom">

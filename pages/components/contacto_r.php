@@ -29,7 +29,7 @@
                     <form class="form-column">
                         <div class="mb-3 form-group-custom">
                             <label for="nombre" class="form-label-custom">Nombre</label>
-                            <input type="text" class="form-control-custom" id="nombre">
+                            <input type="text" class="form-control-custom" id="nombre" placeholder="Nombre y apellido">
                         </div>
 
                         <div class="mb-3 form-group-custom">
@@ -40,7 +40,7 @@
 
                         <div class="mb-3 form-group-custom">
                             <label for="telefono" class="form-label-custom">Teléfono</label>
-                            <input type="tel" class="form-control-custom" id="telefono">
+                            <input type="tel" class="form-control-custom" id="telefono" placeholder="Ej. +1 809 000 0000">
                         </div>
 
                         <div class="mb-3 form-group-custom">
@@ -51,7 +51,7 @@
                         <div class=" form-group-custom">
                             <label for="mensaje" class="form-label-custom">Mensaje</label>
                             <textarea class="form-control-custom textarea-custom" id="mensaje" rows="3"
-                                placeholder="¡Hola!, quiero agendar una asesoría con ustedes."></textarea>
+                                placeholder=""></textarea>
                         </div>
                     </form>
 

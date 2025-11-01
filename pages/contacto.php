@@ -23,4 +23,5 @@
 
     <?php require_once './components/scrips.php'; ?>
 </body>
+<script src="../scripts/select2.js"></script>
 </html>
