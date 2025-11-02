@@ -266,7 +266,7 @@
 /* Teléfonos muy pequeños (320px y menos) */
 @media (max-width: 390px) {
     .contenedor-prueba{
-        width: 80%;
+        width: 78%;
     }
     .hero-content {
         display: flex;

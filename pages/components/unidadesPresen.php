@@ -52,7 +52,7 @@
 
                          </div>
                          <a href="unidades.php" class="animation-blur unidades-btn unidades-btn1 mt-3 d-flex align-items-center">
-                             Conoce más sobre nuestras unidades
+                             Conozca más sobre nuestras unidades
                              <span class="aqui"><span>aquí</span></span>
                          </a>
 

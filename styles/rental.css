@@ -216,7 +216,7 @@
 
     .section-degradado {
         /* Fondo degradado de gris a negro de izquierda a derecha */
-        background: linear-gradient(180deg, #BBBB00 30%, #131313 90%);
+        background: linear-gradient(180deg, #BBBB00 12%, #131313 90%);
         width: 100%;
         position: relative;
 

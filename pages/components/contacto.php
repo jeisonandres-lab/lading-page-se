@@ -44,7 +44,7 @@
                                  <label for="interes" class="form-label-custom">Interés</label>
                                  <div class="custom-select-wrapper">
                                      <div class="custom-select-trigger form-select-custom">
-                                         <span>Elige una opción</span>
+                                         <span>Eliga una opción</span>
                                          <div class="arrow"></div>
                                      </div>
                                      <ul class="custom-options">

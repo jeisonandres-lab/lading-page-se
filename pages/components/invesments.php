@@ -30,7 +30,7 @@
                             rentabilidad y gestión de su inversión.</strong> 
                         </p>
                         <div class="btn-class tracking-in-expand-fwd-bottom">
-                            <a href="#" class="btn-class-btn">Solicita asesoría</a>
+                            <a href="#" class="btn-class-btn">Solicite asesoría</a>
                         </div>
 
                          <div class="d-flex g-5 justify-content-end w-100 content-flecha-atras mt-4 tracking-in-expand-fwd-bottom">

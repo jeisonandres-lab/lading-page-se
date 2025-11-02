@@ -6,7 +6,7 @@
             <div class="col-12 text-center">
                 <h2 class="blog-title fw-bold mb-1">BLOG</h2>
                 <p class="blog-subtitle  mb-4">
-                    Accede a las últimas <span class="text-green">novedades</span> de cada una de nuestras unidades
+                    Acceda a las últimas <span class="text-green">novedades</span> de cada una de nuestras unidades
                 </p>
             </div>
         </div>
